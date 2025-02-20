@@ -1,0 +1,49 @@
+
+> @deriv/core@0.1.0 build
+> f () { webpack --config "./build/webpack.config.js" --env base=$1 --env IS_CRYPTO_APP=${IS_CRYPTO_APP:-false};}; f
+
+Failed to load ./.env.
+(node:29494) [DEP_WEBPACK_DEPRECATION_ARRAY_TO_SET] DeprecationWarning: Compilation.chunks was changed from Array to Set (using Array method 'filter' is deprecated)
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:29494) [DEP_WEBPACK_DEPRECATION_ARRAY_TO_SET_LENGTH] DeprecationWarning: chunk.files was changed from Array to Set (using Array property 'length' is deprecated)
+(node:29494) [DEP_WEBPACK_DEPRECATION_ARRAY_TO_SET_INDEXER] DeprecationWarning: chunk.files was changed from Array to Set (indexing Array is deprecated)
+1022 assets
+Entrypoint [1mmain[39m[22m 25.7 MiB (11.3 KiB) = 10 assets 2 auxiliary assets
+orphan modules 19.5 MiB (javascript) 2.09 MiB (css/mini-extract) [1m[33m[orphan][39m[22m 7969 modules
+runtime modules 36.9 KiB 18 modules
+modules by path [1m../../[39m[22m 46.9 MiB (javascript) 838 KiB (css/mini-extract) 10250 modules
+modules by path [1m./[39m[22m 1.14 MiB (javascript) 396 KiB (css/mini-extract) 369 modules
+modules by path [1m../node_modules/[39m[22m 596 KiB (javascript) 3.68 KiB (css/mini-extract)
+  javascript modules 596 KiB
+    modules by path [1m../node_modules/@deriv-com/auth-client/dist/*.js[39m[22m 23.8 KiB 3 modules
+    modules by path [1m../node_modules/@deriv-com/auth-client/dist/oidc/*.js[39m[22m 96.2 KiB 3 modules
+    modules by path [1m../node_modules/@deriv-com/auth-client/dist/hooks/*.js[39m[22m 1.88 KiB
+      [1m../node_modules/@deriv-com/auth-client/dist/hooks/useOAuth2.js[39m[22m 1.47 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+      [1m../node_modules/@deriv-com/auth-client/dist/hooks/useIsOAuth2Enabled.js[39m[22m 429 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    + 4 modules
+  css modules 3.68 KiB
+    css ../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].use[1]!../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].use[2]!../../../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[6].use[3]!../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].use[4]!../../../node_modules/sass-resources-loader/lib/loader.js??ruleSet[1].rules[6].use[5]![1m../node_modules/@deriv-com/auth-client/dist/assets/Callback.css[39m[22m 132 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+    css ../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].use[1]!../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].use[2]!../../../node_modules/resolve-url-loader/index.js??ruleSet[1].rules[6].use[3]!../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].use[4]!../../../node_modules/sass-resources-loader/lib/loader.js??ruleSet[1].rules[6].use[5]![1m../node_modules/@deriv-com/auth-client/dist/assets/Callback.css (1)[39m[22m 3.55 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+
+[1mLOG from GenerateSW[39m[22m
+<i> [1m[32mThe service worker at service-worker.js will precache[39m[22m
+<i> [1m[32m        0 URLs, totaling 0 B.[39m[22m
+
+[1m[33mWARNING[39m[22m in [1mDefinePlugin
+[1m[31mConflicting[39m[22m[1m values for 'process.env.NODE_ENV'[39m[22m
+
+[1m[33m261 WARNINGS in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)[39m[22m
+
+1 warning has detailed information that is not shown.
+Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
+
+[1m[31mERROR[39m[22m in [1munable to locate '/home/dell/Programs/react/deriv-app/packages/core/src/public/images/common/logos/platform_logos/**/*' glob[39m[22m
+
+webpack 5.97.1 compiled with [1m[31m1 error[39m[22m and [1m[33m262 warnings[39m[22m in 191710 ms
+npm error Lifecycle script `build` failed with error:
+npm error code 1
+npm error path /home/dell/Programs/react/deriv-app/packages/core
+npm error workspace @deriv/core@0.1.0
+npm error location /home/dell/Programs/react/deriv-app/packages/core
+npm error command failed
+npm error command sh -c f () { webpack --config "./build/webpack.config.js" --env base=$1 --env IS_CRYPTO_APP=${IS_CRYPTO_APP:-false};}; f

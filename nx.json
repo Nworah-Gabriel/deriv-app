@@ -35,5 +35,6 @@
         "@nx/js": {
             "analyzeSourceFiles": false
         }
-    }
+    },
+    "nxCloudId": "67b727d943bff30eab6a74f9"
 }

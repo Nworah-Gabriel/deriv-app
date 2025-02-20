@@ -1,0 +1,34 @@
+
+> @deriv/account@1.0.0 build
+> f () { NODE_OPTIONS='-r ts-node/register' webpack --config "./build/webpack.config.js" --env base=$1;}; f
+
+assets by path [1m[32maccount/js/*.js[39m[22m 7.02 MiB
+  assets by info 5.98 MiB [1m[32m[immutable][39m[22m
+    asset [1m[32maccount/js/account.vendors-node_modules_binary-com_binary-document-uploader_DocumentUploader_js-node_modules_day-7988b1.811514dfb8108ba56fe9.js[39m[22m 2.43 MiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m (id hint: vendors)
+    + 16 assets
+  + 14 assets
+assets by path [1m[32maccount/css/*.css[39m[22m 1.27 MiB
+  asset [1m[32maccount/css/vendors-node_modules_binary-com_binary-document-uploader_DocumentUploader_js-node_modules_day-7988b1.acb55ffafb42b19da3b5.css[39m[22m 1.09 MiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m (id hint: vendors)
+  asset [1m[32maccount/css/account-app.009c1ca5bce7759e2954.css[39m[22m 106 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m (name: account-app)
+  asset [1m[32maccount/css/Sections_Profile_PhoneVerification_index_ts.d979bb1b9f71e8c9dd0a.css[39m[22m 18.8 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m
+  asset [1m[32maccount/css/Sections_Security_SelfExclusion_index_ts.420f964da21ff5ac037a.css[39m[22m 13.4 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m
+  asset [1m[32maccount/css/Sections_Security_ApiToken_index_ts.716ede20007da5fb2cc8.css[39m[22m 10.4 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m
+  asset [1m[32maccount/css/Sections_Security_ConnectedApps_index_ts.655b76abbb0ad5c54e94.css[39m[22m 9.67 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m
+  asset [1m[32maccount/css/Sections_Security_AccountLimits_index_ts.2a4b3f0236fc3a65ae46.css[39m[22m 9 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m
+  asset [1m[32maccount/css/Sections_Security_Passkeys_index_ts.e44c7aa0938bc628d25e.css[39m[22m 8.54 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m
+  + 2 assets
+orphan modules 977 KiB (javascript) 1.01 MiB (css/mini-extract) [1m[33m[orphan][39m[22m 315 modules
+runtime modules 22.9 KiB 65 modules
+javascript modules 1.7 MiB
+  modules by path [1m./[39m[22m 855 KiB 376 modules
+  modules by path [1m../../../node_modules/[39m[22m 883 KiB 294 modules
+  modules by path [1mexternal "@deriv/[39m[22m 378 bytes 9 modules
+  modules by path [1mexternal "@deriv-com/[39m[22m 126 bytes 3 modules
+  + 5 modules
+css modules 1.26 MiB
+  modules by path [1m../../../node_modules/[39m[22m 1.1 MiB
+    modules by path [1m../../../node_modules/@deriv-com/quill-ui/dist/assets/*.css[39m[22m 187 KiB 25 modules
+    + 3 modules
+  modules by path [1m./[39m[22m 158 KiB 22 modules
+[1m../../../node_modules/i18n-iso-countries/codes.json[39m[22m 8.56 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+webpack 5.97.1 compiled [1m[32msuccessfully[39m[22m in 80977 ms

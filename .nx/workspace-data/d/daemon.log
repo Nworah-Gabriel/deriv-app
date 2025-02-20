@@ -1696,3 +1696,614 @@
 [NX Daemon Server] - 2025-02-17T11:28:49.979Z - [WATCHER]: Stopping the watcher for /home/dell/Programs/react/deriv-app (sources)
 [NX Daemon Server] - 2025-02-17T11:28:49.980Z - [WATCHER]: Stopping the watcher for /home/dell/Programs/react/deriv-app (outputs)
 [NX Daemon Server] - 2025-02-17T11:28:49.984Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+[NX Daemon Server] - 2025-02-20T12:49:56.778Z - Started listening on: /tmp/e95ea933fdd0222f3ba5/d.sock
+[NX Daemon Server] - 2025-02-20T12:49:56.781Z - [WATCHER]: Subscribed to changes within: /home/dell/Programs/react/deriv-app (native)
+[NX Daemon Server] - 2025-02-20T12:49:56.793Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T12:49:56.794Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-02-20T12:49:56.803Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-20T12:49:56.818Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T12:49:57.011Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:49:57.011Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:49:57.011Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:49:57.025Z - Time taken for 'loadNxPlugins' 199.1980059966445ms
+[NX Daemon Server] - 2025-02-20T12:49:57.147Z - Time taken for 'build-project-configs' 58.3541839979589ms
+[NX Daemon Server] - 2025-02-20T12:49:57.261Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:49:57.263Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-20T12:49:57.267Z - Time taken for 'total for creating and serializing project graph' 459.42712399736047ms
+[NX Daemon Server] - 2025-02-20T12:49:57.269Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-20T12:49:57.270Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 459. Response time: 8.
+[NX Daemon Server] - 2025-02-20T12:49:57.355Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-20T12:49:57.355Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-20T12:49:57.355Z - Handled HASH_TASKS. Handling time: 29. Response time: 0.
+
+> NX notify watch() error err=Error { kind: MaxFilesWatch, paths: ["/home/dell/Programs/react/deriv-app/node_modules/date-fns/locale/is/_lib/localize"] }
+
+
+> NX runtime error err=Native fs watcher error
+
+
+> NX notify watch() error err=Error { kind: MaxFilesWatch, paths: ["/home/dell/Programs/react/deriv-app/node_modules/date-fns/locale/is/_lib/localize"] }
+
+
+> NX runtime error err=Native fs watcher error
+
+[NX Daemon Server] - 2025-02-20T12:50:06.039Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:50:06.465Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:50:06.465Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:50:06.465Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-20T12:50:06.479Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:50:06.481Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-20T12:50:06.737Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T12:50:06.738Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-20T12:50:06.739Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T12:50:06.743Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-20T12:50:06.744Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-20T12:50:06.750Z - Time taken for 'total for creating and serializing project graph' 0.5250869989395142ms
+[NX Daemon Server] - 2025-02-20T12:50:06.752Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-20T12:50:06.752Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 8.
+[NX Daemon Server] - 2025-02-20T12:50:06.804Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-20T12:50:06.805Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-20T12:50:06.805Z - Handled HASH_TASKS. Handling time: 17. Response time: 1.
+[NX Daemon Server] - 2025-02-20T12:51:02.926Z - [WATCHER]: 40 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:51:02.927Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:51:02.992Z - [WATCHER]: 1 file(s) created or restored, 10 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:51:02.993Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:51:03.039Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:51:03.039Z - [REQUEST]: packages/account/dist/account/css/Sections_Security_Passkeys_index_ts.e44c7aa0938bc628d25e.css,packages/account/dist/account/css/Sections_Security_SelfExclusion_index_ts.420f964da21ff5ac037a.css,packages/account/dist/account/js/account.Sections_Security_Passkeys_index_ts.271244d09e2a73ab9527.js,packages/account/dist/account/js/account.Sections_Security_ConnectedApps_index_ts.55d01944d3f8d183f1e9.js,packages/account/dist/account/css/Sections_Security_ApiToken_index_ts.716ede20007da5fb2cc8.css,packages/account/dist/account/js/test-warning-modal.js,packages/account/dist/account/js/currency-selector-config.js,packages/account/dist/account/js/currency-radio-button.js,packages/account/dist/account/css/Sections_Security_AccountLimits_index_ts.2a4b3f0236fc3a65ae46.css,packages/account/dist/account/js/account.404.daee706d7a563fa21ae0.js,packages/account/dist/account/js/account.Sections_Profile_PhoneVerification_index_ts.4080251383201062b6a8.js,packages/account/dist/account/js/account.Sections_Security_LoginHistory_index_ts.dd6dc05eddda3070bb26.js,packages/account/dist/account/js/account.Sections_Assessment_TradingAssessment_index_js.3bafcd3b58eeee72b6f6.js,packages/account/dist/account/css/Sections_Security_TwoFactorAuthentication_index_ts.55f092ef815f0262eb09.css,packages/account/dist/account/js/get-status-badge-config.js,packages/account/dist/account/js/account.Sections_Assessment_FinancialAssessment_index_ts.a1ba37636550589d059b.js,packages/account/dist/account/js/account.Sections_Security_Passwords_index_ts.7870356024f077384312.js,packages/account/dist/account/js/account.Sections_Security_AccountClosed_index_ts.84ee9ce0afb84c89dbcc.js,packages/account/dist/account/js/personal-details-config.js,packages/account/dist/account/js/account.Sections_Profile_LanguageSettings_index_ts.c34135672e4ce642d4bf.js,packages/account/dist/account/js/terms-of-use-config.js,packages/account/dist/account/js/risk-tolerance-warning-modal.js,packages/account/dist/account/js/account.Sections_Security_SelfExclusion_index_ts.7fd88e5b69f8ebe438eb.js,packages/account/dist/account/js/account.account-app.6ff38ee14f35bf456085.js,packages/account/dist/account/js/sent-email-modal.js,packages/account/dist/account/js/address-details-config.js,packages/account/dist/account/js/account.Sections_Security_TwoFactorAuthentication_index_ts.b1e072b98576c683594a.js,packages/account/dist/account/js/account.Sections_Security_AccountLimits_index_ts.a67e679ffd6bd88a7ce8.js,packages/account/dist/account/js/account.js,packages/account/dist/account/css/Sections_Security_ConnectedApps_index_ts.655b76abbb0ad5c54e94.css,packages/account/dist/account/js/account.Sections_Security_ApiToken_index_ts.7fe67190b4d7553f8493.js,packages/account/dist/account/js/currency-radio-button-group.js,packages/account/dist/account/css/account-app.009c1ca5bce7759e2954.css,packages/account/dist/account/css/Sections_Assessment_FinancialAssessment_index_ts.7ffb9b65b3cfa5b82c22.css,packages/account/dist/account/css/vendors-node_modules_binary-com_binary-document-uploader_DocumentUploader_js-node_modules_day-7988b1.acb55ffafb42b19da3b5.css,packages/account/dist/account/js/trading-assessment-config.js,packages/account/dist/account/js/employment-tax-info-config.js,packages/account/dist/account/js/financial-details-config.js,packages/account/dist/account/js/account.Sections_Security_ClosingAccount_index_ts.ef9c615d379fb00afade.js,packages/account/dist/account/css/Sections_Profile_PhoneVerification_index_ts.d979bb1b9f71e8c9dd0a.css,packages/account/dist/account/js/account.vendors-node_modules_binary-com_binary-document-uploader_DocumentUploader_js-node_modules_day-7988b1.811514dfb8108ba56fe9.js
+[NX Daemon Server] - 2025-02-20T12:51:03.039Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:51:03.049Z - Time taken for 'hash changed files from watcher' 9.86600599810481ms
+[NX Daemon Server] - 2025-02-20T12:51:03.161Z - Time taken for 'build-project-configs' 56.76240599900484ms
+[NX Daemon Server] - 2025-02-20T12:51:03.286Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:51:03.288Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:51:03.288Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:51:03.288Z - Time taken for 'total execution time for createProjectGraph()' 126.59449499845505ms
+[NX Daemon Server] - 2025-02-20T12:51:03.978Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:51:03.978Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:51:03.978Z - Handled RECORD_OUTPUTS_HASH. Handling time: 6. Response time: 0.
+[NX Daemon Server] - 2025-02-20T12:51:03.986Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-20T12:51:04.183Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T12:51:04.184Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-20T12:51:04.185Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T12:51:04.187Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-20T12:51:04.188Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-20T12:51:04.192Z - Time taken for 'total for creating and serializing project graph' 0.436489999294281ms
+[NX Daemon Server] - 2025-02-20T12:51:04.194Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-20T12:51:04.194Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 6.
+[NX Daemon Server] - 2025-02-20T12:51:04.255Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-20T12:51:04.255Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-20T12:51:04.255Z - Handled HASH_TASKS. Handling time: 28. Response time: 0.
+[NX Daemon Server] - 2025-02-20T12:51:05.532Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:51:05.640Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:51:05.640Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:51:05.640Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:51:05.650Z - Time taken for 'hash changed files from watcher' 6.490260999649763ms
+[NX Daemon Server] - 2025-02-20T12:51:05.731Z - Time taken for 'build-project-configs' 41.49271400272846ms
+[NX Daemon Server] - 2025-02-20T12:51:05.760Z - [WATCHER]: 19 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:51:05.761Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:51:05.821Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:51:05.822Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:51:05.822Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:51:05.822Z - Time taken for 'total execution time for createProjectGraph()' 82.08089000359178ms
+[NX Daemon Server] - 2025-02-20T12:51:05.835Z - [WATCHER]: 10 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:51:05.836Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:51:05.868Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:51:05.868Z - [REQUEST]: packages/bot-skeleton/dist/media/click.wav,packages/bot-skeleton/dist/media/click.mp3,packages/bot-skeleton/dist/media/disconnect.mp3,packages/bot-skeleton/dist/media/dropdown-arrow.svg,packages/bot-skeleton/dist/media/quote1.png,packages/bot-skeleton/dist/media/delete.wav,packages/bot-skeleton/dist/media/delete.ogg,packages/bot-skeleton/dist/media/disconnect.ogg,packages/bot-skeleton/dist/media/pilcrow.png,packages/bot-skeleton/dist/media/quote0.png,packages/bot-skeleton/dist/media/sprites.png,packages/bot-skeleton/dist/media/1x1.gif,packages/bot-skeleton/dist/media/click.ogg,packages/bot-skeleton/dist/media/delete.mp3,packages/bot-skeleton/dist/media/sprites.svg,packages/bot-skeleton/dist/media/handclosed.cur,packages/bot-skeleton/dist/media/handopen.cur,packages/bot-skeleton/dist/media/disconnect.wav,packages/bot-skeleton/dist/media/handdelete.cur,packages/bot-skeleton/dist/media/logic.png,packages/bot-skeleton/dist/media/sma_formula.png,packages/bot-skeleton/dist/media/create_variable.jpg,packages/bot-skeleton/dist/media/set_variable.png,packages/bot-skeleton/dist/media/ic-chevron-down-bold.svg,packages/bot-skeleton/dist/media/is_candle_black_1.jpeg,packages/bot-skeleton/dist/media/sma_chart_1.png,packages/bot-skeleton/dist/media/sma_chart_2.png,packages/bot-skeleton/dist/media/sma_array_explanation.jpeg,packages/bot-skeleton/dist/media/is_candle_black.jpeg
+[NX Daemon Server] - 2025-02-20T12:51:05.868Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:51:05.879Z - Time taken for 'hash changed files from watcher' 7.121820997446775ms
+[NX Daemon Server] - 2025-02-20T12:51:05.902Z - [WATCHER]: 5 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:51:05.902Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:51:05.954Z - Time taken for 'build-project-configs' 39.08811799809337ms
+[NX Daemon Server] - 2025-02-20T12:51:06.040Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:51:06.041Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:51:06.041Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:51:06.041Z - Time taken for 'total execution time for createProjectGraph()' 74.6295070014894ms
+[NX Daemon Server] - 2025-02-20T12:51:06.047Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:51:06.047Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:51:06.048Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:51:06.058Z - Time taken for 'hash changed files from watcher' 6.300497002899647ms
+[NX Daemon Server] - 2025-02-20T12:51:06.150Z - Time taken for 'build-project-configs' 49.079445999115705ms
+[NX Daemon Server] - 2025-02-20T12:51:06.235Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:51:06.235Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:51:06.235Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:51:06.238Z - Time taken for 'total execution time for createProjectGraph()' 73.74768099933863ms
+[NX Daemon Server] - 2025-02-20T12:52:15.575Z - [WATCHER]: 14 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:52:15.576Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:52:15.627Z - [WATCHER]: 11 file(s) created or restored, 14 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:52:15.628Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:52:15.696Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:52:15.696Z - [REQUEST]: packages/bot-web-ui/dist/bot/css/bot.bot-web-ui-app.f029ead0338d2ace7f84.css,packages/bot-web-ui/dist/bot/js/bot.bot-web-ui-app.f580dec8ef308cb84843.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_martingale-xml.e2b15788e14c5489dbb3.js,packages/bot-web-ui/dist/bot/js/bot.1_3_2_6-xml.d7c69129b9d2ed09886e.js,packages/bot-web-ui/dist/bot/js/bot.vendors-node_modules_blockly_index_js.124da378a483ced675b5.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_dalembert-xml.0221862a07bdb0ce73da.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_martingale_on_stat_reset-xml.afb3de6c5884f674cd77.js,packages/bot-web-ui/dist/bot/js/bot.bot-skeleton_src_scratch_blocks_index_js.d215f5597740879a2ffa.js,packages/bot-web-ui/dist/bot/js/bot.bot-skeleton_src_scratch_hooks_index_js.09aa3eb5050f590d17d7.js,packages/bot-web-ui/dist/bot/js/bot-web-ui.main.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_reverse_dalembert_on_stat_reset-xml.2e7bb8da25b6beacd4a3.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_reverse_dalembert-xml.f98dea93943971b0d200.js,packages/bot-web-ui/dist/bot/js/bot.dbot-collection.a93810fed0b113f239de.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_dalembert_on_stat_reset-xml.6a155824ee48a535d72d.js,packages/bot-web-ui/dist/bot/js/bot.dalembert_max-stake-xml.c38248b0086ea2a600c4.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_reverse_martingale_on_stat_reset-xml.690eafc19e4fa96f3c23.js,packages/bot-web-ui/dist/bot/js/bot.dalembert-xml.ffd5ebe7f62d0ca4fb0a.js,packages/bot-web-ui/dist/bot/js/bot.oscars_grind-xml.23b9b94bb7a3945734c8.js,packages/bot-web-ui/dist/bot/js/bot.reverse_dalembert-xml.004f5efdc05d865ba7e3.js,packages/bot-web-ui/dist/bot/js/bot.martingale_max-stake-xml.f5b1b7c298198be39856.js,packages/bot-web-ui/dist/bot/js/bot.oscars_grind_max-stake-xml.b1ca7c0c2982b1b5caa6.js,packages/bot-web-ui/dist/bot/js/bot.reverse_martingale-xml.16b035946b902ec877dc.js,packages/bot-web-ui/dist/bot/css/bot.vendors-node_modules_deriv_deriv-api_dist_DerivAPIBasic_js-node_modules_deriv_js-interpreter_-4b9834.6419deeb403737cf63dc.css,packages/bot-web-ui/dist/bot/js/bot.accumulators_reverse_martingale-xml.6a0a52d7e16a17b2c69d.js,packages/bot-web-ui/dist/bot/js/bot.martingale-xml.9c5372ab9faaca4ce96a.js
+[NX Daemon Server] - 2025-02-20T12:52:15.696Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:52:15.710Z - [WATCHER]: 36 file(s) created or restored, 10 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:52:15.711Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:52:15.711Z - Time taken for 'hash changed files from watcher' 19.74625900015235ms
+[NX Daemon Server] - 2025-02-20T12:52:15.822Z - Time taken for 'build-project-configs' 72.23913300037384ms
+[NX Daemon Server] - 2025-02-20T12:52:15.833Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:52:15.834Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:52:15.834Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:52:15.856Z - Time taken for 'hash changed files from watcher' 10.905351001769304ms
+[NX Daemon Server] - 2025-02-20T12:52:16.072Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:52:16.073Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:52:16.073Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:52:16.073Z - Time taken for 'total execution time for createProjectGraph()' 203.86125400289893ms
+[NX Daemon Server] - 2025-02-20T12:52:16.126Z - Time taken for 'build-project-configs' 240.03022100031376ms
+[NX Daemon Server] - 2025-02-20T12:52:16.211Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:52:16.212Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:52:16.212Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:52:16.212Z - Time taken for 'total execution time for createProjectGraph()' 81.9159049987793ms
+[NX Daemon Server] - 2025-02-20T12:52:18.952Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:52:18.953Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:52:18.953Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 1.
+[NX Daemon Server] - 2025-02-20T12:52:18.975Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-20T12:52:19.174Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T12:52:19.176Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-20T12:52:19.177Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T12:52:19.180Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-20T12:52:19.180Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-20T12:52:19.184Z - Time taken for 'total for creating and serializing project graph' 0.48399900272488594ms
+[NX Daemon Server] - 2025-02-20T12:52:19.186Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-20T12:52:19.186Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 6.
+[NX Daemon Server] - 2025-02-20T12:52:19.242Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-20T12:52:19.243Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-20T12:52:19.243Z - Handled HASH_TASKS. Handling time: 26. Response time: 1.
+[NX Daemon Server] - 2025-02-20T12:52:51.874Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:53:46.281Z - [WATCHER]: 27 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:53:46.282Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:53:46.333Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:53:46.336Z - [WATCHER]: 7 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:53:46.410Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:53:46.411Z - [REQUEST]: packages/trader/dist/trader/js/trader.touch-no-touch-trade-description.ded06168f5c17efcf1e0.js,packages/trader/dist/trader/css/trader.screen-small.9f04f7a78cc52d4b2049.css,packages/trader/dist/trader/js/trader.screen-large.2bc2c8960511d292b254.js,packages/trader/dist/trader/js/trader.trader-app-v2.41ccd1b2ed80038a1518.js,packages/trader/dist/trader/js/trader.matches-differs-trade-description.884aae61dfca1eea8ad4.js,packages/trader/dist/trader/js/trader.vanillas-trade-description.0725da979f485569e402.js,packages/trader/dist/trader/js/trader.market-countdown-timer.b3f392cf58edf6a649f3.js,packages/trader/dist/trader/js/trader.rise-fall-trade-description.e324b6c707c7bbcb9667.js,packages/trader/dist/trader/js/trader.multipliers-trade-description.d4b029806bdc63056969.js,packages/trader/dist/trader/js/trader.error-component.24fe6739097bd2958fce.js,packages/trader/dist/trader/js/trader.over-under-trade-description.ad377287b70b2811c746.js,packages/trader/dist/trader/js/trader.turbos-trade-description.c245100ce303d1e587a7.js,packages/trader/dist/trader/js/trader.even-odd-trade-description.aa75f394e290d3abdb6c.js,packages/trader/dist/trader/js/trader.higher-lower-trade-description.505ef70265999bf94f01.js,packages/trader/dist/trader/js/trader.trade-modals.33efcb90ba693405cccb.js,packages/trader/dist/trader/css/trader.trade-modals.5d33fce87261854c04de.css,packages/trader/dist/trader/css/trader.vendors-node_modules_cloudflare_stream-react_dist_stream-react_esm_js-node_modules_deriv_quil-145140.de9d0001cf93ddd80ebe.css,packages/trader/dist/trader/js/trader.accumulators-trade-description.ba5bfc5072200c3ac964.js,packages/trader/dist/trader/js/trader.js,packages/trader/dist/trader/js/trader.settings-chart.a25a0c0dcec576e89a5e.js,packages/trader/dist/trader/js/trader.contract.935dc684bdcd071d9b76.js,packages/trader/dist/trader/css/trader.trader-app-v2.0b97ddfb5f547d589250.css,packages/trader/dist/trader/js/trader.vendors-node_modules_cloudflare_stream-react_dist_stream-react_esm_js-node_modules_deriv_quil-145140.953216750c849c03a62b.js,packages/trader/dist/trader/js/trader.vendors-node_modules_bowser_es5_js-node_modules_dayjs_dayjs_min_js-node_modules_lodash_deboun-8ca634.de0452865bc86c3dc3fc.js,packages/trader/dist/trader/js/trader.screen-small.0688d15df567f952ffbb.js,packages/trader/dist/trader/css/trader.trader-app.83c7fa877f33dd1d1005.css,packages/trader/dist/trader/js/trader.trader-app.5115f7c1d4bbcd204a95.js,packages/trader/dist/trader/js/trader.src_sass_app_scss-src_App_Components_Elements_PositionsDrawer_helpers_index_ts-src_App_init-s-ba58f8.30f900fee8060247ffed.js,packages/trader/dist/trader/css/trader.src_sass_app_scss-src_App_Components_Elements_PositionsDrawer_helpers_index_ts-src_App_init-s-ba58f8.6e1d617fde328202093b.css,packages/trader/dist/trader/js/trader.hooks_src_useMFAccountStatus_ts-src_Modules_Trading_Helpers_video-config_ts-src_Stores_Module-77c64e.fd9d05a0cca318bc350a.js,packages/trader/dist/trader/js/trader.vendors-node_modules_react-content-loader_dist_react-content-loader_es_js-node_modules_react--c10131.bb9b637acb75f2bc0b39.js,packages/trader/dist/trader/js/trader.vendors-node_modules_deriv_quill-icons_dist_esm_react_LabelPaired_LabelPairedChevronsDownCapt-dee9aa.382d17e67da104c25bd3.js,packages/trader/dist/trader/css/trader.src_Modules_Trading_Components_Form_TradeParams_Accumulator_accumulators-info-display_tsx-src-a7086a.f865e83048c84a607555.css,packages/trader/dist/trader/css/trader.vendors-node_modules_react-content-loader_dist_react-content-loader_es_js-node_modules_react--c10131.0f8feaa067700b0592b6.css
+[NX Daemon Server] - 2025-02-20T12:53:46.411Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:53:46.438Z - [WATCHER]: 3 file(s) created or restored, 5 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:53:46.439Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:53:46.439Z - Time taken for 'hash changed files from watcher' 27.381330996751785ms
+[NX Daemon Server] - 2025-02-20T12:53:46.619Z - Time taken for 'build-project-configs' 101.18331899866462ms
+[NX Daemon Server] - 2025-02-20T12:53:46.634Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:53:46.634Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:53:46.634Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:53:46.665Z - Time taken for 'hash changed files from watcher' 13.64130000025034ms
+[NX Daemon Server] - 2025-02-20T12:53:46.862Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:53:46.864Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:53:46.864Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:53:46.864Z - Time taken for 'total execution time for createProjectGraph()' 223.4232400022447ms
+[NX Daemon Server] - 2025-02-20T12:53:46.963Z - Time taken for 'build-project-configs' 237.94018000364304ms
+[NX Daemon Server] - 2025-02-20T12:53:47.097Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:53:47.098Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:53:47.098Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:53:47.098Z - Time taken for 'total execution time for createProjectGraph()' 119.29391800239682ms
+[NX Daemon Server] - 2025-02-20T12:53:49.899Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:53:49.899Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:53:49.899Z - Handled RECORD_OUTPUTS_HASH. Handling time: 8. Response time: 0.
+[NX Daemon Server] - 2025-02-20T12:53:49.908Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-20T12:53:50.129Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T12:53:50.130Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-20T12:53:50.131Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T12:53:50.134Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-20T12:53:50.134Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-20T12:53:50.139Z - Time taken for 'total for creating and serializing project graph' 0.6012800000607967ms
+[NX Daemon Server] - 2025-02-20T12:53:50.141Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-20T12:53:50.142Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 8.
+[NX Daemon Server] - 2025-02-20T12:53:50.242Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-20T12:53:50.246Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-20T12:53:50.246Z - Handled HASH_TASKS. Handling time: 69. Response time: 4.
+[NX Daemon Server] - 2025-02-20T12:53:50.878Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:53:50.878Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:53:50.878Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-20T12:53:50.880Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:53:50.880Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:53:50.880Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-20T12:53:51.367Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:53:51.367Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:53:51.367Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-20T12:53:51.380Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:53:51.382Z - [WATCHER]: packages/components/src/components/icon/icons.js was modified
+[NX Daemon Server] - 2025-02-20T12:53:51.489Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:53:51.489Z - [REQUEST]: packages/components/src/components/icon/icons.js
+[NX Daemon Server] - 2025-02-20T12:53:51.489Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:53:51.505Z - Time taken for 'hash changed files from watcher' 6.7082929983735085ms
+[NX Daemon Server] - 2025-02-20T12:53:51.580Z - Time taken for 'build-project-configs' 44.22042899951339ms
+[NX Daemon Server] - 2025-02-20T12:53:51.710Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:53:51.711Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:53:51.712Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:53:51.712Z - Time taken for 'total execution time for createProjectGraph()' 91.26098699867725ms
+[NX Daemon Server] - 2025-02-20T12:54:01.316Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:54:01.901Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:54:01.902Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:54:01.902Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-02-20T12:54:01.924Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:54:02.387Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:54:02.387Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:54:02.387Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-20T12:54:03.086Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:54:03.301Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:54:03.301Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:54:03.301Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:54:03.325Z - Time taken for 'hash changed files from watcher' 14.147038999944925ms
+[NX Daemon Server] - 2025-02-20T12:54:03.464Z - Time taken for 'build-project-configs' 75.60058400034904ms
+[NX Daemon Server] - 2025-02-20T12:54:03.483Z - [WATCHER]: 19 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:54:03.483Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:54:03.660Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:54:03.661Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:54:03.661Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:54:03.661Z - Time taken for 'total execution time for createProjectGraph()' 170.38265100121498ms
+[NX Daemon Server] - 2025-02-20T12:54:03.673Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:54:03.673Z - [REQUEST]: packages/bot-skeleton/dist/media/1x1.gif,packages/bot-skeleton/dist/media/handdelete.cur,packages/bot-skeleton/dist/media/click.ogg,packages/bot-skeleton/dist/media/handopen.cur,packages/bot-skeleton/dist/media/disconnect.wav,packages/bot-skeleton/dist/media/quote0.png,packages/bot-skeleton/dist/media/pilcrow.png,packages/bot-skeleton/dist/media/delete.wav,packages/bot-skeleton/dist/media/delete.mp3,packages/bot-skeleton/dist/media/handclosed.cur,packages/bot-skeleton/dist/media/sprites.png,packages/bot-skeleton/dist/media/delete.ogg,packages/bot-skeleton/dist/media/quote1.png,packages/bot-skeleton/dist/media/click.mp3,packages/bot-skeleton/dist/media/click.wav,packages/bot-skeleton/dist/media/disconnect.ogg,packages/bot-skeleton/dist/media/sprites.svg,packages/bot-skeleton/dist/media/disconnect.mp3,packages/bot-skeleton/dist/media/dropdown-arrow.svg
+[NX Daemon Server] - 2025-02-20T12:54:03.673Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:54:03.691Z - [WATCHER]: 10 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:54:03.691Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:54:03.692Z - Time taken for 'hash changed files from watcher' 12.131145998835564ms
+[NX Daemon Server] - 2025-02-20T12:54:03.703Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:54:03.704Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:54:03.704Z - Handled RECORD_OUTPUTS_HASH. Handling time: 10. Response time: 1.
+[NX Daemon Server] - 2025-02-20T12:54:03.706Z - [WATCHER]: 5 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:54:03.707Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:54:03.818Z - Time taken for 'build-project-configs' 73.19326899945736ms
+[NX Daemon Server] - 2025-02-20T12:54:03.829Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:54:03.829Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:54:03.829Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:54:03.850Z - Time taken for 'hash changed files from watcher' 10.372545998543501ms
+[NX Daemon Server] - 2025-02-20T12:54:04.062Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:54:04.063Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:54:04.063Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:54:04.063Z - Time taken for 'total execution time for createProjectGraph()' 206.92382500320673ms
+[NX Daemon Server] - 2025-02-20T12:54:04.142Z - Time taken for 'build-project-configs' 242.96004400029778ms
+[NX Daemon Server] - 2025-02-20T12:54:04.264Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:54:04.266Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:54:04.266Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:54:04.266Z - Time taken for 'total execution time for createProjectGraph()' 111.42310699820518ms
+[NX Daemon Server] - 2025-02-20T12:55:06.867Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:55:06.870Z - [WATCHER]: 9 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:55:06.919Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:55:06.921Z - [WATCHER]: 16 file(s) created or restored, 9 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:55:06.995Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:55:06.995Z - [REQUEST]: packages/cashier/dist/cashier/js/deposit.js,packages/cashier/dist/cashier/js/cashier-store.js,packages/cashier/dist/cashier/js/cashier.js,packages/cashier/dist/cashier/js/on-ramp.js,packages/cashier/dist/cashier/css/deposit.css,packages/cashier/dist/cashier/css/payment-agent.css,packages/cashier/dist/cashier/css/account-transfer.css,packages/cashier/dist/cashier/js/account-transfer.js,packages/cashier/dist/cashier/css/on-ramp.css,packages/cashier/dist/cashier/js/payment-agent.js,packages/cashier/dist/cashier/css/withdrawal.css,packages/cashier/dist/cashier/public/images/cashier-demo-light.e69b0cb941dd65480866365959a517ae.svg,packages/cashier/dist/cashier/css/cashier-app.adf873eaad47d5597585.css,packages/cashier/dist/cashier/css/vendors-node_modules_deriv-com_ui_dist_assets_Breadcrumbs_css-node_modules_deriv-com_ui_dist_-5970c9.fd7bf369e7e9baffc0e0.css,packages/cashier/dist/cashier/js/cashier.cashier-app.bacf2a2da626b4754a53.js,packages/cashier/dist/cashier/css/vendors-node_modules_deriv-com_ui_dist_components_Text_index_js.e1ace5f25b45111928ab.css,packages/cashier/dist/cashier/css/payment-agent-transfer.css,packages/cashier/dist/cashier/js/cashier.loadjs.92557f2efe51c4236540.js,packages/cashier/dist/cashier/js/payment-agent-transfer.js,packages/cashier/dist/cashier/public/images/cashier-demo-dark.605d2c476f169a7b73a8c7ea5312606b.svg,packages/cashier/dist/cashier/js/cashier.vendors-node_modules_deriv-com_ui_dist_components_Text_index_js.54aebc55ba6af9c97ff3.js,packages/cashier/dist/cashier/js/cashier.cashier-breadcrumb.0ff513b3ab1ada6354ca.js,packages/cashier/dist/cashier/js/cashier.vendors-node_modules_deriv_deriv-api_dist_DerivAPIBasic_js-node_modules_formik_dist_formik_es-46f998.5c759dd8ffcb0605b409.js,packages/cashier/dist/cashier/css/vendors-node_modules_deriv_deriv-api_dist_DerivAPIBasic_js-node_modules_formik_dist_formik_es-46f998.067b2a1ecb63eefd19c7.css,packages/cashier/dist/cashier/js/withdrawal.js
+[NX Daemon Server] - 2025-02-20T12:55:06.995Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:55:07.009Z - Time taken for 'hash changed files from watcher' 23.583605002611876ms
+[NX Daemon Server] - 2025-02-20T12:55:07.159Z - Time taken for 'build-project-configs' 81.46867999807ms
+[NX Daemon Server] - 2025-02-20T12:55:07.353Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:55:07.354Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:55:07.354Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:55:07.354Z - Time taken for 'total execution time for createProjectGraph()' 168.36375499889255ms
+[NX Daemon Server] - 2025-02-20T12:55:08.271Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:55:08.272Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:55:08.272Z - Handled RECORD_OUTPUTS_HASH. Handling time: 6. Response time: 1.
+[NX Daemon Server] - 2025-02-20T12:55:16.106Z - [WATCHER]: 27 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:55:16.108Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:55:16.156Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:55:16.158Z - [WATCHER]: 13 file(s) created or restored, 12 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:55:16.224Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:55:16.224Z - [REQUEST]: packages/account/dist/account/css/Sections_Security_Passkeys_index_ts.e44c7aa0938bc628d25e.css,packages/account/dist/account/js/financial-details-config.js,packages/account/dist/account/js/sent-email-modal.js,packages/account/dist/account/js/risk-tolerance-warning-modal.js,packages/account/dist/account/css/account-app.009c1ca5bce7759e2954.css,packages/account/dist/account/js/account.Sections_Profile_PhoneVerification_index_ts.4080251383201062b6a8.js,packages/account/dist/account/js/currency-radio-button.js,packages/account/dist/account/js/account.Sections_Security_Passkeys_index_ts.208c20dafaaa5dcf9735.js,packages/account/dist/account/js/trading-assessment-config.js,packages/account/dist/account/js/account.account-app.db900e50433e9599cb67.js,packages/account/dist/account/js/account.js,packages/account/dist/account/js/account.Sections_Security_AccountLimits_index_ts.a67e679ffd6bd88a7ce8.js,packages/account/dist/account/js/currency-radio-button-group.js,packages/account/dist/account/js/get-status-badge-config.js,packages/account/dist/account/js/account.404.daee706d7a563fa21ae0.js,packages/account/dist/account/js/employment-tax-info-config.js,packages/account/dist/account/js/terms-of-use-config.js,packages/account/dist/account/js/currency-selector-config.js,packages/account/dist/account/js/test-warning-modal.js,packages/account/dist/account/js/address-details-config.js,packages/account/dist/account/js/account.Sections_Security_Passwords_index_ts.7870356024f077384312.js,packages/account/dist/account/js/personal-details-config.js,packages/account/dist/account/js/account.Sections_Profile_LanguageSettings_index_ts.c34135672e4ce642d4bf.js,packages/account/dist/account/js/account.Sections_Security_LoginHistory_index_ts.dd6dc05eddda3070bb26.js,packages/account/dist/account/css/Sections_Profile_PhoneVerification_index_ts.d979bb1b9f71e8c9dd0a.css,packages/account/dist/account/js/account.Sections_Security_AccountClosed_index_ts.84ee9ce0afb84c89dbcc.js,packages/account/dist/account/css/Sections_Security_AccountLimits_index_ts.2a4b3f0236fc3a65ae46.css,packages/account/dist/account/css/Sections_Security_SelfExclusion_index_ts.420f964da21ff5ac037a.css,packages/account/dist/account/js/account.Sections_Security_SelfExclusion_index_ts.7fd88e5b69f8ebe438eb.js,packages/account/dist/account/js/account.Sections_Security_ClosingAccount_index_ts.ef9c615d379fb00afade.js,packages/account/dist/account/css/vendors-node_modules_binary-com_binary-document-uploader_DocumentUploader_js-node_modules_day-7988b1.acb55ffafb42b19da3b5.css,packages/account/dist/account/css/Sections_Assessment_FinancialAssessment_index_ts.7ffb9b65b3cfa5b82c22.css,packages/account/dist/account/css/Sections_Security_ApiToken_index_ts.716ede20007da5fb2cc8.css,packages/account/dist/account/js/account.Sections_Security_ConnectedApps_index_ts.55d01944d3f8d183f1e9.js,packages/account/dist/account/css/Sections_Security_ConnectedApps_index_ts.655b76abbb0ad5c54e94.css,packages/account/dist/account/js/account.Sections_Assessment_FinancialAssessment_index_ts.a1ba37636550589d059b.js,packages/account/dist/account/js/account.Sections_Security_ApiToken_index_ts.7fe67190b4d7553f8493.js,packages/account/dist/account/css/Sections_Security_TwoFactorAuthentication_index_ts.55f092ef815f0262eb09.css,packages/account/dist/account/js/account.Sections_Security_TwoFactorAuthentication_index_ts.b1e072b98576c683594a.js,packages/account/dist/account/js/account.Sections_Assessment_TradingAssessment_index_js.3bafcd3b58eeee72b6f6.js
+[NX Daemon Server] - 2025-02-20T12:55:16.224Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:55:16.240Z - [WATCHER]: 1 file(s) created or restored, 10 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:55:16.240Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:55:16.241Z - Time taken for 'hash changed files from watcher' 17.061266999691725ms
+[NX Daemon Server] - 2025-02-20T12:55:16.397Z - Time taken for 'build-project-configs' 74.5584870018065ms
+[NX Daemon Server] - 2025-02-20T12:55:16.406Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:55:16.406Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:55:16.407Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:55:16.423Z - Time taken for 'hash changed files from watcher' 9.119888000190258ms
+[NX Daemon Server] - 2025-02-20T12:55:16.647Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:55:16.648Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:55:16.649Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:55:16.649Z - Time taken for 'total execution time for createProjectGraph()' 221.77017600089312ms
+[NX Daemon Server] - 2025-02-20T12:55:16.741Z - Time taken for 'build-project-configs' 250.87095500156283ms
+[NX Daemon Server] - 2025-02-20T12:55:16.888Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:55:16.890Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:55:16.890Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:55:16.890Z - Time taken for 'total execution time for createProjectGraph()' 139.852623000741ms
+[NX Daemon Server] - 2025-02-20T12:55:18.139Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:55:18.139Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:55:18.139Z - Handled RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 0.
+[NX Daemon Server] - 2025-02-20T12:55:51.352Z - [WATCHER]: 15 file(s) created or restored, 1 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:55:51.353Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:55:51.408Z - [WATCHER]: 26 file(s) created or restored, 1 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:55:51.410Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:55:51.488Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:55:51.488Z - [REQUEST]: packages/p2p/dist/p2p/js/p2p.create-ad-add-payment-method-modal.a7b754b91788f36277d0.js,packages/p2p/dist/p2p/js/p2p.buy-sell-modal.2e343f18078cd925fa77.js,packages/p2p/dist/p2p/js/p2p.ad-created-modal.bbf733f69f640f3a1b05.js,packages/p2p/dist/p2p/js/p2p.ad-error-tooltip-modal.863bd22866d55ba1ceb6.js,packages/p2p/dist/p2p/js/p2p.ad-create-edit-error-modal.f3efb1510a4c38d1a691.js,packages/p2p/dist/p2p/js/p2p.cancel-edit-payment-method-modal.34103772a68dda18899b.js,packages/p2p/dist/p2p/js/p2p.business-hour-modal.6c99f27d87558e1d5ff8.js,packages/p2p/dist/p2p/js/p2p.confirm-delete-payment-method-modal.785b38ddb59993a3607c.js,packages/p2p/dist/p2p/js/p2p.ad-cancel-modal.c4f88ea48f6142010af0.js,packages/p2p/dist/p2p/js/p2p.block-user-modal.e7ccb204b99a11e45f80.js,packages/p2p/dist/p2p/js/p2p.add-payment-method-error-modal.b75567da5403807b365e.js,packages/p2p/dist/p2p/js/p2p.cancel-add-payment-method-modal.f9b52ce8352e69b39ac9.js,packages/p2p/dist/p2p/js/p2p.p2p-app-src_utils_a.657d2cf5af55951e993b.js,packages/p2p/dist/p2p/js/p2p.ad-visibility-error-modal.b1b872c35b5e8cec99cf.js,packages/p2p/dist/p2p/js/p2p.block-user-filter-modal.dd5bfe9c3ef65ee57e72.js,packages/p2p/dist/p2p/js/index.js,packages/p2p/dist/p2p/js/p2p.edit-ad-cancel-modal.70b734207f6859cb70c3.js,packages/p2p/dist/p2p/js/p2p.order-details-cancel-modal.db3df5a1908ac44573f4.js,packages/p2p/dist/p2p/js/p2p.email-link-verified-modal.ec0b186183a22a3c50d9.js,packages/p2p/dist/p2p/js/p2p.email-link-expired-modal.e82bec80425fe132f41b.js,packages/p2p/dist/p2p/js/p2p.order-details-confirm-modal.a819f0f9b9e06d4dcd52.js,packages/p2p/dist/p2p/js/p2p.order-time-tooltip-modal.c2c57925f7ee5031719f.js,packages/p2p/dist/p2p/js/p2p.preferred-countries-modal.9370ce7e6e0490a3bae9.js,packages/p2p/dist/p2p/js/p2p.rating-modal.9d3e151674d9a395022f.js,packages/p2p/dist/p2p/js/p2p.daily-limit-modal.187a2539a5efa717e6d4.js,packages/p2p/dist/p2p/js/p2p.error-modal.3e3ee3a2cd609c9765cf.js,packages/p2p/dist/p2p/js/p2p.nickname-modal.da1878b973565fd55cfe.js,packages/p2p/dist/p2p/js/p2p.quick-add-modal.a0c548225145722a56f3.js,packages/p2p/dist/p2p/js/p2p.leave-page-modal.8242f69876c58494a224.js,packages/p2p/dist/p2p/js/p2p.delete-payment-method-confirmation-modal.f26ad04fd015d8e78568.js,packages/p2p/dist/p2p/js/p2p.email-verification-modal.581bbe49db653f07d9a5.js,packages/p2p/dist/p2p/js/p2p.filter-modal.7708bf96fe38eca1b092.js,packages/p2p/dist/p2p/js/p2p.copy-advert-modal.638dba5bca0ba66c8259.js,packages/p2p/dist/p2p/js/p2p.loading-modal.f9616b6d5ca2cac24a6a.js,packages/p2p/dist/p2p/js/p2p.my-ads-delete-modal.cbd3142f13ae20a8850c.js,packages/p2p/dist/p2p/js/p2p.delete-payment-method-error-modal.3f6975f5e9f17da6d690.js,packages/p2p/dist/p2p/js/p2p.my-profile-balance-modal.ec1de4823d4e42cfdc9e.js,packages/p2p/dist/p2p/js/p2p.my-ads-delete-error-modal.4baa4b1a6d3ac06e6941.js,packages/p2p/dist/p2p/js/p2p.invalid-verification-link-modal.9c5396eb5e746af03b10.js,packages/p2p/dist/p2p/js/p2p.market-rate-change-error-modal.93aa328b936efdf7e50c.js,packages/p2p/dist/p2p/js/p2p.currency-selector-modal.7f8857afd3a1cd7d18d6.js,packages/p2p/dist/p2p/js/p2p.my-ads-floating-rate-switch-modal.49fff20c1902783f085c.js
+[NX Daemon Server] - 2025-02-20T12:55:51.489Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:55:51.519Z - [WATCHER]: 5 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:55:51.520Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:55:51.520Z - Time taken for 'hash changed files from watcher' 34.030536998063326ms
+[NX Daemon Server] - 2025-02-20T12:55:51.544Z - [WATCHER]: packages/p2p/dist/p2p/js/p2p.defaultVendors-node_modules_deriv_components_utils_helper_js-node_modules_crc-32_crc32_js-nod-543e11.012cda7748bddd316b18.js was created or restored
+[NX Daemon Server] - 2025-02-20T12:55:51.551Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:55:51.597Z - [WATCHER]: 1 file(s) created or restored, 1 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:55:51.602Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:55:51.660Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:55:51.660Z - [REQUEST]: packages/p2p/dist/p2p/js/p2p.create-ad-add-payment-method-modal.a7b754b91788f36277d0.js,packages/p2p/dist/p2p/js/p2p.buy-sell-modal.2e343f18078cd925fa77.js,packages/p2p/dist/p2p/js/p2p.ad-created-modal.bbf733f69f640f3a1b05.js,packages/p2p/dist/p2p/js/p2p.ad-error-tooltip-modal.863bd22866d55ba1ceb6.js,packages/p2p/dist/p2p/js/p2p.ad-create-edit-error-modal.f3efb1510a4c38d1a691.js,packages/p2p/dist/p2p/js/p2p.cancel-edit-payment-method-modal.34103772a68dda18899b.js,packages/p2p/dist/p2p/js/p2p.business-hour-modal.6c99f27d87558e1d5ff8.js,packages/p2p/dist/p2p/js/p2p.confirm-delete-payment-method-modal.785b38ddb59993a3607c.js,packages/p2p/dist/p2p/js/p2p.ad-cancel-modal.c4f88ea48f6142010af0.js,packages/p2p/dist/p2p/js/p2p.block-user-modal.e7ccb204b99a11e45f80.js,packages/p2p/dist/p2p/js/p2p.add-payment-method-error-modal.b75567da5403807b365e.js,packages/p2p/dist/p2p/js/p2p.cancel-add-payment-method-modal.f9b52ce8352e69b39ac9.js,packages/p2p/dist/p2p/js/p2p.p2p-app-src_utils_a.657d2cf5af55951e993b.js,packages/p2p/dist/p2p/js/p2p.ad-visibility-error-modal.b1b872c35b5e8cec99cf.js,packages/p2p/dist/p2p/js/p2p.block-user-filter-modal.dd5bfe9c3ef65ee57e72.js,packages/p2p/dist/p2p/js/index.js,packages/p2p/dist/p2p/js/p2p.edit-ad-cancel-modal.70b734207f6859cb70c3.js,packages/p2p/dist/p2p/js/p2p.order-details-cancel-modal.db3df5a1908ac44573f4.js,packages/p2p/dist/p2p/js/p2p.email-link-verified-modal.ec0b186183a22a3c50d9.js,packages/p2p/dist/p2p/js/p2p.email-link-expired-modal.e82bec80425fe132f41b.js,packages/p2p/dist/p2p/js/p2p.order-details-confirm-modal.a819f0f9b9e06d4dcd52.js,packages/p2p/dist/p2p/js/p2p.order-time-tooltip-modal.c2c57925f7ee5031719f.js,packages/p2p/dist/p2p/js/p2p.preferred-countries-modal.9370ce7e6e0490a3bae9.js,packages/p2p/dist/p2p/js/p2p.rating-modal.9d3e151674d9a395022f.js,packages/p2p/dist/p2p/js/p2p.daily-limit-modal.187a2539a5efa717e6d4.js,packages/p2p/dist/p2p/js/p2p.error-modal.3e3ee3a2cd609c9765cf.js,packages/p2p/dist/p2p/js/p2p.nickname-modal.da1878b973565fd55cfe.js,packages/p2p/dist/p2p/js/p2p.quick-add-modal.a0c548225145722a56f3.js,packages/p2p/dist/p2p/js/p2p.leave-page-modal.8242f69876c58494a224.js,packages/p2p/dist/p2p/js/p2p.delete-payment-method-confirmation-modal.f26ad04fd015d8e78568.js,packages/p2p/dist/p2p/js/p2p.email-verification-modal.581bbe49db653f07d9a5.js,packages/p2p/dist/p2p/js/p2p.filter-modal.7708bf96fe38eca1b092.js,packages/p2p/dist/p2p/js/p2p.copy-advert-modal.638dba5bca0ba66c8259.js,packages/p2p/dist/p2p/js/p2p.loading-modal.f9616b6d5ca2cac24a6a.js,packages/p2p/dist/p2p/js/p2p.my-ads-delete-modal.cbd3142f13ae20a8850c.js,packages/p2p/dist/p2p/js/p2p.delete-payment-method-error-modal.3f6975f5e9f17da6d690.js,packages/p2p/dist/p2p/js/p2p.my-profile-balance-modal.ec1de4823d4e42cfdc9e.js,packages/p2p/dist/p2p/js/p2p.my-ads-delete-error-modal.4baa4b1a6d3ac06e6941.js,packages/p2p/dist/p2p/js/p2p.invalid-verification-link-modal.9c5396eb5e746af03b10.js,packages/p2p/dist/p2p/js/p2p.market-rate-change-error-modal.93aa328b936efdf7e50c.js,packages/p2p/dist/p2p/js/p2p.currency-selector-modal.7f8857afd3a1cd7d18d6.js,packages/p2p/dist/p2p/js/p2p.my-ads-floating-rate-switch-modal.49fff20c1902783f085c.js,packages/p2p/dist/p2p/js/p2p.404.4d046dab7e7fc0cdce2e.js,packages/p2p/dist/p2p/js/p2p.share-my-ads-modal.4f72df082ea73c7d17eb.js,packages/p2p/dist/p2p/js/p2p.two-month-picker.188adf4e87cf61691b18.js,packages/p2p/dist/p2p/js/p2p.src_components_routes_route-with-sub-routes_tsx.cba74191c5f833cf9e20.js,packages/p2p/dist/p2p/js/p2p.recommended-modal.33b08380c915d49b0631.js,packages/p2p/dist/p2p/js/p2p.defaultVendors-node_modules_deriv_components_utils_helper_js-node_modules_crc-32_crc32_js-nod-543e11.012cda7748bddd316b18.js,packages/p2p/dist/p2p/js/p2p.p2p-app-n.9902eb15864d55ddd170.js
+[NX Daemon Server] - 2025-02-20T12:55:51.661Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:55:51.697Z - Time taken for 'hash changed files from watcher' 37.54257100075483ms
+[NX Daemon Server] - 2025-02-20T12:55:51.741Z - [WATCHER]: packages/p2p/dist/p2p/js/p2p.p2p-app-src_s.94701bf617dae8f9410a.js was created or restored
+[NX Daemon Server] - 2025-02-20T12:55:51.741Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:55:51.932Z - Time taken for 'build-project-configs' 151.74350500106812ms
+[NX Daemon Server] - 2025-02-20T12:55:51.950Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:55:51.950Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:55:51.950Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:55:51.975Z - [WATCHER]: 1 file(s) created or restored, 4 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:55:51.975Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:55:51.976Z - Time taken for 'hash changed files from watcher' 17.397270999848843ms
+[NX Daemon Server] - 2025-02-20T12:55:52.084Z - Time taken for 'build-project-configs' 38.368514001369476ms
+[NX Daemon Server] - 2025-02-20T12:55:52.095Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:55:52.095Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:55:52.095Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:55:52.117Z - Time taken for 'hash changed files from watcher' 10.846691001206636ms
+[NX Daemon Server] - 2025-02-20T12:55:52.348Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:55:52.350Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:55:52.350Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:55:52.350Z - Time taken for 'total execution time for createProjectGraph()' 237.27070700004697ms
+[NX Daemon Server] - 2025-02-20T12:55:52.652Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:55:52.654Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:55:52.655Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:55:52.655Z - Time taken for 'total execution time for createProjectGraph()' 542.7157460004091ms
+[NX Daemon Server] - 2025-02-20T12:55:52.810Z - Time taken for 'build-project-configs' 577.9669540002942ms
+[NX Daemon Server] - 2025-02-20T12:55:52.855Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:55:52.856Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:55:52.856Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 1.
+[NX Daemon Server] - 2025-02-20T12:55:53.032Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:55:53.033Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:55:53.033Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:55:53.033Z - Time taken for 'total execution time for createProjectGraph()' 225.30903899669647ms
+[NX Daemon Server] - 2025-02-20T12:55:53.130Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:55:53.131Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:55:53.131Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:55:53.131Z - Time taken for 'total execution time for createProjectGraph()' 314.4083019979298ms
+[NX Daemon Server] - 2025-02-20T12:55:58.432Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:56:17.410Z - [WATCHER]: 29 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:56:17.411Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:56:17.522Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:56:17.522Z - [REQUEST]: packages/cfd/dist/cfd/js/assets.js,packages/cfd/dist/cfd/js/cfd.404.d949051237deafb835a8.js,packages/cfd/dist/cfd/css/cfd.src_Containers_mt5-create-password_mt5-create-password_tsx.a9347d5c232633e1b6b5.css,packages/cfd/dist/cfd/js/CFDTopUpDemoModal.js,packages/cfd/dist/cfd/js/cfd.src_Containers_cfd-password-success-icon_tsx.a1f192864cd5a21305b4.js,packages/cfd/dist/cfd/js/cfd.src_Containers_cfd-password-change_tsx.ef0b515a42654a25d352.js,packages/cfd/dist/cfd/js/CTraderTransferModal.js,packages/cfd/dist/cfd/css/cfd.main.cd2cd3f73be9b3d62d2a.css,packages/cfd/dist/cfd/js/vendors-node_modules_deriv_quill-icons_dist_esm_react_Standalone_StandaloneArrowUpRightRegula-a584ca.js,packages/cfd/dist/cfd/css/cfd.main.e3e02247674b61edff7a.css,packages/cfd/dist/cfd/js/cfd.src_Containers_cfd-password-change-content_tsx.664a3f0a3d9f32237f09.js,packages/cfd/dist/cfd/js/MT5MigrationModal.js,packages/cfd/dist/cfd/js/internalCFDStoreUsage.js,packages/cfd/dist/cfd/js/cfd.src_Containers_cfd-change-password-confirmation_tsx.0efb8dee322a87a68c23.js,packages/cfd/dist/cfd/js/CFDServerErrorDialog.js,packages/cfd/dist/cfd/js/cfd.cfd-compare-accounts.ca80ed6af2f7a9a5608e.js,packages/cfd/dist/cfd/css/cfd.main.bbdf230602eca45ada40.css,packages/cfd/dist/cfd/js/MT5TradeModal.js,packages/cfd/dist/cfd/js/cfd.cfd-app.300038005049e2872997.js,packages/cfd/dist/cfd/js/CFDPasswordManagerModal.js,packages/cfd/dist/cfd/js/utilities.js,packages/cfd/dist/cfd/css/cfd.cfd-compare-accounts.8c2fea6e2315cc57c63e.css,packages/cfd/dist/cfd/asset-manifest.json,packages/cfd/dist/cfd/js/CFDResetPasswordModal.js,packages/cfd/dist/cfd/js/CFDStore.js,packages/cfd/dist/cfd/js/CFDPasswordModal.js,packages/cfd/dist/cfd/js/cfd.src_Containers_cfd-password-modal-tnc_tsx.bc66d5996d8d38083969.js,packages/cfd/dist/cfd/js/cfd.js,packages/cfd/dist/cfd/js/cfd.src_Containers_mt5-create-password_mt5-create-password_tsx.31034363f403d26c1429.js
+[NX Daemon Server] - 2025-02-20T12:56:17.522Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:56:17.537Z - Time taken for 'hash changed files from watcher' 10.451478999108076ms
+[NX Daemon Server] - 2025-02-20T12:56:17.702Z - Time taken for 'build-project-configs' 79.79472900182009ms
+[NX Daemon Server] - 2025-02-20T12:56:17.928Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:56:17.930Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:56:17.930Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:56:17.930Z - Time taken for 'total execution time for createProjectGraph()' 198.90415399894118ms
+[NX Daemon Server] - 2025-02-20T12:56:27.355Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:56:27.356Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:56:27.356Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 1.
+[NX Daemon Server] - 2025-02-20T12:56:29.275Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:56:29.487Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:56:29.487Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:56:29.487Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:56:29.502Z - Time taken for 'hash changed files from watcher' 10.914553999900818ms
+[NX Daemon Server] - 2025-02-20T12:56:29.622Z - Time taken for 'build-project-configs' 66.58349899947643ms
+[NX Daemon Server] - 2025-02-20T12:56:29.624Z - [WATCHER]: 19 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:56:29.624Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:56:29.766Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:56:29.767Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:56:29.767Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:56:29.767Z - Time taken for 'total execution time for createProjectGraph()' 122.02019999921322ms
+[NX Daemon Server] - 2025-02-20T12:56:29.782Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:56:29.782Z - [REQUEST]: packages/bot-skeleton/dist/media/quote0.png,packages/bot-skeleton/dist/media/quote1.png,packages/bot-skeleton/dist/media/delete.ogg,packages/bot-skeleton/dist/media/click.wav,packages/bot-skeleton/dist/media/disconnect.mp3,packages/bot-skeleton/dist/media/delete.mp3,packages/bot-skeleton/dist/media/dropdown-arrow.svg,packages/bot-skeleton/dist/media/disconnect.wav,packages/bot-skeleton/dist/media/1x1.gif,packages/bot-skeleton/dist/media/delete.wav,packages/bot-skeleton/dist/media/click.ogg,packages/bot-skeleton/dist/media/handopen.cur,packages/bot-skeleton/dist/media/sprites.png,packages/bot-skeleton/dist/media/sprites.svg,packages/bot-skeleton/dist/media/disconnect.ogg,packages/bot-skeleton/dist/media/click.mp3,packages/bot-skeleton/dist/media/handclosed.cur,packages/bot-skeleton/dist/media/handdelete.cur,packages/bot-skeleton/dist/media/pilcrow.png
+[NX Daemon Server] - 2025-02-20T12:56:29.782Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:56:29.797Z - [WATCHER]: 10 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:56:29.797Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:56:29.798Z - Time taken for 'hash changed files from watcher' 14.283167999237776ms
+[NX Daemon Server] - 2025-02-20T12:56:29.806Z - [WATCHER]: 5 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:56:29.806Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:56:29.915Z - Time taken for 'build-project-configs' 55.532305002212524ms
+[NX Daemon Server] - 2025-02-20T12:56:29.930Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:56:29.930Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:56:29.930Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:56:29.945Z - Time taken for 'hash changed files from watcher' 13.722252000123262ms
+[NX Daemon Server] - 2025-02-20T12:56:30.099Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:56:30.100Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:56:30.100Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:56:30.100Z - Time taken for 'total execution time for createProjectGraph()' 177.29719600081444ms
+[NX Daemon Server] - 2025-02-20T12:56:30.167Z - Time taken for 'build-project-configs' 175.62531400099397ms
+[NX Daemon Server] - 2025-02-20T12:56:30.276Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:56:30.277Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:56:30.277Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:56:30.277Z - Time taken for 'total execution time for createProjectGraph()' 93.71954399719834ms
+[NX Daemon Server] - 2025-02-20T12:56:38.029Z - [WATCHER]: 12 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:56:38.030Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:56:38.144Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:56:38.144Z - [REQUEST]: packages/reports/dist/reports/js/reports.vendors-node_modules_react-content-loader_dist_react-content-loader_es_js-node_modules_classn-e603fb.041fb19dd6c7131e5610.js,packages/reports/dist/reports/js/reports.vendors-node_modules_moment_moment_js.9a7db509770a541c7837.js,packages/reports/dist/reports/js/reports.trade-modals.ce7110d28c60d146030b.js,packages/reports/dist/reports/css/reports.reports-routes.cd6da124f7e1a2bfa9d0.css,packages/reports/dist/reports/js/reports.js,packages/reports/dist/reports/js/reports.404.98c995472a305e5900c8.js,packages/reports/dist/reports/js/reports.reports-routes.6036dfbea82014528b4e.js,packages/reports/dist/reports/js/reports.two-month-picker.106a4745f1c7059b15b0.js,packages/reports/dist/reports/js/reports.vendors-node_modules_lodash_debounce_index_js-node_modules_mobx-persist-store_lib_esm5_index_-41aa7c.7c128e3ae7b08a9e10b7.js,packages/reports/dist/reports/asset-manifest.json,packages/reports/dist/reports/js/reports.reports-app.096b2715999ca977da76.js,packages/reports/dist/reports/css/reports.reports-app.c6e5cbfdfbcc03076620.css
+[NX Daemon Server] - 2025-02-20T12:56:38.144Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:56:38.156Z - Time taken for 'hash changed files from watcher' 12.165645997971296ms
+[NX Daemon Server] - 2025-02-20T12:56:38.271Z - Time taken for 'build-project-configs' 55.58884499967098ms
+[NX Daemon Server] - 2025-02-20T12:56:38.386Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:56:38.387Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:56:38.387Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:56:38.387Z - Time taken for 'total execution time for createProjectGraph()' 98.96622600033879ms
+[NX Daemon Server] - 2025-02-20T12:56:38.545Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:56:38.545Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:56:38.545Z - Handled RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 0.
+[NX Daemon Server] - 2025-02-20T12:57:19.657Z - [WATCHER]: 5 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:57:19.657Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:57:19.772Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:57:19.772Z - [REQUEST]: packages/wallets/dist/wallets/js/wallets.src_components_WalletsCarousel_WalletsCarousel_tsx.e7a3087253bc0060766b.js,packages/wallets/dist/wallets/js/wallets.src_components_DesktopWalletsList_DesktopWalletsList_tsx.9f022806c2e3dd6ed192.js,packages/wallets/dist/wallets/js/wallets.compare-accounts-route.867176f1bd41c84e24ba.js,packages/wallets/dist/wallets/js/index.js,packages/wallets/dist/wallets/js/wallets.wallets-listing-route.d67e6770d47f26239726.js
+[NX Daemon Server] - 2025-02-20T12:57:19.773Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:57:19.796Z - [WATCHER]: 3 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:57:19.797Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:57:19.797Z - Time taken for 'hash changed files from watcher' 13.683099001646042ms
+[NX Daemon Server] - 2025-02-20T12:57:19.822Z - [WATCHER]: 4 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:57:19.822Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:57:19.985Z - Time taken for 'build-project-configs' 80.50539600104094ms
+[NX Daemon Server] - 2025-02-20T12:57:20.013Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:57:20.013Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:57:20.013Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:57:20.034Z - [WATCHER]: 4 file(s) created or restored, 12 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:57:20.036Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:57:20.036Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:57:20.037Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:57:20.037Z - Time taken for 'hash changed files from watcher' 26.742380999028683ms
+[NX Daemon Server] - 2025-02-20T12:57:20.128Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:57:20.129Z - [WATCHER]: 2 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:57:20.157Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:57:20.157Z - [REQUEST]: packages/wallets/dist/wallets/js/wallets.vendors-node_modules_embla-carousel-react_embla-carousel-react_esm_js-node_modules_yup_es_ind-9b9ae7.d7cc43d607fba7f93196.js,packages/wallets/dist/wallets/js/wallets.src_components_WalletTourGuide_WalletTourGuide_tsx.86350bb73d35ae29076a.js,packages/wallets/dist/wallets/js/wallets.vendors-node_modules_deriv-com_ui_dist_components_ActionScreen_index_js-node_modules_deriv-co-1a632f.672375c6dc6f58c9ea25.js,packages/wallets/dist/wallets/js/wallets.wallets-app.22eb058ab49697887388.js,packages/wallets/dist/wallets/js/index.js,packages/wallets/dist/wallets/js/wallets.src_components_DesktopWalletsList_DesktopWalletsList_tsx.9f022806c2e3dd6ed192.js,packages/wallets/dist/wallets/js/wallets.vendors-node_modules_formik_dist_formik_esm_js-node_modules_deriv-com_ui_dist_components_Badg-13772c.091ba262c20e7bf44701.js,packages/wallets/dist/wallets/js/wallets.components.ba730e02036ff7111782.js,packages/wallets/dist/wallets/js/wallets.vendors-node_modules_deriv-com_ui_dist_components_Divider_index_js-node_modules_deriv-com_ui_-49d755.440be016a12f4814bb59.js,packages/wallets/dist/wallets/js/wallets.cashier-modal-route.777a06dc73ecf92cfd2a.js,packages/wallets/dist/wallets/js/wallets.compare-accounts-route.867176f1bd41c84e24ba.js,packages/wallets/dist/wallets/js/wallets.vendors-node_modules_deriv-com_ui_dist_components_Dialog_index_js-node_modules_deriv-com_ui_d-bddf3a.d9ee6e28e226202c2704.js,packages/wallets/dist/wallets/js/wallets.vendors-node_modules_zxcvbn-ts_core_dist_index_esm_js-node_modules_zxcvbn-ts_language-common_-2fa420.f35f15faf81062d5e4d4.js,packages/wallets/dist/wallets/js/wallets.src_components_WalletsCarousel_WalletsCarousel_tsx.e7a3087253bc0060766b.js,packages/wallets/dist/wallets/js/wallets.wallets-listing-route.d67e6770d47f26239726.js,packages/wallets/dist/wallets/js/wallets.vendors-node_modules_react-transition-group_esm_CSSTransition_js-node_modules_react-transitio-246a7c.cefd2990ac481c196fae.js,packages/wallets/dist/wallets/js/wallets.default-src_components_WalletListCardBadge_WalletListCardBadge_tsx-src_components_WalletMarke-4de253.e5f7bc3f2fda8c229929.js,packages/wallets/dist/wallets/js/wallets.vendors-node_modules_react-joyride_dist_index_mjs.6ddfe7b103c751779054.js,packages/wallets/dist/wallets/js/wallets.default-src_components_WalletCard_WalletCard_tsx-src_constants_constants_tsx-src_features_cfd-b5d10d.3c265ce7a818d03864a3.js,packages/wallets/dist/wallets/js/wallets.default-src_components_AccountsList_AccountsList_tsx-src_components_WalletListCardActions_Wal-39cda1.59e59ded53a269fb1d47.js
+[NX Daemon Server] - 2025-02-20T12:57:20.157Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:57:20.172Z - Time taken for 'hash changed files from watcher' 20.891162998974323ms
+[NX Daemon Server] - 2025-02-20T12:57:20.366Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:57:20.369Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:57:20.370Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:57:20.370Z - Time taken for 'total execution time for createProjectGraph()' 395.718775998801ms
+[NX Daemon Server] - 2025-02-20T12:57:20.548Z - Time taken for 'build-project-configs' 259.84586000069976ms
+[NX Daemon Server] - 2025-02-20T12:57:20.724Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:57:20.726Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:57:20.726Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:57:20.727Z - Time taken for 'total execution time for createProjectGraph()' 161.9875839985907ms
+[NX Daemon Server] - 2025-02-20T12:57:20.886Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:57:20.887Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:57:20.887Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:57:20.888Z - Time taken for 'total execution time for createProjectGraph()' 310.46527199819684ms
+[NX Daemon Server] - 2025-02-20T12:57:20.969Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:57:20.970Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:57:20.970Z - Handled RECORD_OUTPUTS_HASH. Handling time: 2. Response time: 1.
+[NX Daemon Server] - 2025-02-20T12:58:09.896Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:58:17.961Z - [WATCHER]: 10 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:58:17.962Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:58:18.072Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:58:18.072Z - [REQUEST]: packages/appstore/dist/appstore/public/traders-hub-logged-out-banner-bg-desktop.6610521ee6365c1472d4.svg,packages/appstore/dist/appstore/js/appstore.cfd_migration-banner.302fb85d64700835b7d5.js,packages/appstore/dist/appstore/js/appstore.modal_verification-docs-list-modal.98ef963d58d44e3446d4.js,packages/appstore/dist/appstore/js/appstore.modules-onboarding.3781c0bdcef53f3cd057.js,packages/appstore/dist/appstore/js/appstore.src_modules_Page404_index_ts.f86010334a26c0f9343e.js,packages/appstore/dist/appstore/js/appstore.modules-traders-hub.0735d107d557924a6357.js,packages/appstore/dist/appstore/js/appstore.modules-traders-hub-logged-out.a2ca568aed8cae12a54a.js,packages/appstore/dist/appstore/public/traders-hub-logged-out-banner-bg-responsive.d1faf2ac3f8bfbf7a896.svg,packages/appstore/dist/appstore/js/appstore.appstore.1fa5b690f63c224f3669.js,packages/appstore/dist/appstore/js/index.js
+[NX Daemon Server] - 2025-02-20T12:58:18.072Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:58:18.084Z - Time taken for 'hash changed files from watcher' 9.511218000203371ms
+[NX Daemon Server] - 2025-02-20T12:58:18.261Z - Time taken for 'build-project-configs' 92.54831099882722ms
+[NX Daemon Server] - 2025-02-20T12:58:18.477Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:58:18.479Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:58:18.479Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:58:18.479Z - Time taken for 'total execution time for createProjectGraph()' 192.6933789998293ms
+[NX Daemon Server] - 2025-02-20T12:58:19.966Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:58:19.966Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:58:19.966Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 0.
+[NX Daemon Server] - 2025-02-20T12:58:29.387Z - [WATCHER]: 12 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:58:29.388Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:58:29.524Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:58:29.524Z - [REQUEST]: packages/bot-web-ui/dist/bot/js/bot.1_3_2_6-xml.d7c69129b9d2ed09886e.js,packages/bot-web-ui/dist/bot/js/bot.bot-skeleton_src_scratch_hooks_index_js.09aa3eb5050f590d17d7.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_reverse_dalembert_on_stat_reset-xml.2e7bb8da25b6beacd4a3.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_reverse_dalembert-xml.f98dea93943971b0d200.js,packages/bot-web-ui/dist/bot/css/bot.bot-web-ui-app.f029ead0338d2ace7f84.css,packages/bot-web-ui/dist/bot/js/bot.dbot-collection.a93810fed0b113f239de.js,packages/bot-web-ui/dist/bot/js/bot.bot-skeleton_src_scratch_blocks_index_js.d215f5597740879a2ffa.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_martingale_on_stat_reset-xml.afb3de6c5884f674cd77.js,packages/bot-web-ui/dist/bot/js/bot-web-ui.main.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_dalembert_on_stat_reset-xml.6a155824ee48a535d72d.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_dalembert-xml.0221862a07bdb0ce73da.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_martingale-xml.e2b15788e14c5489dbb3.js
+[NX Daemon Server] - 2025-02-20T12:58:29.524Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:58:29.556Z - [WATCHER]: 3 file(s) created or restored, 12 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:58:29.557Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:58:29.558Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:58:29.558Z - Time taken for 'hash changed files from watcher' 34.446555998176336ms
+[NX Daemon Server] - 2025-02-20T12:58:29.559Z - [WATCHER]: 10 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:58:29.814Z - Time taken for 'build-project-configs' 122.8850769996643ms
+[NX Daemon Server] - 2025-02-20T12:58:29.852Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:58:29.852Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:58:29.854Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:58:29.880Z - [WATCHER]: 14 file(s) created or restored, 10 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:58:29.883Z - [WATCHER]: 22 file(s) created or restored, 9 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:58:29.886Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:58:29.886Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:58:29.891Z - Time taken for 'hash changed files from watcher' 37.49072200059891ms
+[NX Daemon Server] - 2025-02-20T12:58:30.027Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:58:30.027Z - [REQUEST]: packages/bot-web-ui/dist/bot/media/delete.mp3,packages/bot-web-ui/dist/bot/media/create_variable.jpg,packages/bot-web-ui/dist/bot/js/bot.vendors-node_modules_deriv_deriv-api_dist_DerivAPIBasic_js-node_modules_deriv_js-interpreter_-4b9834.079a77ee33e8d6cf28de.js,packages/bot-web-ui/dist/bot/media/announcement.mp3,packages/bot-web-ui/dist/bot/media/coins.mp3,packages/bot-web-ui/dist/bot/media/delete.wav,packages/bot-web-ui/dist/bot/js/bot.bot-skeleton_src_scratch_blocks_images_js.bc34355f39ae2574c9dc.js,packages/bot-web-ui/dist/bot/media/click.ogg,packages/bot-web-ui/dist/bot/media/1x1.gif,packages/bot-web-ui/dist/bot/media/click.mp3,packages/bot-web-ui/dist/bot/media/click.wav,packages/bot-web-ui/dist/bot/media/delete.ogg,packages/bot-web-ui/dist/bot/media/disconnect.mp3,packages/bot-web-ui/dist/bot/media/disconnect.ogg,packages/bot-web-ui/dist/bot/js/bot.oscars_grind_max-stake-xml.b1ca7c0c2982b1b5caa6.js,packages/bot-web-ui/dist/bot/js/bot.martingale-xml.9c5372ab9faaca4ce96a.js,packages/bot-web-ui/dist/bot/js/bot.dalembert_max-stake-xml.c38248b0086ea2a600c4.js,packages/bot-web-ui/dist/bot/js/bot.martingale_max-stake-xml.f5b1b7c298198be39856.js,packages/bot-web-ui/dist/bot/js/bot.reverse_dalembert-xml.004f5efdc05d865ba7e3.js,packages/bot-web-ui/dist/bot/js/bot.accumulators_reverse_martingale_on_stat_reset-xml.690eafc19e4fa96f3c23.js,packages/bot-web-ui/dist/bot/css/bot.vendors-node_modules_deriv_deriv-api_dist_DerivAPIBasic_js-node_modules_deriv_js-interpreter_-4b9834.6419deeb403737cf63dc.css,packages/bot-web-ui/dist/bot/js/bot.oscars_grind-xml.23b9b94bb7a3945734c8.js,packages/bot-web-ui/dist/bot/js/bot.dalembert-xml.ffd5ebe7f62d0ca4fb0a.js,packages/bot-web-ui/dist/bot/js/bot.reverse_martingale-xml.16b035946b902ec877dc.js,packages/bot-web-ui/dist/bot/media/job-done.mp3,packages/bot-web-ui/dist/bot/media/sma_array_explanation.jpeg,packages/bot-web-ui/dist/bot/media/disconnect.wav,packages/bot-web-ui/dist/bot/media/handclosed.cur,packages/bot-web-ui/dist/bot/media/pilcrow.png,packages/bot-web-ui/dist/bot/media/sma_formula.png,packages/bot-web-ui/dist/bot/media/handopen.cur,packages/bot-web-ui/dist/bot/media/sprites.svg,packages/bot-web-ui/dist/bot/media/set_variable.png,packages/bot-web-ui/dist/bot/media/handdelete.cur,packages/bot-web-ui/dist/bot/media/ic-chevron-down-bold.svg,packages/bot-web-ui/dist/bot/media/sma_chart_1.png,packages/bot-web-ui/dist/bot/media/logic.png,packages/bot-web-ui/dist/bot/media/sma_chart_2.png,packages/bot-web-ui/dist/bot/media/quote0.png,packages/bot-web-ui/dist/bot/media/out-of-bounds.mp3,packages/bot-web-ui/dist/bot/media/i-am-being-serious.mp3,packages/bot-web-ui/dist/bot/media/quote1.png,packages/bot-web-ui/dist/bot/media/is_candle_black_1.jpeg,packages/bot-web-ui/dist/bot/media/dropdown-arrow.svg,packages/bot-web-ui/dist/bot/media/is_candle_black.jpeg,packages/bot-web-ui/dist/bot/media/sprites.png
+[NX Daemon Server] - 2025-02-20T12:58:30.027Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:58:30.046Z - Time taken for 'hash changed files from watcher' 45.40218799933791ms
+[NX Daemon Server] - 2025-02-20T12:58:30.222Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:58:30.224Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:58:30.224Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:58:30.224Z - Time taken for 'total execution time for createProjectGraph()' 439.7064770013094ms
+[NX Daemon Server] - 2025-02-20T12:58:30.428Z - Time taken for 'build-project-configs' 219.0198289975524ms
+[NX Daemon Server] - 2025-02-20T12:58:30.567Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:58:30.568Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:58:30.568Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:58:30.568Z - Time taken for 'total execution time for createProjectGraph()' 175.12849799916148ms
+[NX Daemon Server] - 2025-02-20T12:58:30.729Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:58:30.731Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:58:30.731Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:58:30.731Z - Time taken for 'total execution time for createProjectGraph()' 321.9667669981718ms
+[NX Daemon Server] - 2025-02-20T12:58:35.596Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:58:35.597Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:58:35.597Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 1.
+[NX Daemon Server] - 2025-02-20T12:59:27.258Z - [WATCHER]: 14 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:59:27.258Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:59:27.337Z - [WATCHER]: 9 file(s) created or restored, 14 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:59:27.338Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:59:27.384Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:59:27.384Z - [REQUEST]: packages/trader/dist/trader/js/trader.screen-small.0688d15df567f952ffbb.js,packages/trader/dist/trader/css/trader.trader-app-v2.0b97ddfb5f547d589250.css,packages/trader/dist/trader/js/trader.error-component.24fe6739097bd2958fce.js,packages/trader/dist/trader/js/trader.trade-modals.33efcb90ba693405cccb.js,packages/trader/dist/trader/js/trader.contract.935dc684bdcd071d9b76.js,packages/trader/dist/trader/js/trader.settings-chart.a25a0c0dcec576e89a5e.js,packages/trader/dist/trader/js/trader.screen-large.2bc2c8960511d292b254.js,packages/trader/dist/trader/css/trader.trader-app.83c7fa877f33dd1d1005.css,packages/trader/dist/trader/css/trader.screen-small.9f04f7a78cc52d4b2049.css,packages/trader/dist/trader/css/trader.trade-modals.5d33fce87261854c04de.css,packages/trader/dist/trader/js/trader.accumulators-trade-description.ba5bfc5072200c3ac964.js,packages/trader/dist/trader/js/trader.trader-app.5115f7c1d4bbcd204a95.js,packages/trader/dist/trader/js/trader.js,packages/trader/dist/trader/js/trader.market-countdown-timer.b3f392cf58edf6a649f3.js,packages/trader/dist/trader/js/trader.trader-app-v2.366ade8e1d974d63faba.js,packages/trader/dist/trader/js/trader.higher-lower-trade-description.505ef70265999bf94f01.js,packages/trader/dist/trader/js/trader.vanillas-trade-description.0725da979f485569e402.js,packages/trader/dist/trader/js/trader.touch-no-touch-trade-description.ded06168f5c17efcf1e0.js,packages/trader/dist/trader/js/trader.matches-differs-trade-description.884aae61dfca1eea8ad4.js,packages/trader/dist/trader/js/trader.even-odd-trade-description.aa75f394e290d3abdb6c.js,packages/trader/dist/trader/js/trader.turbos-trade-description.c245100ce303d1e587a7.js,packages/trader/dist/trader/js/trader.multipliers-trade-description.d4b029806bdc63056969.js,packages/trader/dist/trader/js/trader.rise-fall-trade-description.e324b6c707c7bbcb9667.js
+[NX Daemon Server] - 2025-02-20T12:59:27.384Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:59:27.412Z - [WATCHER]: 14 file(s) created or restored, 8 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T12:59:27.414Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T12:59:27.415Z - Time taken for 'hash changed files from watcher' 23.426417998969555ms
+[NX Daemon Server] - 2025-02-20T12:59:27.553Z - Time taken for 'build-project-configs' 81.35319500043988ms
+[NX Daemon Server] - 2025-02-20T12:59:27.562Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T12:59:27.562Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:59:27.562Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T12:59:27.574Z - Time taken for 'hash changed files from watcher' 8.386317998170853ms
+[NX Daemon Server] - 2025-02-20T12:59:27.766Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:59:27.767Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:59:27.767Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:59:27.767Z - Time taken for 'total execution time for createProjectGraph()' 208.11674699932337ms
+[NX Daemon Server] - 2025-02-20T12:59:27.833Z - Time taken for 'build-project-configs' 209.46753599867225ms
+[NX Daemon Server] - 2025-02-20T12:59:27.949Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T12:59:27.951Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T12:59:27.951Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T12:59:27.951Z - Time taken for 'total execution time for createProjectGraph()' 105.29241700097919ms
+[NX Daemon Server] - 2025-02-20T12:59:31.679Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:59:31.680Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T12:59:31.680Z - Handled RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 1.
+[NX Daemon Server] - 2025-02-20T13:00:11.834Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T13:00:12.043Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T13:00:12.043Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T13:00:12.043Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T13:00:12.052Z - Time taken for 'hash changed files from watcher' 8.221698999404907ms
+[NX Daemon Server] - 2025-02-20T13:00:12.162Z - Time taken for 'build-project-configs' 72.10163199901581ms
+[NX Daemon Server] - 2025-02-20T13:00:12.319Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T13:00:12.321Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T13:00:12.321Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T13:00:12.321Z - Time taken for 'total execution time for createProjectGraph()' 124.29125400260091ms
+[NX Daemon Server] - 2025-02-20T13:01:31.500Z - [WATCHER]: 13 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-20T13:01:31.501Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T13:01:31.611Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T13:01:31.611Z - [REQUEST]: packages/core/dist/js/core.it-json.1b85ee694e69325ab74f.js,packages/core/dist/js/core.mn-json.28508df3d642b644e9be.js,packages/core/dist/css/core.main~i.5bdf56bff0a4250e7c4f.main.css,packages/core/dist/js/core.ko-json.de294199fdf35f7dd4f0.js,packages/core/dist/js/core.fr-json.95668bc3292e2af89f44.js,packages/core/dist/js/core.ar-json.629fab9e064993345207.js,packages/core/dist/js/core.ach-json.8e2a74ad114b02783bba.js,packages/core/dist/js/core.bn-json.c94eab22923acee88127.js,packages/core/dist/js/core.km-json.57ec64e1fac14664167f.js,packages/core/dist/js/core.es-json.071191827b62a444e818.js,packages/core/dist/js/core.de-json.c90997871ad308d19d8a.js,packages/core/dist/js/core.id-json.6978a36248a2fa4bd3ea.js,packages/core/dist/js/core.main~i.1fb7b390708181bea02e.js
+[NX Daemon Server] - 2025-02-20T13:01:31.611Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T13:01:31.622Z - Time taken for 'hash changed files from watcher' 9.953251998871565ms
+[NX Daemon Server] - 2025-02-20T13:01:31.744Z - Time taken for 'build-project-configs' 65.1987119987607ms
+[NX Daemon Server] - 2025-02-20T13:01:31.923Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T13:01:31.924Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T13:01:31.924Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T13:01:31.924Z - Time taken for 'total execution time for createProjectGraph()' 164.8879359997809ms
+[NX Daemon Server] - 2025-02-20T13:01:37.180Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T13:01:37.180Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T13:01:37.180Z - Handled RECORD_OUTPUTS_HASH. Handling time: 13. Response time: 0.
+[NX Daemon Server] - 2025-02-20T13:01:37.245Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-20T13:02:20.832Z - [WATCHER]: nx.json was modified
+[NX Daemon Server] - 2025-02-20T13:02:20.833Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T13:02:21.059Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T13:02:21.059Z - [REQUEST]: nx.json
+[NX Daemon Server] - 2025-02-20T13:02:21.059Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T13:02:21.076Z - Time taken for 'hash changed files from watcher' 24.822476003319025ms
+[NX Daemon Server] - 2025-02-20T13:02:21.162Z - Time taken for 'build-project-configs' 48.73480699956417ms
+[NX Daemon Server] - 2025-02-20T13:02:21.298Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T13:02:21.299Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T13:02:21.299Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T13:02:21.299Z - Time taken for 'total execution time for createProjectGraph()' 116.41680699959397ms
+[NX Daemon Server] - 2025-02-20T13:03:47.314Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T13:03:47.315Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-20T13:03:47.315Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T13:03:47.318Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-20T13:03:47.318Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-20T13:03:47.323Z - Time taken for 'total for creating and serializing project graph' 0.4929019995033741ms
+[NX Daemon Server] - 2025-02-20T13:03:47.325Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-20T13:03:47.325Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 7.
+[NX Daemon Server] - 2025-02-20T13:03:47.409Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-20T13:03:47.409Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-20T13:03:47.410Z - Handled HASH_TASKS. Handling time: 38. Response time: 1.
+[NX Daemon Server] - 2025-02-20T13:06:51.272Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T13:06:51.272Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T13:06:51.272Z - Handled RECORD_OUTPUTS_HASH. Handling time: 17. Response time: 0.
+[NX Daemon Server] - 2025-02-20T13:06:51.296Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-20T13:08:46.550Z - [WATCHER]: packages/core/src/public/images/common/logos/platform_logos was created or restored
+[NX Daemon Server] - 2025-02-20T13:08:46.551Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-20T13:08:46.660Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-20T13:08:46.660Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T13:08:46.660Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-20T13:08:46.669Z - Time taken for 'hash changed files from watcher' 8.44217500090599ms
+[NX Daemon Server] - 2025-02-20T13:08:46.747Z - Time taken for 'build-project-configs' 38.402642998844385ms
+[NX Daemon Server] - 2025-02-20T13:08:46.871Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-20T13:08:46.872Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-20T13:08:46.872Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-20T13:08:46.872Z - Time taken for 'total execution time for createProjectGraph()' 113.62773599848151ms
+[NX Daemon Server] - 2025-02-20T13:09:08.611Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T13:09:08.613Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-20T13:09:08.614Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-20T13:09:08.617Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-20T13:09:08.617Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-20T13:09:08.622Z - Time taken for 'total for creating and serializing project graph' 0.6181169971823692ms
+[NX Daemon Server] - 2025-02-20T13:09:08.624Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-20T13:09:08.624Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 7.
+[NX Daemon Server] - 2025-02-20T13:09:08.691Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-20T13:09:08.691Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-20T13:09:08.691Z - Handled HASH_TASKS. Handling time: 37. Response time: 0.
+[NX Daemon Server] - 2025-02-20T13:12:21.079Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-20T13:12:21.080Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-20T13:12:21.080Z - Handled RECORD_OUTPUTS_HASH. Handling time: 13. Response time: 1.
+[NX Daemon Server] - 2025-02-20T13:12:21.393Z - Closed a connection. Number of open connections: 0
