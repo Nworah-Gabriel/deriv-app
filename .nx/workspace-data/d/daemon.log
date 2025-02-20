@@ -1,0 +1,1698 @@
+[NX Daemon Server] - 2025-02-17T08:31:50.252Z - Started listening on: /tmp/e95ea933fdd0222f3ba5/d.sock
+[NX Daemon Server] - 2025-02-17T08:31:50.261Z - [WATCHER]: Subscribed to changes within: /home/dell/Programs/react/deriv-app (native)
+[NX Daemon Server] - 2025-02-17T08:31:50.265Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:31:50.266Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-02-17T08:31:50.279Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2025-02-17T08:31:50.279Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2025-02-17T08:31:50.279Z - Handled FORCE_SHUTDOWN. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:31:50.280Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:31:50.281Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:31:50.281Z - [WATCHER]: Stopping the watcher for /home/dell/Programs/react/deriv-app (sources)
+[NX Daemon Server] - 2025-02-17T08:31:50.281Z - [WATCHER]: Stopping the watcher for /home/dell/Programs/react/deriv-app (outputs)
+[NX Daemon Server] - 2025-02-17T08:33:27.872Z - Started listening on: /tmp/e95ea933fdd0222f3ba5/d.sock
+[NX Daemon Server] - 2025-02-17T08:33:27.875Z - [WATCHER]: Subscribed to changes within: /home/dell/Programs/react/deriv-app (native)
+[NX Daemon Server] - 2025-02-17T08:33:27.878Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:33:27.879Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-02-17T08:33:27.892Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-17T08:33:27.909Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:33:28.094Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:33:28.094Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:33:28.094Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:33:28.118Z - Time taken for 'loadNxPlugins' 193.57339700032026ms
+[NX Daemon Server] - 2025-02-17T08:33:28.278Z - Time taken for 'build-project-configs' 71.60818899981678ms
+[NX Daemon Server] - 2025-02-17T08:33:28.374Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:33:28.376Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-17T08:33:28.381Z - Time taken for 'total for creating and serializing project graph' 483.87567299976945ms
+[NX Daemon Server] - 2025-02-17T08:33:28.383Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-17T08:33:28.383Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 484. Response time: 7.
+[NX Daemon Server] - 2025-02-17T08:33:28.512Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:33:28.512Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:33:28.512Z - Handled HASH_TASKS. Handling time: 30. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:33:29.300Z - [WATCHER]: packages/components/src/components/icon/icons.js was modified
+[NX Daemon Server] - 2025-02-17T08:33:29.300Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:33:29.408Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:33:29.408Z - [REQUEST]: packages/components/src/components/icon/icons.js
+[NX Daemon Server] - 2025-02-17T08:33:29.408Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:33:29.418Z - Time taken for 'hash changed files from watcher' 7.059625000227243ms
+[NX Daemon Server] - 2025-02-17T08:33:29.496Z - Time taken for 'build-project-configs' 40.04786800034344ms
+[NX Daemon Server] - 2025-02-17T08:33:29.586Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:33:29.587Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:33:29.587Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:33:29.587Z - Time taken for 'total execution time for createProjectGraph()' 82.89522999990731ms
+[NX Daemon Server] - 2025-02-17T08:33:35.849Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:33:36.221Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:33:36.221Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:33:36.221Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:33:36.230Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:33:36.243Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:33:36.423Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:33:36.425Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:33:36.426Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:33:36.429Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-17T08:33:36.429Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-17T08:33:36.434Z - Time taken for 'total for creating and serializing project graph' 0.3687220001593232ms
+[NX Daemon Server] - 2025-02-17T08:33:36.436Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-17T08:33:36.436Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 7.
+[NX Daemon Server] - 2025-02-17T08:33:36.498Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:33:36.498Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:33:36.498Z - Handled HASH_TASKS. Handling time: 31. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:34:25.908Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:34:47.805Z - [WATCHER]: nx-cloud.env copy.example was created or restored
+[NX Daemon Server] - 2025-02-17T08:34:47.805Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:34:47.919Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:34:47.919Z - [REQUEST]: nx-cloud.env copy.example
+[NX Daemon Server] - 2025-02-17T08:34:47.919Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:34:47.945Z - Time taken for 'hash changed files from watcher' 12.910800999961793ms
+[NX Daemon Server] - 2025-02-17T08:34:48.056Z - Time taken for 'build-project-configs' 71.57806099997833ms
+[NX Daemon Server] - 2025-02-17T08:34:48.170Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:34:48.171Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:34:48.171Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:34:48.171Z - Time taken for 'total execution time for createProjectGraph()' 108.99062900012359ms
+[NX Daemon Server] - 2025-02-17T08:34:58.379Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:34:58.380Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2025-02-17T08:34:58.487Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:34:58.488Z - [REQUEST]: nx-cloud.env 
+[NX Daemon Server] - 2025-02-17T08:34:58.488Z - [REQUEST]: nx-cloud.env copy.example
+[NX Daemon Server] - 2025-02-17T08:34:58.495Z - Time taken for 'hash changed files from watcher' 6.5582119999453425ms
+[NX Daemon Server] - 2025-02-17T08:34:58.579Z - Time taken for 'build-project-configs' 46.44993200013414ms
+[NX Daemon Server] - 2025-02-17T08:34:58.669Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:34:58.670Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:34:58.670Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:34:58.671Z - Time taken for 'total execution time for createProjectGraph()' 82.97644299967214ms
+[NX Daemon Server] - 2025-02-17T08:35:15.814Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2025-02-17T08:35:15.814Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:35:15.921Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:35:15.921Z - [REQUEST]: .env 
+[NX Daemon Server] - 2025-02-17T08:35:15.921Z - [REQUEST]: nx-cloud.env 
+[NX Daemon Server] - 2025-02-17T08:35:15.929Z - Time taken for 'hash changed files from watcher' 6.99978999979794ms
+[NX Daemon Server] - 2025-02-17T08:35:16.002Z - Time taken for 'build-project-configs' 37.91098299995065ms
+[NX Daemon Server] - 2025-02-17T08:35:16.103Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:35:16.103Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:35:16.104Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:35:16.104Z - Time taken for 'total execution time for createProjectGraph()' 89.12667099991813ms
+[NX Daemon Server] - 2025-02-17T08:35:45.015Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2025-02-17T08:35:45.016Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:35:45.124Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:35:45.124Z - [REQUEST]: nx.cloud.env 
+[NX Daemon Server] - 2025-02-17T08:35:45.124Z - [REQUEST]: .env 
+[NX Daemon Server] - 2025-02-17T08:35:45.136Z - Time taken for 'hash changed files from watcher' 7.622425000183284ms
+[NX Daemon Server] - 2025-02-17T08:35:45.224Z - Time taken for 'build-project-configs' 51.59139099996537ms
+[NX Daemon Server] - 2025-02-17T08:35:45.335Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:35:45.336Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:35:45.336Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:35:45.336Z - Time taken for 'total execution time for createProjectGraph()' 99.40922899963334ms
+[NX Daemon Server] - 2025-02-17T08:36:52.162Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:36:52.163Z - [WATCHER]: nx.cloud.env  was modified
+[NX Daemon Server] - 2025-02-17T08:36:52.395Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:36:52.395Z - [REQUEST]: nx.cloud.env 
+[NX Daemon Server] - 2025-02-17T08:36:52.395Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:36:52.425Z - Time taken for 'hash changed files from watcher' 29.887155999895185ms
+[NX Daemon Server] - 2025-02-17T08:36:52.511Z - Time taken for 'build-project-configs' 57.34739399980754ms
+[NX Daemon Server] - 2025-02-17T08:36:52.630Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:36:52.631Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:36:52.631Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:36:52.631Z - Time taken for 'total execution time for createProjectGraph()' 107.13947700010613ms
+[NX Daemon Server] - 2025-02-17T08:36:59.417Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:36:59.419Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:36:59.419Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:36:59.422Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-17T08:36:59.422Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-17T08:36:59.427Z - Time taken for 'total for creating and serializing project graph' 0.5627979999408126ms
+[NX Daemon Server] - 2025-02-17T08:36:59.429Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-17T08:36:59.429Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 7.
+[NX Daemon Server] - 2025-02-17T08:36:59.485Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:36:59.485Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:36:59.485Z - Handled HASH_TASKS. Handling time: 26. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:36:59.926Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:37:00.187Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:37:00.188Z - [WATCHER]: packages/components/src/components/icon/icons.js was modified
+[NX Daemon Server] - 2025-02-17T08:37:00.295Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:37:00.296Z - [REQUEST]: packages/components/src/components/icon/icons.js
+[NX Daemon Server] - 2025-02-17T08:37:00.296Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:37:00.303Z - Time taken for 'hash changed files from watcher' 6.442516000010073ms
+[NX Daemon Server] - 2025-02-17T08:37:00.395Z - Time taken for 'build-project-configs' 47.01892100041732ms
+[NX Daemon Server] - 2025-02-17T08:37:00.489Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:37:00.489Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:37:00.489Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:37:00.490Z - Time taken for 'total execution time for createProjectGraph()' 85.26677899993956ms
+[NX Daemon Server] - 2025-02-17T08:37:06.763Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:37:07.129Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:37:07.129Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:37:07.129Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:37:07.138Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:37:07.150Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:37:07.328Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:37:07.330Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:37:07.331Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:37:07.333Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-17T08:37:07.334Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-17T08:37:07.338Z - Time taken for 'total for creating and serializing project graph' 0.5505770002491772ms
+[NX Daemon Server] - 2025-02-17T08:37:07.340Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-17T08:37:07.340Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 6.
+[NX Daemon Server] - 2025-02-17T08:37:07.396Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:37:07.396Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:37:07.396Z - Handled HASH_TASKS. Handling time: 27. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:38:02.998Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:38:03.052Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:38:04.039Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:38:04.039Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:38:04.039Z - Handled RECORD_OUTPUTS_HASH. Handling time: 4. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:38:04.048Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:38:04.239Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:38:04.240Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:38:04.241Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:38:04.244Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-17T08:38:04.244Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-17T08:38:04.248Z - Time taken for 'total for creating and serializing project graph' 0.34498299984261394ms
+[NX Daemon Server] - 2025-02-17T08:38:04.250Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-17T08:38:04.250Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 6.
+[NX Daemon Server] - 2025-02-17T08:38:04.294Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:38:04.295Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:38:04.295Z - Handled HASH_TASKS. Handling time: 15. Response time: 1.
+[NX Daemon Server] - 2025-02-17T08:38:05.781Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:38:05.845Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:38:05.906Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:39:19.466Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:39:19.518Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:39:19.651Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:39:23.023Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:39:23.023Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:39:23.023Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:39:23.036Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:39:23.246Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:39:23.247Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:39:23.249Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:39:23.251Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-17T08:39:23.252Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-17T08:39:23.256Z - Time taken for 'total for creating and serializing project graph' 0.3065909999422729ms
+[NX Daemon Server] - 2025-02-17T08:39:23.258Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-17T08:39:23.258Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 6.
+[NX Daemon Server] - 2025-02-17T08:39:23.304Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:39:23.304Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:39:23.305Z - Handled HASH_TASKS. Handling time: 15. Response time: 1.
+[NX Daemon Server] - 2025-02-17T08:39:54.703Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:41:09.059Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:41:09.113Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:41:13.033Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:13.033Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:13.033Z - Handled RECORD_OUTPUTS_HASH. Handling time: 4. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:41:13.044Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:41:13.292Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:41:13.293Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:41:13.294Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-02-17T08:41:13.296Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-02-17T08:41:13.297Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-02-17T08:41:13.302Z - Time taken for 'total for creating and serializing project graph' 0.40869700023904443ms
+[NX Daemon Server] - 2025-02-17T08:41:13.305Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-02-17T08:41:13.305Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 8.
+[NX Daemon Server] - 2025-02-17T08:41:13.410Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:41:13.414Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-02-17T08:41:13.414Z - Handled HASH_TASKS. Handling time: 67. Response time: 4.
+[NX Daemon Server] - 2025-02-17T08:41:13.870Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:13.870Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:13.870Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:41:13.918Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:13.918Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:13.918Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:41:14.043Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:41:14.313Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:14.313Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:14.313Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:41:14.376Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:41:14.377Z - [WATCHER]: packages/components/src/components/icon/icons.js was modified
+[NX Daemon Server] - 2025-02-17T08:41:14.489Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:41:14.489Z - [REQUEST]: packages/components/src/components/icon/icons.js
+[NX Daemon Server] - 2025-02-17T08:41:14.489Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:41:14.504Z - Time taken for 'hash changed files from watcher' 10.970801000017673ms
+[NX Daemon Server] - 2025-02-17T08:41:14.651Z - Time taken for 'build-project-configs' 74.95486399997026ms
+[NX Daemon Server] - 2025-02-17T08:41:14.827Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:41:14.828Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:41:14.828Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:41:14.828Z - Time taken for 'total execution time for createProjectGraph()' 158.41953899990767ms
+[NX Daemon Server] - 2025-02-17T08:41:24.970Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:41:25.620Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:25.620Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:25.620Z - Handled RECORD_OUTPUTS_HASH. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:41:25.637Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:41:26.176Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:26.176Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:26.176Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:41:26.788Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:41:27.187Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:41:27.290Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:41:27.360Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:27.360Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:41:27.361Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 1.
+[NX Daemon Server] - 2025-02-17T08:41:27.376Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:42:46.245Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:42:46.297Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:42:46.910Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:42:46.969Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:42:47.022Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:42:47.751Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:42:47.751Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:42:47.751Z - Handled RECORD_OUTPUTS_HASH. Handling time: 6. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:42:48.334Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:42:48.334Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:42:48.334Z - Handled RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:43:33.205Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:43:41.988Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:43:42.041Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:43:42.108Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:43:42.177Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:43:42.264Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:43:42.944Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:43:42.945Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:43:42.945Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 1.
+[NX Daemon Server] - 2025-02-17T08:43:54.478Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:44:03.589Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:44:03.589Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:44:03.589Z - Handled RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:44:05.316Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:44:05.706Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:44:05.792Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:44:05.879Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:44:33.340Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:44:33.948Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:44:33.948Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:44:33.948Z - Handled RECORD_OUTPUTS_HASH. Handling time: 6. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:45:10.894Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:45:10.951Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:45:11.018Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:45:11.076Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:45:11.178Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:45:11.852Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:45:11.852Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:45:11.852Z - Handled RECORD_OUTPUTS_HASH. Handling time: 2. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:45:58.807Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:46:03.308Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:46:03.404Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:46:03.733Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:46:03.807Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:46:08.503Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:46:08.503Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:46:08.504Z - Handled RECORD_OUTPUTS_HASH. Handling time: 3. Response time: 1.
+[NX Daemon Server] - 2025-02-17T08:46:18.591Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:46:18.657Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:46:18.708Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:46:18.769Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:46:20.251Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:46:20.251Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:46:20.251Z - Handled RECORD_OUTPUTS_HASH. Handling time: 4. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:47:07.137Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:47:07.191Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:47:10.936Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:47:10.936Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:47:10.936Z - Handled RECORD_OUTPUTS_HASH. Handling time: 5. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:49:07.649Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:07.702Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:07.755Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:07.806Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:07.876Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:07.950Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:08.030Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:08.118Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:08.288Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:08.408Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:08.547Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:08.733Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:08.812Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:08.915Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:08.970Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:09.209Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:09.314Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:09.371Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:09.430Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:09.485Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:49:21.684Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:49:21.684Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2025-02-17T08:49:21.684Z - Handled RECORD_OUTPUTS_HASH. Handling time: 21. Response time: 0.
+[NX Daemon Server] - 2025-02-17T08:49:21.900Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-02-17T08:55:58.260Z - [WATCHER]: nx.cloud.env  was deleted
+[NX Daemon Server] - 2025-02-17T08:55:58.261Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:55:58.479Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:55:58.479Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:55:58.479Z - [REQUEST]: nx.cloud.env 
+[NX Daemon Server] - 2025-02-17T08:55:58.519Z - Time taken for 'hash changed files from watcher' 16.838574999943376ms
+[NX Daemon Server] - 2025-02-17T08:55:58.647Z - Time taken for 'build-project-configs' 104.01506699994206ms
+[NX Daemon Server] - 2025-02-17T08:55:58.759Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:55:58.760Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:55:58.760Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:55:58.760Z - Time taken for 'total execution time for createProjectGraph()' 101.47510200040415ms
+[NX Daemon Server] - 2025-02-17T08:56:25.574Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:45.649Z - [WATCHER]: google-chrome-stable_current_amd64.deb was created or restored
+[NX Daemon Server] - 2025-02-17T08:57:45.650Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:45.718Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:45.719Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:45.777Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:57:45.777Z - [REQUEST]: google-chrome-stable_current_amd64.deb
+[NX Daemon Server] - 2025-02-17T08:57:45.777Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:57:45.809Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:45.810Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:45.810Z - Time taken for 'hash changed files from watcher' 24.553573000244796ms
+[NX Daemon Server] - 2025-02-17T08:57:45.847Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:45.848Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:45.900Z - Time taken for 'build-project-configs' 69.5957480003126ms
+[NX Daemon Server] - 2025-02-17T08:57:45.908Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:45.908Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.013Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:57:46.013Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:57:46.013Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:57:46.014Z - Time taken for 'total execution time for createProjectGraph()' 100.37139499979094ms
+[NX Daemon Server] - 2025-02-17T08:57:46.021Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:57:46.021Z - [REQUEST]: google-chrome-stable_current_amd64.deb
+[NX Daemon Server] - 2025-02-17T08:57:46.021Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:57:46.031Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.031Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.031Z - Time taken for 'hash changed files from watcher' 6.879487999714911ms
+[NX Daemon Server] - 2025-02-17T08:57:46.046Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.046Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.108Z - Time taken for 'build-project-configs' 40.98152599995956ms
+[NX Daemon Server] - 2025-02-17T08:57:46.110Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.110Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.200Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:57:46.201Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:57:46.201Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:57:46.201Z - Time taken for 'total execution time for createProjectGraph()' 80.9876490002498ms
+[NX Daemon Server] - 2025-02-17T08:57:46.203Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.203Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.215Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.216Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.268Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.269Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.323Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.323Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.375Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.375Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.430Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.431Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.456Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:57:46.456Z - [REQUEST]: google-chrome-stable_current_amd64.deb
+[NX Daemon Server] - 2025-02-17T08:57:46.456Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:57:46.468Z - Time taken for 'hash changed files from watcher' 22.704301999881864ms
+[NX Daemon Server] - 2025-02-17T08:57:46.486Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.486Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.537Z - Time taken for 'build-project-configs' 41.14912300044671ms
+[NX Daemon Server] - 2025-02-17T08:57:46.542Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.542Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.629Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:57:46.630Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:57:46.630Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:57:46.630Z - Time taken for 'total execution time for createProjectGraph()' 70.68734799977392ms
+[NX Daemon Server] - 2025-02-17T08:57:46.631Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.631Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.689Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.690Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.752Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.753Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.808Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.808Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.860Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.860Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.913Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.914Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:46.966Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:46.966Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.018Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.019Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.075Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.076Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.129Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.129Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.180Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.181Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.236Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.238Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.316Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:57:47.316Z - [REQUEST]: google-chrome-stable_current_amd64.deb
+[NX Daemon Server] - 2025-02-17T08:57:47.316Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:57:47.334Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.334Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.334Z - Time taken for 'hash changed files from watcher' 27.914251999929547ms
+[NX Daemon Server] - 2025-02-17T08:57:47.342Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.342Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.408Z - Time taken for 'build-project-configs' 50.158751000184566ms
+[NX Daemon Server] - 2025-02-17T08:57:47.409Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.409Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.485Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:57:47.486Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:57:47.486Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:57:47.486Z - Time taken for 'total execution time for createProjectGraph()' 64.12362299999222ms
+[NX Daemon Server] - 2025-02-17T08:57:47.488Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.488Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.514Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.516Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.569Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.570Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.622Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.622Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.780Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.781Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.834Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.834Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.886Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.886Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.944Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.944Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:47.996Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:47.996Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.060Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.060Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.112Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.113Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.166Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.167Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.216Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.219Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.272Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.272Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.323Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.323Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.376Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.377Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.429Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.429Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.482Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.483Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.596Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.596Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.654Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.654Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.744Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.747Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.799Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.799Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.856Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:48.856Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:48.977Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:57:48.977Z - [REQUEST]: google-chrome-stable_current_amd64.deb
+[NX Daemon Server] - 2025-02-17T08:57:48.977Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:57:48.999Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:49.000Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:49.000Z - Time taken for 'hash changed files from watcher' 41.254388000350446ms
+[NX Daemon Server] - 2025-02-17T08:57:49.004Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:49.005Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:49.067Z - Time taken for 'build-project-configs' 51.49748700018972ms
+[NX Daemon Server] - 2025-02-17T08:57:49.068Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:49.069Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:49.142Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:57:49.143Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:57:49.143Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:57:49.143Z - Time taken for 'total execution time for createProjectGraph()' 60.88465700019151ms
+[NX Daemon Server] - 2025-02-17T08:57:49.144Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:49.144Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:49.178Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:49.178Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:49.232Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:49.232Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:49.287Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:49.288Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:49.361Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:49.364Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:49.456Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:49.457Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:49.509Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:49.509Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:49.561Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:49.562Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:49.623Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:49.624Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.026Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.026Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.226Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.226Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.286Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.287Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.339Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.339Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.387Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.393Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.439Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.442Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.512Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.513Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.568Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.568Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.632Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.633Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.730Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.732Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.781Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.784Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.841Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.841Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.899Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.899Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:50.959Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:50.959Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.015Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.018Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.069Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.069Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.125Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.126Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.179Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.179Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.231Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.231Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.283Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.284Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.337Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.338Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.391Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.391Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.454Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.454Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.674Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.674Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.726Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.726Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.820Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.824Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.876Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.876Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.944Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.946Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:51.996Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:51.998Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:52.165Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:52.167Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:52.216Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:57:52.217Z - [REQUEST]: google-chrome-stable_current_amd64.deb
+[NX Daemon Server] - 2025-02-17T08:57:52.217Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:57:52.222Z - Time taken for 'hash changed files from watcher' 15.715547000057995ms
+[NX Daemon Server] - 2025-02-17T08:57:52.285Z - Time taken for 'build-project-configs' 34.58769699977711ms
+[NX Daemon Server] - 2025-02-17T08:57:52.357Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:57:52.357Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:57:52.357Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:57:52.357Z - Time taken for 'total execution time for createProjectGraph()' 58.26593300001696ms
+[NX Daemon Server] - 2025-02-17T08:57:52.557Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:52.557Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:52.617Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:52.617Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:52.690Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:52.690Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:52.767Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:52.768Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:52.893Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:52.895Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:52.946Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:52.947Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.001Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.001Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.061Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.061Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.116Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.116Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.176Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.177Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.225Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.228Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.283Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.284Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.347Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.348Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.454Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.454Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.505Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.506Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.558Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.558Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.613Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.615Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.673Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.673Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.730Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.731Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.782Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.782Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.842Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.845Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.897Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.897Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:53.950Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:53.951Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:54.006Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:54.006Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:54.063Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:54.063Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:54.146Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:54.149Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:54.200Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:54.200Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:54.295Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:54.295Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:54.356Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:54.356Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:54.582Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:54.583Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:54.634Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:54.635Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:54.697Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:54.697Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:54.780Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:54.783Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:54.853Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:54.854Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.007Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.011Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:55.061Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:55.064Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.113Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:55.143Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.169Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:55.198Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.224Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:55.253Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.282Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:55.314Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.347Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:55.373Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.400Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:55.430Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.456Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:55.482Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.515Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:55.543Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.571Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:55.598Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.634Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:55.783Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:55.783Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.986Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:55.988Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:56.056Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:56.057Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:56.128Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:56.128Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:56.253Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:56.254Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:56.354Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:56.354Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:56.414Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:56.415Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:56.468Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:56.469Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:56.602Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:56.604Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:56.809Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:56.809Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:56.882Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:56.882Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:57.014Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:57.014Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:57.216Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:57.219Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:57.288Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:57.291Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:57.460Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:57.460Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:57.705Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:57.706Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:57.756Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:57.757Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:57.827Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:57.827Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:57.882Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:57.883Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:57.937Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:57.937Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:57.990Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:57.991Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.045Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.046Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.105Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.105Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.162Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.163Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.218Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.219Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.275Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.276Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.330Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.330Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.381Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.384Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.440Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.441Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.493Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.493Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.547Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.547Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.598Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.601Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.653Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.656Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.711Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.713Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.767Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.767Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.819Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.820Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.872Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.875Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:58.925Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:58.928Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.013Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:57:59.013Z - [REQUEST]: google-chrome-stable_current_amd64.deb
+[NX Daemon Server] - 2025-02-17T08:57:59.013Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:57:59.022Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.022Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:59.022Z - Time taken for 'hash changed files from watcher' 54.823680999688804ms
+[NX Daemon Server] - 2025-02-17T08:57:59.098Z - Time taken for 'build-project-configs' 41.39741099998355ms
+[NX Daemon Server] - 2025-02-17T08:57:59.099Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.099Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:59.111Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.111Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:59.185Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:57:59.185Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:57:59.185Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:57:59.186Z - Time taken for 'total execution time for createProjectGraph()' 74.84851799998432ms
+[NX Daemon Server] - 2025-02-17T08:57:59.198Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.198Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:59.444Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.444Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:59.497Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.498Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:59.573Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.573Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:59.623Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:59.625Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.676Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.677Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:59.733Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.733Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:59.825Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.826Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:59.887Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.888Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:57:59.957Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:57:59.957Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.006Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.010Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.059Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.066Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.111Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.130Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.167Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.192Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.232Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.245Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.284Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.308Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.336Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.370Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.469Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.469Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.528Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.528Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.584Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.584Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.643Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.643Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.773Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.773Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.828Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.828Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:00.904Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:00.904Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.005Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.005Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.094Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.094Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.163Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.166Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.229Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.229Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.284Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.284Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.335Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.336Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.388Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.388Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.441Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.441Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.495Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.495Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.553Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.556Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.608Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.608Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.659Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.659Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.712Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.712Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.763Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.764Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.827Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.827Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.882Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.882Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.934Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.934Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:01.986Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:01.987Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.040Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.040Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.091Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.092Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.145Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.147Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.198Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.200Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.253Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.253Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.306Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.306Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.361Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.361Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.414Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.415Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.466Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.469Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.533Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.533Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.583Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.585Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.639Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.640Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.691Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.691Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.751Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.751Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.806Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.806Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.866Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.866Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.922Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.922Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:02.996Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:02.996Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:03.048Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:03.048Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:03.107Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:03.108Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:03.160Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:03.161Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:03.256Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:03.257Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:03.311Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:03.311Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:03.447Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:03.447Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:03.642Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:03.642Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:04.054Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:04.055Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:04.462Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:04.462Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:04.664Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:04.665Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:04.760Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:04.761Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:04.813Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:04.816Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:04.883Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:04.884Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:04.949Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:04.949Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:05.259Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:05.262Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:05.315Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:05.315Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:05.399Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:05.400Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:05.491Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:58:05.491Z - [REQUEST]: google-chrome-stable_current_amd64.deb
+[NX Daemon Server] - 2025-02-17T08:58:05.491Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:58:05.497Z - Time taken for 'hash changed files from watcher' 67.69595399964601ms
+[NX Daemon Server] - 2025-02-17T08:58:05.569Z - Time taken for 'build-project-configs' 39.62645999994129ms
+[NX Daemon Server] - 2025-02-17T08:58:05.570Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:05.570Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:05.648Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:58:05.649Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:58:05.649Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:58:05.649Z - Time taken for 'total execution time for createProjectGraph()' 64.826461000368ms
+[NX Daemon Server] - 2025-02-17T08:58:05.658Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:05.658Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:05.712Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:05.712Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:05.785Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:05.785Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:05.839Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:05.840Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:05.892Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:05.892Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:05.952Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:05.952Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.004Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.004Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.056Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.056Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.118Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.118Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.174Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.174Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.236Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.236Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.289Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.290Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.341Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.341Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.394Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.395Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.448Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.448Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.500Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.500Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.556Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.556Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.605Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.609Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.657Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.661Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.713Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.713Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:06.766Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:06.767Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.022Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.023Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.227Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.229Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.282Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.282Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.365Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.366Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.421Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.423Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.475Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.476Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.528Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.529Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.587Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.587Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.647Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.647Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.700Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.700Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.772Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.772Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.826Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.826Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.880Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.880Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.934Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.934Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:07.987Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:07.987Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.039Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.047Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.102Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.103Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.157Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.158Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.219Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.219Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.273Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.274Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.339Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.339Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.424Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.424Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.473Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.477Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.526Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.529Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.581Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.581Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.633Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.633Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.744Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.745Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.816Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.816Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.870Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.870Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.928Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:08.928Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.989Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:08.992Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.044Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.044Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.098Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.098Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.149Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.150Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.204Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.204Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.261Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.262Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.314Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.314Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.427Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.427Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.484Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.485Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.548Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.549Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.598Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.599Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.653Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.656Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.708Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.708Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.764Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.764Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.813Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.816Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.868Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:09.869Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.983Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:09.986Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:10.035Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:10.038Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:10.089Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:10.091Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:10.143Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:10.145Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:10.197Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:10.197Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:10.265Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:10.266Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:10.320Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:10.321Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:10.373Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:10.376Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:10.495Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:10.496Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:10.548Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:10.548Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:10.601Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:10.601Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:10.744Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:10.744Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:10.940Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:10.940Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:11.079Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:11.079Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:11.204Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:11.204Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:11.341Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:11.343Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:11.399Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:11.399Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:11.557Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:11.557Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:11.761Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:11.762Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:11.965Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:11.966Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:12.040Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:58:12.041Z - [REQUEST]: google-chrome-stable_current_amd64.deb
+[NX Daemon Server] - 2025-02-17T08:58:12.041Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:58:12.050Z - Time taken for 'hash changed files from watcher' 68.69559400016442ms
+[NX Daemon Server] - 2025-02-17T08:58:12.125Z - Time taken for 'build-project-configs' 40.92084299959242ms
+[NX Daemon Server] - 2025-02-17T08:58:12.216Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:58:12.217Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:58:12.217Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:58:12.217Z - Time taken for 'total execution time for createProjectGraph()' 77.84520999994129ms
+[NX Daemon Server] - 2025-02-17T08:58:12.218Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:12.218Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:12.239Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:12.239Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:12.408Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:12.408Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:12.493Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:12.493Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:12.544Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:12.545Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:12.597Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:12.597Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:12.653Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:12.653Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:12.751Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:12.751Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:12.864Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:12.864Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:12.919Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:12.919Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.003Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.004Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.055Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.058Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.109Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.109Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.162Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.162Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.218Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.220Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.276Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.276Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.336Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.336Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.391Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.391Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.448Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.450Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.502Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.502Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.565Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.567Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.694Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.694Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.745Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.746Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.797Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.797Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.849Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.849Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.908Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.908Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:13.960Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:13.960Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.014Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:14.014Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.076Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:14.076Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.154Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:14.154Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.205Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.207Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:14.344Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.348Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:14.399Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:14.400Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.453Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:14.453Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.502Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.505Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:14.702Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:14.703Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.754Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:14.755Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.810Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:14.810Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.881Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:14.882Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.934Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:14.935Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.989Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:14.992Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.047Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.047Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.103Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.103Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.152Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.154Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.207Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.208Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.266Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.267Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.317Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.320Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.400Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.400Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.452Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.453Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.505Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.505Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.556Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.556Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.621Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.621Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.695Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.696Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.747Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.748Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.802Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.804Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.858Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.859Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:15.911Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:15.911Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.015Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.016Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.069Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.069Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.125Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.125Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.179Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.180Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.229Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.232Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.288Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.288Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.342Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.342Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.401Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.403Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.470Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.473Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.527Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.527Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.581Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.582Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.752Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.753Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.802Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.804Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.853Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.856Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.904Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.911Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:16.956Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:16.962Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.022Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.023Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:17.085Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.085Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:17.137Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.137Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:17.363Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.363Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:17.503Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.504Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:17.569Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.569Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:17.621Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.621Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:17.673Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.674Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:17.755Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.755Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:17.807Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.807Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:17.868Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.868Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:17.920Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.921Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:17.989Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:17.990Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:18.042Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:18.042Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:18.096Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:18.097Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:18.158Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:18.159Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:18.213Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:18.214Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:18.265Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:18.267Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:18.325Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:18.326Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:18.386Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:18.386Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:18.438Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:18.438Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:18.542Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:18.542Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:18.593Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:18.594Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:18.706Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:58:18.706Z - [REQUEST]: google-chrome-stable_current_amd64.deb
+[NX Daemon Server] - 2025-02-17T08:58:18.706Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:58:18.713Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:18.713Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:18.713Z - Time taken for 'hash changed files from watcher' 86.53253699978814ms
+[NX Daemon Server] - 2025-02-17T08:58:18.791Z - Time taken for 'build-project-configs' 40.09102200018242ms
+[NX Daemon Server] - 2025-02-17T08:58:18.793Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:18.793Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:18.871Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:58:18.872Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:58:18.872Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:58:18.872Z - Time taken for 'total execution time for createProjectGraph()' 72.7098000003025ms
+[NX Daemon Server] - 2025-02-17T08:58:18.941Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:18.941Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.136Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.139Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.195Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.195Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.274Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.275Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.331Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.334Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.386Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.387Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.438Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.438Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.491Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.491Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.545Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.545Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.600Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.601Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.657Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.657Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.709Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.709Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.762Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.763Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.822Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.822Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:19.877Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:19.877Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:20.229Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:20.230Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:20.282Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:20.283Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:20.415Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:20.415Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:20.466Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:20.466Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:20.528Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:20.528Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:20.586Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:20.586Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:20.646Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:20.647Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:20.698Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:20.701Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:20.752Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:20.753Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:20.807Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:20.807Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:20.860Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:20.861Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:20.912Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:20.912Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:20.967Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:20.968Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.024Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.025Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.077Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.077Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.130Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.130Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.190Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.192Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.244Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.245Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.302Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.303Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.354Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.354Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.417Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.418Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.469Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.469Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.522Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.523Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.578Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.578Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.769Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.770Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.899Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.899Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:21.954Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:21.954Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.026Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.026Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.081Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.082Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.179Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.180Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.233Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.234Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.306Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.307Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.361Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.362Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.472Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.472Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.529Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.530Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.583Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.583Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.667Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.668Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.720Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.720Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.831Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.831Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.927Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.928Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:22.990Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:22.990Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.080Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.081Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.134Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.134Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.216Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.216Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.269Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.273Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.373Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.376Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.427Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.428Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.479Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.479Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.533Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.534Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.591Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.591Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.644Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.647Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.705Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.705Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.757Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.760Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.812Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.812Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.868Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.868Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.925Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.926Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:23.980Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:23.980Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:24.032Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:24.033Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:24.295Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:24.298Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:24.450Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:24.451Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:24.667Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:24.668Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:24.820Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:24.820Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:24.882Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:24.883Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.028Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.028Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.087Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.087Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.210Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:58:25.210Z - [REQUEST]: google-chrome-stable_current_amd64.deb
+[NX Daemon Server] - 2025-02-17T08:58:25.210Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:58:25.217Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.218Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.218Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.218Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.218Z - Time taken for 'hash changed files from watcher' 94.1335249999538ms
+[NX Daemon Server] - 2025-02-17T08:58:25.289Z - Time taken for 'build-project-configs' 39.56060100020841ms
+[NX Daemon Server] - 2025-02-17T08:58:25.290Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.290Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.309Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.309Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.366Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:58:25.367Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:58:25.367Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:58:25.367Z - Time taken for 'total execution time for createProjectGraph()' 69.46798499999568ms
+[NX Daemon Server] - 2025-02-17T08:58:25.368Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.368Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.414Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.414Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.470Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.470Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.522Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.522Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.574Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.574Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.741Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.741Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.888Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.888Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:25.958Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:25.959Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:26.030Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:26.030Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:26.150Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:26.153Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:26.255Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:26.256Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:26.308Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:26.309Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:26.379Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:26.379Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:26.504Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:26.505Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:26.710Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:26.711Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:26.762Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:26.762Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:26.915Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:26.916Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:27.117Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:27.120Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:27.169Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:27.172Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:27.323Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:27.324Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:27.394Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:27.397Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:27.565Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:27.566Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:27.713Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:27.713Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:27.765Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:27.765Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:27.840Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:27.841Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:27.893Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:27.894Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:27.962Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:27.965Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.014Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.017Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.086Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.086Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.143Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.144Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.196Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.196Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.251Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.251Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.304Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.305Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.357Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.357Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.425Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.426Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.482Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.483Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.548Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.548Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.600Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.600Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.658Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.658Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.715Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.716Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.766Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.767Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.820Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.820Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.871Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.873Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:28.941Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:28.943Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:29.002Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:29.002Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:29.065Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:29.065Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:29.123Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:29.123Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:29.243Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:29.246Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:29.453Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:29.453Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:29.596Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:29.596Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:29.648Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:29.648Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:29.746Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:29.749Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:29.815Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:29.815Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:30.068Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:30.068Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:30.273Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:30.274Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:30.479Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:30.479Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:30.683Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:30.683Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:30.888Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:30.889Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.089Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.090Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.212Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.215Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.266Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.266Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.389Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.392Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.442Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.445Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.517Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.517Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.569Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.572Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.724Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:58:31.724Z - [REQUEST]: google-chrome-stable_current_amd64.deb
+[NX Daemon Server] - 2025-02-17T08:58:31.724Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:58:31.733Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.734Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.734Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.735Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.735Z - Time taken for 'hash changed files from watcher' 106.4891119999811ms
+[NX Daemon Server] - 2025-02-17T08:58:31.808Z - Time taken for 'build-project-configs' 45.52436999976635ms
+[NX Daemon Server] - 2025-02-17T08:58:31.809Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.809Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.826Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.827Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.885Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:58:31.886Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:58:31.886Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:58:31.887Z - Time taken for 'total execution time for createProjectGraph()' 64.56893500033766ms
+[NX Daemon Server] - 2025-02-17T08:58:31.887Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.888Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.928Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.929Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:31.990Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:31.990Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.057Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.057Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.108Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.110Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.162Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.163Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.227Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.227Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.293Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.296Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.355Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.356Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.409Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.409Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.464Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.465Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.517Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.517Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.583Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.584Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.633Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.636Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.685Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.688Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.747Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.747Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:32.805Z - [WATCHER]: google-chrome-stable_current_amd64.deb was modified
+[NX Daemon Server] - 2025-02-17T08:58:32.806Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T08:58:38.232Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-02-17T08:58:38.232Z - [REQUEST]: google-chrome-stable_current_amd64.deb
+[NX Daemon Server] - 2025-02-17T08:58:38.232Z - [REQUEST]: 
+[NX Daemon Server] - 2025-02-17T08:58:38.239Z - Time taken for 'hash changed files from watcher' 93.36069600004703ms
+[NX Daemon Server] - 2025-02-17T08:58:38.308Z - Time taken for 'build-project-configs' 42.794199999887496ms
+[NX Daemon Server] - 2025-02-17T08:58:38.384Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2025-02-17T08:58:38.385Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX Daemon Server] - 2025-02-17T08:58:38.385Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX Daemon Server] - 2025-02-17T08:58:38.385Z - Time taken for 'total execution time for createProjectGraph()' 59.42048399988562ms
+[NX Daemon Server] - 2025-02-17T09:02:13.647Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T09:02:13.700Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T09:02:13.765Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T11:28:49.976Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2025-02-17T11:28:49.978Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-02-17T11:28:49.979Z - [WATCHER]: Stopping the watcher for /home/dell/Programs/react/deriv-app (sources)
+[NX Daemon Server] - 2025-02-17T11:28:49.980Z - [WATCHER]: Stopping the watcher for /home/dell/Programs/react/deriv-app (outputs)
+[NX Daemon Server] - 2025-02-17T11:28:49.984Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
