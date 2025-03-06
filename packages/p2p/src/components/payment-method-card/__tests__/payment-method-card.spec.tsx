@@ -79,10 +79,10 @@ describe('<PaymentMethodCard />', () => {
         render(<PaymentMethodCard payment_method={payment_method_card_props} />, { wrapper });
 
         const dropdown = screen.getByTestId('dt_dropdown_display');
-        await userEvent.click(dropdown);
+        userEvent.click(dropdown);
 
-        await waitFor(async () => {
-            await userEvent.click(screen.getByText('Edit'));
+        await waitFor(() => {
+            userEvent.click(screen.getByText('Edit'));
         });
 
         expect(mock_store.my_profile_store.setPaymentMethodToEdit).toHaveBeenCalled();
@@ -94,10 +94,10 @@ describe('<PaymentMethodCard />', () => {
         render(<PaymentMethodCard payment_method={payment_method_card_props} />, { wrapper });
 
         const dropdown = screen.getByTestId('dt_dropdown_display');
-        await userEvent.click(dropdown);
+        userEvent.click(dropdown);
 
-        await waitFor(async () => {
-            await userEvent.click(screen.getByText('Delete'));
+        await waitFor(() => {
+            userEvent.click(screen.getByText('Delete'));
         });
 
         expect(mock_modal_manager.showModal).toBeCalledWith({

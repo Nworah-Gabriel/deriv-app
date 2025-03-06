@@ -22,14 +22,14 @@ describe('<MyProfileBalance />', () => {
         expect(screen.getByText('Available Deriv P2P balance')).toBeInTheDocument();
     });
 
-    it('should render MyProfileBalanceModal when icon is clicked on and call showModal', async () => {
+    it('should render MyProfileBalanceModal when icon is clicked on and call showModal', () => {
         render(<MyProfileBalance />, {
             wrapper: ({ children }) => <StoreProvider store={mockStore({})}>{children}</StoreProvider>,
         });
 
         const infoIcon = screen.getByTestId('dt_my_profile_balance_icon');
 
-        await userEvent.click(infoIcon);
+        userEvent.click(infoIcon);
 
         expect(mock_modal_manager.showModal).toHaveBeenCalledTimes(1);
         expect(mock_modal_manager.showModal).toHaveBeenCalledWith({ key: 'MyProfileBalanceModal' });

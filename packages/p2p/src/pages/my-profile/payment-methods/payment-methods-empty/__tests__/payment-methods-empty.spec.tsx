@@ -29,12 +29,12 @@ describe('<PaymentMethodsEmpty/>', () => {
         expect(screen.getByRole('button', { name: 'Add payment methods' })).toBeInTheDocument();
     });
 
-    it('should call setActiveTab when clicking on return icon', async () => {
+    it('should call setActiveTab when clicking on return icon', () => {
         render(<PaymentMethodsEmpty />);
 
         const returnIcon = screen.getByTestId('dt_mobile_full_page_return_icon');
 
-        await userEvent.click(returnIcon);
+        userEvent.click(returnIcon);
 
         expect(mock_store.my_profile_store.setActiveTab).toBeCalledWith(my_profile_tabs.MY_STATS);
     });

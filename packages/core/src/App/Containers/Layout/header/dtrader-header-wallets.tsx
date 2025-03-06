@@ -81,11 +81,11 @@ const MenuRight = observer(() => {
                         'acc-info__preloader__dtrader--is-crypto': is_crypto(currency),
                     })}
                 >
-                    <AccountsInfoLoaderWallets is_logged_in={is_logged_in} is_mobile={is_mobile} speed={3} />
+                    {/* <AccountsInfoLoaderWallets is_logged_in={is_logged_in} is_mobile={is_mobile} speed={3} /> */}
                 </div>
             ) : (
                 <div id={'dt_core_header_acc-info-container'} className='acc-info__container'>
-                    <AccountActionsWallets />
+                    {/* <AccountActionsWallets /> */}
                 </div>
             )}
         </div>
@@ -120,9 +120,9 @@ const DTraderHeaderWallets = observer(() => {
                 <MenuLeft />
                 <MenuRight />
             </div>
-            <RealAccountSignup />
-            <SetAccountCurrencyModal />
-            <NewVersionNotification onUpdate={addUpdateNotification} />
+            {/* <RealAccountSignup /> */}
+            {/* <SetAccountCurrencyModal /> */}
+            {/* <NewVersionNotification onUpdate={addUpdateNotification} /> */}
         </header>
     );
 });

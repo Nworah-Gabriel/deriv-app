@@ -37,7 +37,7 @@ describe('<FileUploaderComponent />', () => {
         render(<FileUploaderComponent {...props} />);
 
         const input = screen.getByTestId('dt_file_upload_input') as HTMLInputElement;
-        await userEvent.upload(input, file);
+        userEvent.upload(input, file);
 
         await waitFor(() => {
             if (input.files) {
@@ -56,7 +56,7 @@ describe('<FileUploaderComponent />', () => {
 
         const unsupported_file = new File(['hello'], 'hello.html', { type: 'html' });
         const input = screen.getByTestId('dt_file_upload_input');
-        await userEvent.upload(input, unsupported_file);
+        userEvent.upload(input, unsupported_file);
 
         await waitFor(() => {
             expect(screen.getByText('error')).toBeInTheDocument();
@@ -80,7 +80,7 @@ describe('<FileUploaderComponent />', () => {
         render(<FileUploaderComponent {...props} />);
 
         const input = screen.getByTestId('dt_file_upload_input') as HTMLInputElement;
-        await userEvent.upload(input, file);
+        userEvent.upload(input, file);
 
         await waitFor(() => {
             expect(screen.getByText('hello.png')).toBeInTheDocument();

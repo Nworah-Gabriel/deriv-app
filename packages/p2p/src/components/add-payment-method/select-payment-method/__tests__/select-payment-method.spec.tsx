@@ -42,12 +42,12 @@ describe('<SelectPaymentMethod />', () => {
         expect(screen.getByTestId('dt_initial_loader')).toBeInTheDocument();
     });
 
-    it('should call setSelectedPaymentMethod when clicking on Add new link', async () => {
+    it('should call setSelectedPaymentMethod when clicking on Add new link', () => {
         render(<SelectPaymentMethod />);
 
         const addNewLink = screen.getByText('Add new.');
 
-        await userEvent.click(addNewLink);
+        userEvent.click(addNewLink);
 
         expect(mock_store.my_profile_store.setSelectedPaymentMethod).toBeCalledWith('other');
     });
@@ -58,12 +58,12 @@ describe('<SelectPaymentMethod />', () => {
         let aliPayDropdownOption;
         const paymentMethodDropdown = screen.getByLabelText('Payment method');
 
-        await userEvent.click(paymentMethodDropdown);
+        userEvent.click(paymentMethodDropdown);
 
-        await waitFor(async () => {
+        await waitFor(() => {
             aliPayDropdownOption = screen.getByText('Alipay');
 
-            await userEvent.click(aliPayDropdownOption);
+            userEvent.click(aliPayDropdownOption);
         });
 
         await waitFor(() => expect(mock_store.my_profile_store.setSelectedPaymentMethod).toBeCalled());

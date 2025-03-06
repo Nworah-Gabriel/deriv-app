@@ -64,12 +64,12 @@ describe('<AdCreateEditErrorModal />', () => {
         expect(update_button).toBeInTheDocument();
         expect(screen.getByText('You already have an ad with this range')).toBeInTheDocument();
     });
-    it('should close the modal on clicking update ad/ok button', async () => {
+    it('should close the modal on clicking update ad/ok button', () => {
         render(<AdCreateEditErrorModal />);
 
         const ok_button = screen.getByRole('button', { name: 'OK' });
         expect(ok_button).toBeInTheDocument();
-        await userEvent.click(ok_button);
+        userEvent.click(ok_button);
         expect(mock_modal_manager.hideModal).toHaveBeenCalledTimes(1);
     });
 });

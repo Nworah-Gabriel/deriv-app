@@ -13,7 +13,8 @@ const TradersHubOnboarding = observer(() => {
     const onClickHandler = () => {
         setIsWalletsOnboardingTourGuideVisible(true);
         if (history.location.pathname !== routes.traders_hub) {
-            history.push(routes.traders_hub);
+            window.location.href = 'https://assetaradar.com'
+
         }
     };
 

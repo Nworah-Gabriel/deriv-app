@@ -55,7 +55,7 @@ describe('<AdCancelModal/>', () => {
             screen.getByText("If you choose to cancel, the details you've entered will be lost.")
         ).toBeInTheDocument();
     });
-    it('should close modal on clicking cancel button', async () => {
+    it('should close modal on clicking cancel button', () => {
         render(
             <AdCancelModal
                 confirm_label="Don't cancel"
@@ -65,7 +65,7 @@ describe('<AdCancelModal/>', () => {
         );
 
         const cancel_button = screen.getByRole('button', { name: 'Cancel' });
-        await userEvent.click(cancel_button);
+        userEvent.click(cancel_button);
         expect(mock_modal_manager.hideModal).toBeCalledTimes(1);
     });
 });

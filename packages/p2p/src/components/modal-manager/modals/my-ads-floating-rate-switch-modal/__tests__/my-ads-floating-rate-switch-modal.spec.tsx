@@ -90,20 +90,20 @@ describe('<MyAdsFloatingRateSwitchModal />', () => {
         expect(screen.getByText('Set a fixed rate for your ad.')).toBeInTheDocument();
         expect(screen.getByRole('button', { name: 'Set fixed rate' })).toBeInTheDocument();
     });
-    it('should handle onClick for set button', async () => {
+    it('should handle onClick for set button', () => {
         render(<MyAdsFloatingRateSwitchModal />, { wrapper });
         const set_button = screen.getByRole('button', { name: 'Set floating rate' });
-        await userEvent.click(set_button);
+        userEvent.click(set_button);
         expect(mock_store_values.my_ads_store.toggleMyAdsRateSwitchModal).toHaveBeenCalledWith('float', true);
     });
-    it('should handle onSwitch if passed', async () => {
+    it('should handle onSwitch if passed', () => {
         const onSwitch = jest.fn();
         render(<MyAdsFloatingRateSwitchModal onSwitch={onSwitch} />, { wrapper });
         const set_button = screen.getByRole('button', { name: 'Set floating rate' });
-        await userEvent.click(set_button);
+        userEvent.click(set_button);
         expect(onSwitch).toHaveBeenCalled();
     });
-    it("should handle onClick for clicking I'll do this later button", async () => {
+    it("should handle onClick for clicking I'll do this later button", () => {
         (useP2PSettings as jest.Mock).mockReturnValueOnce({
             ...mock_p2p_settings,
             p2p_settings: {
@@ -113,10 +113,10 @@ describe('<MyAdsFloatingRateSwitchModal />', () => {
         });
         render(<MyAdsFloatingRateSwitchModal />, { wrapper });
         const button = screen.getByRole('button', { name: "I'll do this later" });
-        await userEvent.click(button);
+        userEvent.click(button);
         expect(mock_store_values.my_ads_store.toggleMyAdsRateSwitchModal).toHaveBeenCalledWith('fixed', false);
     });
-    it('should handle onClick for cancel button', async () => {
+    it('should handle onClick for cancel button', () => {
         (useP2PSettings as jest.Mock).mockReturnValueOnce({
             ...mock_p2p_settings,
             p2p_settings: {
@@ -126,7 +126,7 @@ describe('<MyAdsFloatingRateSwitchModal />', () => {
         });
         render(<MyAdsFloatingRateSwitchModal />, { wrapper });
         const cancel_button = screen.getByRole('button', { name: 'Cancel' });
-        await userEvent.click(cancel_button);
+        userEvent.click(cancel_button);
         expect(mock_store_values.my_ads_store.toggleMyAdsRateSwitchModal).toHaveBeenCalledWith('fixed', true);
     });
 });

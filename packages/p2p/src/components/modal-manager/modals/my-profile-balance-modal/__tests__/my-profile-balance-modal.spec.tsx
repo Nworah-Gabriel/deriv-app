@@ -43,12 +43,12 @@ describe('<MyProfileBalanceModal />', () => {
         ).toBeInTheDocument();
     });
 
-    it('should call hideModal when clicking on the OK button', async () => {
+    it('should call hideModal when clicking on the OK button', () => {
         render(<MyProfileBalanceModal />);
 
         const okButton = screen.getByRole('button', { name: 'OK' });
 
-        await userEvent.click(okButton);
+        userEvent.click(okButton);
 
         expect(mock_modal_manager.hideModal).toHaveBeenCalledTimes(1);
     });

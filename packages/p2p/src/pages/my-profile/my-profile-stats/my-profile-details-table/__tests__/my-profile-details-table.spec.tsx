@@ -44,14 +44,14 @@ describe('<MyProfileDetailsTable />', () => {
         expect(screen.getByText('Sell')).toBeInTheDocument();
     });
 
-    it('should render MyProfileDetailsTable component', async () => {
+    it('should render MyProfileDetailsTable component', () => {
         render(<MyProfileDetailsTable />, {
             wrapper: ({ children }) => <StoreProvider store={mockStore({})}>{children}</StoreProvider>,
         });
 
         const increaseLimitsButton = screen.getByRole('button', { name: 'Increase my limits' });
 
-        await userEvent.click(increaseLimitsButton);
+        userEvent.click(increaseLimitsButton);
 
         expect(mock_modal_manager.showModal).toHaveBeenCalledTimes(1);
         expect(mock_modal_manager.showModal).toHaveBeenCalledWith({ key: 'DailyLimitModal' });

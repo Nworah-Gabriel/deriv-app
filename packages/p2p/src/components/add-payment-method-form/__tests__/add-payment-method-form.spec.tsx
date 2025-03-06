@@ -97,12 +97,12 @@ describe('<AddPaymentMethodForm />', () => {
         expect(screen.getByTestId('dt_initial_loader')).toBeInTheDocument();
     });
 
-    it('should call setSelectedPaymentMethod when clicking on cross icon', async () => {
+    it('should call setSelectedPaymentMethod when clicking on cross icon', () => {
         render(<AddPaymentMethodForm />, { wrapper });
 
         const crossIcon = screen.getByTestId('dt_add_payment_method_form_cross_icon');
 
-        await userEvent.click(crossIcon);
+        userEvent.click(crossIcon);
 
         expect(mock_store.my_profile_store.setSelectedPaymentMethod).toBeCalledWith('');
     });
@@ -113,7 +113,7 @@ describe('<AddPaymentMethodForm />', () => {
         const alipayIdInput = screen.getByLabelText('Alipay ID');
         const cancelButton = screen.getByRole('button', { name: 'Cancel' });
 
-        await userEvent.type(alipayIdInput, '123');
+        userEvent.type(alipayIdInput, '123');
 
         await waitFor(() => userEvent.click(cancelButton));
 
@@ -122,13 +122,13 @@ describe('<AddPaymentMethodForm />', () => {
         );
     });
 
-    it('should call hideAddPaymentMethodForm and hideModal if fields are empty when clicking Cancel button', async () => {
+    it('should call hideAddPaymentMethodForm and hideModal if fields are empty when clicking Cancel button', () => {
         mock_store.my_profile_store.selected_payment_method = '';
         render(<AddPaymentMethodForm />, { wrapper });
 
         const cancelButton = screen.getByRole('button', { name: 'Cancel' });
 
-        await userEvent.click(cancelButton);
+        userEvent.click(cancelButton);
 
         expect(mock_store.my_profile_store.hideAddPaymentMethodForm).toHaveBeenCalled();
         expect(mock_modal_manager.hideModal).toHaveBeenCalled();
@@ -175,14 +175,14 @@ describe('<AddPaymentMethodForm />', () => {
 
         const alipayIdInput = screen.getByLabelText('Alipay ID');
 
-        act(async () => {
-            await userEvent.type(alipayIdInput, '123');
+        act(() => {
+            userEvent.type(alipayIdInput, '123');
         });
 
         const addButton = screen.getByRole('button', { name: 'Add' });
 
-        act(async () => {
-            await userEvent.click(addButton);
+        act(() => {
+            userEvent.click(addButton);
         });
 
         await waitFor(() => {

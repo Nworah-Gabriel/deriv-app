@@ -23,56 +23,56 @@ describe('<BuySellRowAction />', () => {
         render(<BuySellRowAction />, { wrapper });
         expect(screen.getByRole('button', { name: 'Unavailable' })).toBeInTheDocument();
     });
-    it('should show the Buy button if advertiser is eligible to create a buy order against the advert', async () => {
+    it('should show the Buy button if advertiser is eligible to create a buy order against the advert', () => {
         const onClick = jest.fn();
 
         render(<BuySellRowAction account_currency='USD' is_buy_advert is_eligible onClick={onClick} />, { wrapper });
 
         const buy_btn = screen.getByRole('button', { name: 'Buy USD' });
         expect(buy_btn).toBeInTheDocument();
-        await userEvent.click(buy_btn);
+        userEvent.click(buy_btn);
         expect(onClick).toHaveBeenCalled();
     });
-    it('should show the Sell button if advertiser is eligible to create a sell order against the advert', async () => {
+    it('should show the Sell button if advertiser is eligible to create a sell order against the advert', () => {
         const onClick = jest.fn();
 
         render(<BuySellRowAction account_currency='USD' is_eligible onClick={onClick} />, { wrapper });
 
         const sell_btn = screen.getByRole('button', { name: 'Sell USD' });
         expect(sell_btn).toBeInTheDocument();
-        await userEvent.click(sell_btn);
+        userEvent.click(sell_btn);
         expect(onClick).toHaveBeenCalled();
     });
-    it('should show the proper message if advertiser does not meet the completion rate', async () => {
+    it('should show the proper message if advertiser does not meet the completion rate', () => {
         const onClick = jest.fn();
         const eligibility_status = ['completion_rate'];
 
         render(<BuySellRowAction eligibility_status={eligibility_status} onClick={onClick} />, { wrapper });
-        await userEvent.click(screen.getByRole('button', { name: 'Unavailable' }));
+        userEvent.click(screen.getByRole('button', { name: 'Unavailable' }));
 
         expect(mock_modal_manager.showModal).toHaveBeenCalledWith({
             key: 'ErrorModal',
             props: { error_message: 'Your completion rate is too low for this ad.' },
         });
     });
-    it('should show the proper message if advertiser does not meet the minimum no. of joining days', async () => {
+    it('should show the proper message if advertiser does not meet the minimum no. of joining days', () => {
         const onClick = jest.fn();
         const eligibility_status = ['join_date'];
 
         render(<BuySellRowAction eligibility_status={eligibility_status} onClick={onClick} />, { wrapper });
-        await userEvent.click(screen.getByRole('button', { name: 'Unavailable' }));
+        userEvent.click(screen.getByRole('button', { name: 'Unavailable' }));
 
         expect(mock_modal_manager.showModal).toHaveBeenCalledWith({
             key: 'ErrorModal',
             props: { error_message: "You've not used Deriv P2P long enough for this ad." },
         });
     });
-    it('should show the proper message if advertiser does not meet any of the conditions set for the advert', async () => {
+    it('should show the proper message if advertiser does not meet any of the conditions set for the advert', () => {
         const onClick = jest.fn();
         const eligibility_status = ['join_date', 'completion_rate', 'country'];
 
         render(<BuySellRowAction eligibility_status={eligibility_status} onClick={onClick} />, { wrapper });
-        await userEvent.click(screen.getByRole('button', { name: 'Unavailable' }));
+        userEvent.click(screen.getByRole('button', { name: 'Unavailable' }));
 
         expect(mock_modal_manager.showModal).toHaveBeenCalledWith({
             key: 'ErrorModal',

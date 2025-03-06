@@ -48,12 +48,12 @@ describe('<EmailLinkedBlockedModal />', () => {
         expect(screen.getByText('Too many failed attempts')).toBeInTheDocument();
         expect(screen.getByText('this is the error message')).toBeInTheDocument();
     });
-    it('should handle close modal', async () => {
+    it('should handle close modal', () => {
         render(<EmailLinkedBlockedModal {...mock_props} />);
 
         const close_icon = screen.getByTestId('dt_modal_close_icon');
         expect(close_icon).toBeInTheDocument();
-        await userEvent.click(close_icon);
+        userEvent.click(close_icon);
         expect(mock_modal_manager.hideModal).toBeCalledTimes(1);
         expect(mock_store.order_store.setIsVerifyingEmail).toBeCalledTimes(1);
     });

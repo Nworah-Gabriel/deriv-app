@@ -176,10 +176,10 @@ const StatisticsInfoModal = ({
             title={localize("What's this?")}
             is_open={is_statistics_info_modal_open}
             toggleModal={toggleStatisticsInfoModal}
-            width={'440px'}
+            width={'20px'}
         >
             <Modal.Body>
-                <div className={classNames('statistics__modal-body', { 'statistics__modal-body--mobile': is_mobile })}>
+                {/* <div className={classNames('statistics__modal-body', { 'statistics__modal-body--mobile': is_mobile })}>
                     <ThemedScrollbars className='statistics__modal-scrollbar'>
                         <Text as='p' weight='bold' className='statistics__modal-body--content no-margin'>
                             {localize('Total stake')}
@@ -218,7 +218,7 @@ const StatisticsInfoModal = ({
                             )}
                         </Text>
                     </ThemedScrollbars>
-                </div>
+                </div> */}
             </Modal.Body>
         </Modal>
     );

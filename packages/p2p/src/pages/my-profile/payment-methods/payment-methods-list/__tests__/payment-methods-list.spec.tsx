@@ -79,23 +79,23 @@ describe('<PaymentMethodsList /> Desktop', () => {
         expect(screen.getByText('test_bank_name')).toBeInTheDocument();
     });
 
-    it('should call setShouldShowAddPaymentMethodForm when clicking Add new button', async () => {
+    it('should call setShouldShowAddPaymentMethodForm when clicking Add new button', () => {
         render(<PaymentMethodsList />, { wrapper });
 
         const addNewButtons = screen.getAllByRole('button', { name: 'Add new' });
 
-        await userEvent.click(addNewButtons[0]);
+        userEvent.click(addNewButtons[0]);
 
         expect(mock_store.my_profile_store.setShouldShowAddPaymentMethodForm).toBeCalledWith(true);
     });
 
-    it('should call setActiveTab when clicking return icon', async () => {
+    it('should call setActiveTab when clicking return icon', () => {
         (useDevice as jest.Mock).mockReturnValue({ isDesktop: false });
         render(<PaymentMethodsList />, { wrapper });
 
         const pageReturnIcon = screen.getByTestId('dt_mobile_full_page_return_icon');
 
-        await userEvent.click(pageReturnIcon);
+        userEvent.click(pageReturnIcon);
 
         expect(mock_store.my_profile_store.setActiveTab).toBeCalledWith(my_profile_tabs.MY_STATS);
     });

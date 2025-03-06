@@ -62,19 +62,19 @@ describe('<AddPaymentMethod />', () => {
         expect(screen.getByRole('button', { name: 'Add' })).toBeInTheDocument();
     });
 
-    it('should call showModal when clicking page return icon if selected_payment_method or dirty is true', async () => {
+    it('should call showModal when clicking page return icon if selected_payment_method or dirty is true', () => {
         mock_store.general_store.formik_ref.dirty = true;
 
         render(<AddPaymentMethod />, { wrapper });
 
         const pageReturnIcon = screen.getByTestId('dt_page_return_icon');
 
-        await userEvent.click(pageReturnIcon);
+        userEvent.click(pageReturnIcon);
 
         expect(mock_modal_manager.showModal).toBeCalledWith({ key: 'CancelAddPaymentMethodModal', props: {} });
     });
 
-    it('should call hideModal, hideAddPaymentMethodForm when clicking page return icon if selected_payment_method and dirty is false', async () => {
+    it('should call hideModal, hideAddPaymentMethodForm when clicking page return icon if selected_payment_method and dirty is false', () => {
         mock_store.general_store.formik_ref.dirty = false;
         mock_store.my_profile_store.selected_payment_method = '';
 
@@ -82,7 +82,7 @@ describe('<AddPaymentMethod />', () => {
 
         const pageReturnIcon = screen.getByTestId('dt_page_return_icon');
 
-        await userEvent.click(pageReturnIcon);
+        userEvent.click(pageReturnIcon);
 
         expect(mock_store.my_profile_store.hideAddPaymentMethodForm).toBeCalled();
         expect(mock_modal_manager.hideModal).toBeCalled();

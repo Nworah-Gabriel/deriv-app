@@ -82,7 +82,7 @@ describe('<ErrorComponent/>', () => {
         expect(screen.getByText('Refresh')).toBeInTheDocument();
     });
 
-    it('should trigger the history.listen and call the setError function when redirect button get clicked', async () => {
+    it('should trigger the history.listen and call the setError function when redirect button get clicked', () => {
         const redirectOnClick = jest.fn();
         const setError = jest.fn();
         renderWithRouter(
@@ -94,16 +94,16 @@ describe('<ErrorComponent/>', () => {
             />
         );
 
-        await userEvent.click(screen.getByText('test_label'));
+        userEvent.click(screen.getByText('test_label'));
         expect(setError).toHaveBeenCalled();
     });
 
-    it('should call location.reload when redirectOnClick is not passed should_clear_error_on_click is false and button is pressed', async () => {
+    it('should call location.reload when redirectOnClick is not passed should_clear_error_on_click is false and button is pressed', () => {
         const redirectOnClick = null;
         renderWithRouter(
             <ErrorComponent {...mock_props} redirectOnClick={redirectOnClick} should_clear_error_on_click={false} />
         );
-        await userEvent.click(screen.getByText('test_label'));
+        userEvent.click(screen.getByText('test_label'));
 
         expect(window.location.reload).toHaveBeenCalled();
     });

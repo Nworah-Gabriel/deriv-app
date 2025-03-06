@@ -81,7 +81,7 @@ describe('<MyProfileContent />', () => {
         expect(screen.getByText('PaymentMethods')).toBeInTheDocument();
     });
 
-    it('should call hideAddPaymentMethodForm and setShouldShowEditPaymentMethodForm when clicking return icon', async () => {
+    it('should call hideAddPaymentMethodForm and setShouldShowEditPaymentMethodForm when clicking return icon', () => {
         (useDevice as jest.Mock).mockReturnValueOnce({ isDesktop: false });
         mock_store.my_profile_store.selected_payment_method = '';
         mock_store.my_profile_store.active_tab = my_profile_tabs.PAYMENT_METHODS;
@@ -90,13 +90,13 @@ describe('<MyProfileContent />', () => {
 
         const pageReturnIcon = screen.getByTestId('dt_mobile_full_page_return_icon');
 
-        await userEvent.click(pageReturnIcon);
+        userEvent.click(pageReturnIcon);
 
         expect(mock_store.my_profile_store.hideAddPaymentMethodForm).toBeCalled();
         expect(mock_store.my_profile_store.setShouldShowEditPaymentMethodForm).toBeCalledWith(false);
     });
 
-    it('should call showModal with CancelAddPaymentMethodModal if is_form_modified is true and should_show_add_payment_method_form is true', async () => {
+    it('should call showModal with CancelAddPaymentMethodModal if is_form_modified is true and should_show_add_payment_method_form is true', () => {
         (useDevice as jest.Mock).mockReturnValueOnce({ isDesktop: false });
         mock_store.my_profile_store.active_tab = my_profile_tabs.PAYMENT_METHODS;
         mock_store.general_store.is_form_modified = true;
@@ -106,12 +106,12 @@ describe('<MyProfileContent />', () => {
 
         const pageReturnIcon = screen.getByTestId('dt_mobile_full_page_return_icon');
 
-        await userEvent.click(pageReturnIcon);
+        userEvent.click(pageReturnIcon);
 
         expect(mock_modal_manager.showModal).toBeCalledWith({ key: 'CancelAddPaymentMethodModal' });
     });
 
-    it('should call showModal with CancelEditPaymentMethodModal if is_form_modified is true and should_show_edit_payment_method_form is true', async () => {
+    it('should call showModal with CancelEditPaymentMethodModal if is_form_modified is true and should_show_edit_payment_method_form is true', () => {
         (useDevice as jest.Mock).mockReturnValueOnce({ isDesktop: false });
         mock_store.my_profile_store.active_tab = my_profile_tabs.PAYMENT_METHODS;
         mock_store.general_store.is_form_modified = true;
@@ -121,7 +121,7 @@ describe('<MyProfileContent />', () => {
 
         const pageReturnIcon = screen.getByTestId('dt_mobile_full_page_return_icon');
 
-        await userEvent.click(pageReturnIcon);
+        userEvent.click(pageReturnIcon);
 
         expect(mock_modal_manager.showModal).toBeCalledWith({ key: 'CancelEditPaymentMethodModal' });
     });

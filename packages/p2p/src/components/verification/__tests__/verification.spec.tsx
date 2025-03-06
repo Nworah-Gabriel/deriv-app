@@ -37,7 +37,7 @@ describe('<Verification />', () => {
         expect(screen.getByText('Upload documents to verify your address.')).toBeInTheDocument();
     });
 
-    it('Should redirect to account poi verification if poi has not been verified', async () => {
+    it('Should redirect to account poi verification if poi has not been verified', () => {
         (useStores as jest.Mock).mockReturnValue({
             general_store: { ...mocked_store_values, p2p_poa_required: false },
         });
@@ -52,11 +52,11 @@ describe('<Verification />', () => {
         render(<Verification />);
 
         const el_action_button = screen.getByTestId('dt_checklist_item_status_action');
-        await userEvent.click(el_action_button);
+        userEvent.click(el_action_button);
         expect(window.location.href).toBe('/account/proof-of-identity?ext_platform_url=/cashier/p2p');
     });
 
-    it('Should redirect to account poa verification if poa has not been verified', async () => {
+    it('Should redirect to account poa verification if poa has not been verified', () => {
         (useStores as jest.Mock).mockReturnValue({
             general_store: { ...mocked_store_values, p2p_poa_required: true, poi_status: 'verified' },
         });
@@ -71,7 +71,7 @@ describe('<Verification />', () => {
         render(<Verification />);
 
         const el_action_button = screen.getByTestId('dt_checklist_item_status_action');
-        await userEvent.click(el_action_button);
+        userEvent.click(el_action_button);
         expect(window.location.href).toBe('/account/proof-of-address?ext_platform_url=/cashier/p2p');
     });
 

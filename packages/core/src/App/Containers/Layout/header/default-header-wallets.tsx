@@ -98,9 +98,23 @@ const DefaultHeaderWallets = () => {
                     {isDesktop ? (
                         <React.Fragment>
                             <div className='header__menu-left-logo'>
-                                <StaticUrl href='/'>
-                                    <DerivBrandShortLogo />
-                                </StaticUrl>
+                                <div
+                                    style={{
+                                        paddingLeft: '10px',
+                                        height: '40px',
+                                        width: '100px',
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        justifyContent: 'space-around',
+                                        alignContent: 'space-around',
+                                        alignItems: 'center',
+                                        alignSelf: 'center',
+                                    }}
+                                >
+                                    <a href='https://assetsradar.com'>
+                                        <img src='https://assetsradar.com/static/img/logo.png' alt='AssetRadar png' />
+                                    </a>
+                                </div>
                             </div>
                             <PlatformSwitcher
                                 app_routing_history={app_routing_history}
@@ -135,31 +149,11 @@ const DefaultHeaderWallets = () => {
                                 'acc-info__preloader--is-crypto': getDecimalPlaces(currency) > 2,
                             })}
                         >
-                            <AccountsInfoLoader is_logged_in={is_logged_in} is_mobile={is_mobile} speed={3} />
+                            {/* <AccountsInfoLoader is_logged_in={is_logged_in} is_mobile={is_mobile} speed={3} /> */}
                         </div>
                     )}
 
-                    <div id={'dt_core_header_acc-info-container'} className='acc-info__container'>
-                        <AccountActions
-                            acc_switcher_disabled_message={acc_switcher_disabled_message}
-                            account_type={account_type}
-                            balance={balance}
-                            currency={currency}
-                            disableApp={disableApp}
-                            enableApp={enableApp}
-                            is_acc_switcher_on={is_acc_switcher_on}
-                            is_acc_switcher_disabled={is_acc_switcher_disabled}
-                            is_eu={is_eu}
-                            is_notifications_visible={is_notifications_visible}
-                            is_logged_in={is_logged_in}
-                            is_virtual={is_virtual}
-                            onClickDeposit={onClickDeposit}
-                            notifications_count={notifications_count}
-                            toggleAccountsDialog={toggleAccountsDialog}
-                            toggleNotifications={toggleNotifications}
-                            openRealAccountSignup={openRealAccountSignup}
-                        />
-                    </div>
+                    
                 </div>
             </div>
             {/*
@@ -168,7 +162,7 @@ const DefaultHeaderWallets = () => {
             */}
             {!is_trading_assessment_for_existing_user_enabled && <RealAccountSignup />}
             <SetAccountCurrencyModal />
-            <NewVersionNotification onUpdate={addUpdateNotification} />
+            {/* <NewVersionNotification onUpdate={addUpdateNotification} /> */}
         </header>
     );
 };

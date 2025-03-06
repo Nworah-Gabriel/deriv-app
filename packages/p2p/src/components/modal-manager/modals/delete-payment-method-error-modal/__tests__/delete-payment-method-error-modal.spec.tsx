@@ -34,11 +34,11 @@ describe('<DeletePaymentMethodErrorModal />', () => {
         expect(screen.getByRole('button', { name: 'Ok' })).toBeInTheDocument();
     });
 
-    it('should call hideModal when clicking on the Ok button', async () => {
+    it('should call hideModal when clicking on the Ok button', () => {
         render(<DeletePaymentMethodErrorModal error_message='error message' />);
 
         const ok_button = screen.getByRole('button', { name: 'Ok' });
-        await userEvent.click(ok_button);
+        userEvent.click(ok_button);
 
         expect(mock_modal_manager.hideModal).toHaveBeenCalledTimes(1);
     });

@@ -51,23 +51,23 @@ describe('<EmailLinkExpiredModal />', () => {
         expect(screen.getByRole('button', { name: 'Get new link' })).toBeInTheDocument();
     });
 
-    it('should call hideModal and confirmOrderRequest when clicking on button', async () => {
+    it('should call hideModal and confirmOrderRequest when clicking on button', () => {
         render(<EmailLinkExpiredModal />);
 
         const getNewLinkButton = screen.getByRole('button', { name: 'Get new link' });
 
-        await userEvent.click(getNewLinkButton);
+        userEvent.click(getNewLinkButton);
 
         expect(mock_modal_manager.hideModal).toBeCalledWith({ should_hide_all_modals: true });
         expect(mock_store.order_store.confirmOrderRequest).toBeCalledWith('1');
     });
 
-    it('should call hideModal when toggling the modal', async () => {
+    it('should call hideModal when toggling the modal', () => {
         render(<EmailLinkExpiredModal />);
 
         const closeIcon = screen.getByTestId('dt_modal_close_icon');
 
-        await userEvent.click(closeIcon);
+        userEvent.click(closeIcon);
 
         expect(mock_modal_manager.hideModal).toBeCalledWith({ should_hide_all_modals: true });
     });

@@ -54,28 +54,28 @@ describe('<BusinessHourModal />', () => {
         expect(screen.getByRole('button', { name: 'Edit' })).toBeInTheDocument();
     });
 
-    it('should show the edit screen when user clicks on Edit button', async () => {
+    it('should show the edit screen when user clicks on Edit button', () => {
         render(<BusinessHourModal />, { wrapper });
 
         const edit_button = screen.getByRole('button', { name: 'Edit' });
 
-        await userEvent.click(edit_button);
+        userEvent.click(edit_button);
 
         expect(screen.getByText('Edit business hour')).toBeInTheDocument();
         expect(screen.getByRole('button', { name: 'Cancel' })).toBeInTheDocument();
         expect(screen.getByRole('button', { name: 'Edit' })).toBeInTheDocument();
     });
 
-    it('should hide the edit screen if the user clicks on Cancel button', async () => {
+    it('should hide the edit screen if the user clicks on Cancel button', () => {
         render(<BusinessHourModal />, { wrapper });
 
         const edit_button = screen.getByRole('button', { name: 'Edit' });
 
-        await userEvent.click(edit_button);
+        userEvent.click(edit_button);
 
         const cancel_button = screen.getByRole('button', { name: 'Cancel' });
 
-        await userEvent.click(cancel_button);
+        userEvent.click(cancel_button);
 
         expect(screen.getByText('Business hour')).toBeInTheDocument();
         expect(screen.getByRole('button', { name: 'Edit' })).toBeInTheDocument();
@@ -108,22 +108,22 @@ describe('<BusinessHourModal />', () => {
         expect(screen.getByTestId('dt_mobile_full_page_return_icon')).toBeInTheDocument();
     });
 
-    it('should call hideModal when the user clicks on the back button', async () => {
+    it('should call hideModal when the user clicks on the back button', () => {
         render(<BusinessHourModal />, { wrapper });
 
         const back_button = screen.getByTestId('dt_mobile_full_page_return_icon');
 
-        await userEvent.click(back_button);
+        userEvent.click(back_button);
 
         expect(mock_modal_manager.hideModal).toHaveBeenCalled();
     });
 
-    it('should show edit page on mobile if the user clicks on Edit button', async () => {
+    it('should show edit page on mobile if the user clicks on Edit button', () => {
         render(<BusinessHourModal />, { wrapper });
 
         const edit_button = screen.getByRole('button', { name: 'Edit' });
 
-        await userEvent.click(edit_button);
+        userEvent.click(edit_button);
 
         expect(screen.getByText('Edit business hour')).toBeInTheDocument();
         expect(screen.getByRole('button', { name: 'Cancel' })).toBeInTheDocument();
@@ -131,16 +131,16 @@ describe('<BusinessHourModal />', () => {
         expect(screen.getByTestId('dt_mobile_full_page_return_icon')).toBeInTheDocument();
     });
 
-    it('should hide the edit screen if user clicks on back button from edit screen', async () => {
+    it('should hide the edit screen if user clicks on back button from edit screen', () => {
         render(<BusinessHourModal />, { wrapper });
 
         const edit_button = screen.getByRole('button', { name: 'Edit' });
 
-        await userEvent.click(edit_button);
+        userEvent.click(edit_button);
 
         const back_button = screen.getByTestId('dt_mobile_full_page_return_icon');
 
-        await userEvent.click(back_button);
+        userEvent.click(back_button);
 
         expect(screen.getByText('Business hour')).toBeInTheDocument();
         expect(screen.getByRole('button', { name: 'Edit' })).toBeInTheDocument();

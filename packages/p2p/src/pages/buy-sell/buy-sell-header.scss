@@ -15,9 +15,7 @@
         display: flex;
         flex: none;
         justify-content: center;
-        transition:
-            transform 0.3s linear,
-            opacity 0.3s ease;
+        transition: transform 0.3s linear, opacity 0.3s ease;
         transform-origin: top;
         width: 100%;
         z-index: 1;
@@ -42,9 +40,7 @@
         width: 16.8rem;
 
         @include mobile-or-tablet-screen {
-            transition:
-                transform 0.3s linear,
-                opacity 0.3s ease;
+            transition: transform 0.3s linear, opacity 0.3s ease;
             transform-origin: top;
         }
     }

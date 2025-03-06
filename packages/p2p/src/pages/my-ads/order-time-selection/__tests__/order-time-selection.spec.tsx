@@ -48,20 +48,20 @@ describe('<OrderTimeSelection/>', () => {
         expect(screen.getByText('Orders must be completed in')).toBeInTheDocument();
         expect(screen.getByTestId('dt_order_time_selection_info_icon')).toBeInTheDocument();
     });
-    it('should show tooltip message on hovering info icon in desktop view', async () => {
+    it('should show tooltip message on hovering info icon in desktop view', () => {
         render(<OrderTimeSelection />);
         const info_icon = screen.getByTestId('dt_order_time_selection_info_icon');
-        await userEvent.hover(info_icon);
+        userEvent.hover(info_icon);
 
         expect(screen.getByText('Orders will expire if they aren’t completed within this time.')).toBeInTheDocument();
     });
-    it('should open orderTimeTooltipModal on clicking info icon in responsive view', async () => {
+    it('should open orderTimeTooltipModal on clicking info icon in responsive view', () => {
         (useDevice as jest.Mock).mockReturnValueOnce({ isDesktop: false });
         render(<OrderTimeSelection />);
 
         const info_icon = screen.getByTestId('dt_order_time_selection_info_icon');
 
-        await userEvent.click(info_icon);
+        userEvent.click(info_icon);
         expect(mock_modal_manager.showModal).toHaveBeenCalledWith(
             expect.objectContaining({ key: 'OrderTimeTooltipModal' })
         );

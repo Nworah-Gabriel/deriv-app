@@ -30,7 +30,7 @@ describe('<Dp2pBlockedChecklist />', () => {
         expect(screen.getByText('Complete the financial assessment form')).toBeInTheDocument();
     });
 
-    it('it should redirect to `/account/financial-assessment` while clicking on checklist button if client is high risk and not blocked', async () => {
+    it('it should redirect to `/account/financial-assessment` while clicking on checklist button if client is high risk and not blocked', () => {
         (useStores as jest.Mock).mockReturnValue({
             general_store: {
                 is_high_risk: true,
@@ -38,7 +38,7 @@ describe('<Dp2pBlockedChecklist />', () => {
             },
         });
         render(<Dp2pBlockedChecklist />);
-        await userEvent.click(screen.getByTestId('dt_checklist_item_status_action'));
+        userEvent.click(screen.getByTestId('dt_checklist_item_status_action'));
         expect(mockHistoryPush).toHaveBeenCalledWith({ pathname: '/account/financial-assessment' });
     });
 

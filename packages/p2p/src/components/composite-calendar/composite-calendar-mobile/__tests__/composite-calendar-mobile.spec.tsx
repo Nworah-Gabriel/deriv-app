@@ -43,30 +43,30 @@ describe('CompositeCalendarMobile', () => {
         render(<CompositeCalendarMobile {...mock_props} />);
         expect(screen.getByText('Input Field')).toBeInTheDocument();
     });
-    it('should open the mobile dialog on clicking the calendar field', async () => {
+    it('should open the mobile dialog on clicking the calendar field', () => {
         render(<CompositeCalendarMobile {...mock_props} />);
-        await userEvent.click(screen.getByText('Input Field'));
+        userEvent.click(screen.getByText('Input Field'));
         expect(screen.getByText('Custom')).toBeInTheDocument();
     });
     it('should close the modal on close click', async () => {
         render(<CompositeCalendarMobile {...mock_props} />);
-        await userEvent.click(screen.getByText('Input Field'));
+        userEvent.click(screen.getByText('Input Field'));
         act(() => {
             (MobileDialog as jest.Mock).mock.calls[0][0].onClose();
         });
         expect(MobileDialog).toHaveBeenLastCalledWith(expect.objectContaining({ visible: false }), {});
     });
-    it('should handle applydaterange function', async () => {
+    it('should handle applydaterange function', () => {
         render(<CompositeCalendarMobile {...mock_props} />);
-        await userEvent.click(screen.getByText('Input Field'));
+        userEvent.click(screen.getByText('Input Field'));
         act(() => {
             (MobileDialog as jest.Mock).mock.calls[0][0].footer.props.applyDateRange();
         });
         expect(mock_props.onChange).toHaveBeenCalled();
     });
-    it('should handle DatePicker onChange function with from date', async () => {
+    it('should handle DatePicker onChange function with from date', () => {
         render(<CompositeCalendarMobile {...mock_props} />);
-        await userEvent.click(screen.getByText('Input Field'));
+        userEvent.click(screen.getByText('Input Field'));
         act(() => {
             (DatePicker as unknown as jest.Mock).mock.calls[0][0].onChange({ target: { value: '2021-09-01' } }, 'from');
         });

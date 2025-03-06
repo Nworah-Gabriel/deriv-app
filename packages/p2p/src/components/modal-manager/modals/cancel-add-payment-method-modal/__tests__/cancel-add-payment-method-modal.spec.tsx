@@ -51,11 +51,11 @@ describe('<CancelAddPaymentMethodModal />', () => {
         expect(screen.getByRole('button', { name: 'Go back' })).toBeInTheDocument();
     });
 
-    it('should hide modal and clear the form when clicking on cancel button', async () => {
+    it('should hide modal and clear the form when clicking on cancel button', () => {
         const mock_on_cancel = jest.fn();
         render(<CancelAddPaymentMethodModal onCancel={mock_on_cancel} should_hide_all_modals_on_cancel />);
         const cancel_button = screen.getByRole('button', { name: 'Cancel' });
-        await userEvent.click(cancel_button);
+        userEvent.click(cancel_button);
 
         const { hideAddPaymentMethodForm, setSelectedPaymentMethod } = mock_stores.my_profile_store;
         const { setShouldShowAddPaymentMethod } = mock_stores.my_ads_store;
@@ -71,10 +71,10 @@ describe('<CancelAddPaymentMethodModal />', () => {
         });
     });
 
-    it('should cancel adding payment method without hiding all modals', async () => {
+    it('should cancel adding payment method without hiding all modals', () => {
         render(<CancelAddPaymentMethodModal />);
         const cancel_button = screen.getByRole('button', { name: 'Cancel' });
-        await userEvent.click(cancel_button);
+        userEvent.click(cancel_button);
 
         expect(mock_modal_manager_context.hideModal).toHaveBeenCalledWith({
             should_save_form_history: false,
@@ -83,10 +83,10 @@ describe('<CancelAddPaymentMethodModal />', () => {
         });
     });
 
-    it('should hide modal when clicking on go back button', async () => {
+    it('should hide modal when clicking on go back button', () => {
         render(<CancelAddPaymentMethodModal />);
         const go_back_button = screen.getByRole('button', { name: 'Go back' });
-        await userEvent.click(go_back_button);
+        userEvent.click(go_back_button);
 
         expect(mock_modal_manager_context.hideModal).toHaveBeenCalledWith({
             should_save_form_history: true,

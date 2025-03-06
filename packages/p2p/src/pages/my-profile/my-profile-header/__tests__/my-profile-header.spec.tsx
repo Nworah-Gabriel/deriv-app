@@ -13,7 +13,7 @@ describe('<MyProfileHeader/>', () => {
         expect(screen.getByText('My counterparties')).toBeInTheDocument();
     });
 
-    it('can switch between tabs when a tab is clicked on', async () => {
+    it('can switch between tabs when a tab is clicked on', () => {
         render(<MyProfileHeader />);
 
         const StatsTab = screen.getByRole('button', { name: 'Stats' });
@@ -21,7 +21,7 @@ describe('<MyProfileHeader/>', () => {
 
         expect(StatsTab).toHaveClass('dc-button-menu__button--active');
 
-        await UserEvent.click(MyCounterpartiesTab);
+        UserEvent.click(MyCounterpartiesTab);
 
         expect(StatsTab).not.toHaveClass('dc-button-menu__button--active');
         expect(MyCounterpartiesTab).toHaveClass('dc-button-menu__button--active');

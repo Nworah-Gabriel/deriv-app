@@ -102,15 +102,26 @@ const DTraderHeader = observer(() => {
                         </React.Fragment>
                     ) : (
                         <React.Fragment>
-                            <DerivShortLogo />
+                            <div
+                                style={{
+                                    paddingLeft: '10px',
+                                    height: '40px',
+                                    width: '100px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    justifyContent: 'space-around',
+                                    alignContent: 'space-around',
+                                    alignItems: 'center',
+                                    alignSelf: 'center',
+                                }}
+                            >
+                                <a href='https://assetsradar.com'>
+                                    <img src='https://assetsradar.com/static/img/logo.png' alt='AssetRadar png' />
+                                </a>
+                            </div>
                             <div className='header__divider' />
                             <TradersHubHomeButton />
-                            <PlatformSwitcher
-                                app_routing_history={app_routing_history}
-                                platform_config={filterPlatformsForClients(platform_config)}
-                                setTogglePlatformType={setTogglePlatformType}
-                                current_language={current_language}
-                            />
+                            
                         </React.Fragment>
                     )}
                     <MenuLinks />
@@ -126,7 +137,7 @@ const DTraderHeader = observer(() => {
                             <div className='header__menu--dtrader--separator' />
                         </div>
                     )}
-                    {(is_logging_in || is_switching) && (
+                    {/* {(is_logging_in || is_switching) && (
                         <div
                             id='dt_core_header_acc-info-preloader'
                             className={classNames('acc-info__preloader__dtrader', {
@@ -134,15 +145,13 @@ const DTraderHeader = observer(() => {
                                 'acc-info__preloader__dtrader--is-crypto': getDecimalPlaces(currency) > 2,
                             })}
                         >
-                            <AccountsInfoLoader is_logged_in={is_logged_in} is_mobile={!isDesktop} speed={3} />
+                           
                         </div>
-                    )}
-                    {!is_from_tradershub_os && <HeaderAccountActions onClickDeposit={handleClickCashier} />}
+                    )} */}
+                    
                 </div>
             </div>
-            {is_real_acc_signup_on && <RealAccountSignup />}
-            <SetAccountCurrencyModal />
-            <NewVersionNotification onUpdate={addUpdateNotification} />
+            {/* {is_real_acc_signup_on && <RealAccountSignup />} */}
         </header>
     );
 });

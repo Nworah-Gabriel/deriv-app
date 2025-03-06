@@ -60,14 +60,14 @@ describe('<PreferredCountriesModal />', () => {
         expect(checkbox_ag).not.toBeChecked();
     });
 
-    it('should uncheck all selected countries when clear button is clicked', async () => {
+    it('should uncheck all selected countries when clear button is clicked', () => {
         mock_modal_manager = {
             ...mock_modal_manager,
             useSavedState: jest.fn(() => [[], jest.fn()]),
         };
         render(<PreferredCountriesModal {...mock_props} />, { wrapper });
         const clear_button = screen.getByRole('button', { name: 'Clear' });
-        await userEvent.click(clear_button);
+        userEvent.click(clear_button);
 
         const checkbox_ad = screen.getByRole('checkbox', { name: 'ad' });
         const checkbox_af = screen.getByRole('checkbox', { name: 'af' });
@@ -78,7 +78,7 @@ describe('<PreferredCountriesModal />', () => {
         expect(checkbox_ag).not.toBeChecked();
     });
 
-    it('should call onApply and hideModal when apply button is clicked after checking country', async () => {
+    it('should call onApply and hideModal when apply button is clicked after checking country', () => {
         mock_modal_manager = {
             ...mock_modal_manager,
             useSavedState: jest.fn(() => [['Andorra', 'Afghanistan', 'Antigua and Barbuda'], jest.fn()]),
@@ -91,14 +91,14 @@ describe('<PreferredCountriesModal />', () => {
         const checkbox_ad = screen.getByRole('checkbox', { name: 'ag' });
         const apply_button = screen.getByRole('button', { name: 'Apply' });
 
-        await userEvent.click(checkbox_ad);
-        await userEvent.click(apply_button);
+        userEvent.click(checkbox_ad);
+        userEvent.click(apply_button);
 
         expect(mock_props.onApply).toHaveBeenCalledWith(['Andorra', 'Afghanistan', 'Antigua and Barbuda']);
         expect(mock_modal_manager.hideModal).toHaveBeenCalled();
     });
 
-    it('should call hideModal when the x icon is clicked', async () => {
+    it('should call hideModal when the x icon is clicked', () => {
         mock_modal_manager = {
             ...mock_modal_manager,
             useSavedState: jest.fn(() => [mock_props.eligible_countries, jest.fn()]),
@@ -109,7 +109,7 @@ describe('<PreferredCountriesModal />', () => {
         });
 
         const close_icon = screen.getByTestId('dt_modal_close_icon');
-        await userEvent.click(close_icon);
+        userEvent.click(close_icon);
 
         expect(mock_modal_manager.hideModal).toHaveBeenCalled();
     });

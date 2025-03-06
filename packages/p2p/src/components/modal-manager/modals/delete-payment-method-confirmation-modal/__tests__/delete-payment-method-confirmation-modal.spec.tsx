@@ -47,20 +47,20 @@ describe('<DeletePaymentMethodConfirmationModal />', () => {
         expect(screen.getByRole('button', { name: 'No' })).toBeInTheDocument();
     });
 
-    it('should call delete_payment_method when Yes, remove button is clicked', async () => {
+    it('should call delete_payment_method when Yes, remove button is clicked', () => {
         render(<DeletePaymentMethodConfirmationModal payment_method_id={1} payment_method_name='Skrill' />);
 
         const yes_remove_button = screen.getByRole('button', { name: 'Yes, remove' });
-        await userEvent.click(yes_remove_button);
+        userEvent.click(yes_remove_button);
 
         expect(mock_p2p_advertiser_payment_methods_hooks.delete).toHaveBeenCalled();
     });
 
-    it('should close modal when No button is clicked', async () => {
+    it('should close modal when No button is clicked', () => {
         render(<DeletePaymentMethodConfirmationModal payment_method_id={1} payment_method_name='Skrill' />);
 
         const no_button = screen.getByRole('button', { name: 'No' });
-        await userEvent.click(no_button);
+        userEvent.click(no_button);
 
         expect(mock_modal_manager_context.hideModal).toHaveBeenCalled();
     });

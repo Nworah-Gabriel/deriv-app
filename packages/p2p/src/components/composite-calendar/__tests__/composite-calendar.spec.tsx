@@ -31,22 +31,22 @@ describe('<CompositeCalendar />', () => {
         expect(screen.getByTestId('dt_calendar_input_from')).toBeInTheDocument();
         expect(screen.getByTestId('dt_calendar_input_to')).toBeInTheDocument();
     });
-    it('should handle onclick for "from date" input', async () => {
+    it('should handle onclick for "from date" input', () => {
         render(<CompositeCalendar {...mock_props} />, { wrapper });
         const from_input = screen.getByTestId('dt_calendar_input_from');
-        await userEvent.click(from_input);
+        userEvent.click(from_input);
         expect(screen.getByText('Last 7 days')).toBeInTheDocument();
     });
-    it('should handle onclick for "to date" input', async () => {
+    it('should handle onclick for "to date" input', () => {
         render(<CompositeCalendar {...mock_props} />, { wrapper });
         const to_input = screen.getByTestId('dt_calendar_input_to');
-        await userEvent.click(to_input);
+        userEvent.click(to_input);
         expect(screen.getByText('Last 7 days')).toBeInTheDocument();
     });
     it('should handle setToDate function click', async () => {
         render(<CompositeCalendar {...mock_props} />, { wrapper });
         const to_input = screen.getByTestId('dt_calendar_input_to');
-        await userEvent.click(to_input);
+        userEvent.click(to_input);
         act(() => {
             (TwoMonthPicker as unknown as jest.Mock).mock.calls[0][0].onChange();
         });
@@ -57,7 +57,7 @@ describe('<CompositeCalendar />', () => {
     it('should handle setFromDate function click', async () => {
         render(<CompositeCalendar {...mock_props} />, { wrapper });
         const from_input = screen.getByTestId('dt_calendar_input_from');
-        await userEvent.click(from_input);
+        userEvent.click(from_input);
         act(() => {
             (TwoMonthPicker as unknown as jest.Mock).mock.calls[0][0].onChange();
         });
@@ -65,53 +65,53 @@ describe('<CompositeCalendar />', () => {
             expect(mock_props.onChange).toHaveBeenCalled();
         });
     });
-    it('should handle onclick for "All time" option', async () => {
+    it('should handle onclick for "All time" option', () => {
         render(<CompositeCalendar {...mock_props} />, { wrapper });
         const from_input = screen.getByTestId('dt_calendar_input_from');
-        await userEvent.click(from_input);
-        await userEvent.click(screen.getByText('All time'));
+        userEvent.click(from_input);
+        userEvent.click(screen.getByText('All time'));
         expect(mock_props.onChange).toHaveBeenCalled();
     });
-    it('should handle onclick for "Today" option', async () => {
+    it('should handle onclick for "Today" option', () => {
         render(<CompositeCalendar {...mock_props} />, { wrapper });
         const from_input = screen.getByTestId('dt_calendar_input_from');
-        await userEvent.click(from_input);
-        await userEvent.click(screen.getByText('Today'));
+        userEvent.click(from_input);
+        userEvent.click(screen.getByText('Today'));
         expect(mock_props.onChange).toHaveBeenCalled();
     });
-    it('should handle onclick for "Last 7 days" option', async () => {
+    it('should handle onclick for "Last 7 days" option', () => {
         render(<CompositeCalendar {...mock_props} />, { wrapper });
         const from_input = screen.getByTestId('dt_calendar_input_from');
-        await userEvent.click(from_input);
-        await userEvent.click(screen.getByText('Last 7 days'));
+        userEvent.click(from_input);
+        userEvent.click(screen.getByText('Last 7 days'));
         expect(mock_props.onChange).toHaveBeenCalled();
     });
-    it('should handle onclick for "Last 30 days" option', async () => {
+    it('should handle onclick for "Last 30 days" option', () => {
         render(<CompositeCalendar {...mock_props} />, { wrapper });
         const from_input = screen.getByTestId('dt_calendar_input_from');
-        await userEvent.click(from_input);
-        await userEvent.click(screen.getByText('Last 30 days'));
+        userEvent.click(from_input);
+        userEvent.click(screen.getByText('Last 30 days'));
         expect(mock_props.onChange).toHaveBeenCalled();
     });
-    it('should handle onclick for "Last quarter" option', async () => {
+    it('should handle onclick for "Last quarter" option', () => {
         render(<CompositeCalendar {...mock_props} />, { wrapper });
         const from_input = screen.getByTestId('dt_calendar_input_from');
-        await userEvent.click(from_input);
-        await userEvent.click(screen.getByText('Last quarter'));
+        userEvent.click(from_input);
+        userEvent.click(screen.getByText('Last quarter'));
         expect(mock_props.onChange).toHaveBeenCalled();
     });
-    it('should disable date before from date in "to input" section ', async () => {
+    it('should disable date before from date in "to input" section ', () => {
         render(<CompositeCalendar {...mock_props} />, { wrapper });
         const to_input = screen.getByTestId('dt_calendar_input_to');
-        await userEvent.click(to_input);
+        userEvent.click(to_input);
         expect(
             (TwoMonthPicker as unknown as jest.Mock).mock.calls[0][0].getIsPeriodDisabled(toMoment('2023-10-02'))
         ).toBeTruthy();
     });
-    it('should disable date after to date in "from input" section ', async () => {
+    it('should disable date after to date in "from input" section ', () => {
         render(<CompositeCalendar {...mock_props} />, { wrapper });
         const from_input = screen.getByTestId('dt_calendar_input_from');
-        await userEvent.click(from_input);
+        userEvent.click(from_input);
         expect(
             (TwoMonthPicker as unknown as jest.Mock).mock.calls[0][0].getIsPeriodDisabled(toMoment('2023-10-02'))
         ).toBeFalsy();

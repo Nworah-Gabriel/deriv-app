@@ -15,9 +15,9 @@ describe('CalendarRadioButton', () => {
         render(<CalendarRadioButton {...mock_props} />);
         expect(screen.getByText('All time')).toBeInTheDocument();
     });
-    it('should handle on click of radio button', async () => {
+    it('should handle on click of radio button', () => {
         render(<CalendarRadioButton {...mock_props} />);
-        await userEvent.click(screen.getByText('All time'));
+        userEvent.click(screen.getByText('All time'));
         expect(mock_props.onChange).toHaveBeenCalled();
     });
 });

@@ -22,7 +22,7 @@ const HeaderAccountActions = observer(({ onClickDeposit }: THeaderAccountActions
     const filtered_notifications = notifications_array.filter(item => !item.only_toast_message);
     return (
         <div id='dt_core_header_acc-info-container' className='acc-info__container'>
-            <AccountActions
+            {/* <AccountActions
                 acc_switcher_disabled_message={account_switcher_disabled_message}
                 account_type={account_type}
                 balance={balance}
@@ -40,7 +40,7 @@ const HeaderAccountActions = observer(({ onClickDeposit }: THeaderAccountActions
                 toggleAccountsDialog={toggleAccountsDialog}
                 toggleNotifications={toggleNotificationsModal}
                 openRealAccountSignup={openRealAccountSignup}
-            />
+            /> */}
         </div>
     );
 });

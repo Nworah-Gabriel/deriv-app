@@ -59,11 +59,11 @@ describe('<EmailLinkVerifiedModal />', () => {
             )
         ).toBeInTheDocument();
     });
-    it('should handle confirm button click', async () => {
+    it('should handle confirm button click', () => {
         render(<EmailLinkVerifiedModal />);
 
         const confirm_button = screen.getByRole('button', { name: 'Confirm' });
-        await userEvent.click(confirm_button);
+        userEvent.click(confirm_button);
         expect(mock_modal_manager.hideModal).toHaveBeenCalledWith({ should_hide_all_modals: true });
         expect(mock_store.order_store.confirmOrder).toHaveBeenCalledWith(true);
         expect(mock_store.order_store.setVerificationCode).toHaveBeenCalledWith('');

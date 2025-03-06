@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { Button, Icon } from '@deriv/components';
-import { observer, useStore } from '@deriv/stores';
+import { observer } from '@deriv/stores';
 import { localize } from '@deriv/translations';
 import ContractResultOverlay from 'Components/contract-result-overlay';
 import { contract_stages } from 'Constants/contract-stage';
@@ -17,7 +17,6 @@ type TTradeAnimation = {
 
 const TradeAnimation = observer(({ className, should_show_overlay }: TTradeAnimation) => {
     const { dashboard, run_panel, summary_card } = useDBotStore();
-    const { client } = useStore();
     const { active_tab } = dashboard;
     const { is_contract_completed, profit } = summary_card;
     const {
@@ -26,18 +25,9 @@ const TradeAnimation = observer(({ className, should_show_overlay }: TTradeAnima
         is_stop_button_disabled,
         onRunButtonClick,
         onStopBotClick,
-        performSelfExclusionCheck,
     } = run_panel;
-    const { account_status } = client;
-    const cashier_validation = account_status?.cashier_validation;
-    const [shouldDisable, setShouldDisable] = React.useState(false);
-    const is_unavailable_for_payment_agent = cashier_validation?.includes('WithdrawServiceUnavailableForPA');
 
-    // perform self-exclusion checks which will be stored under the self-exclusion-store
-    React.useEffect(() => {
-        performSelfExclusionCheck();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    const [shouldDisable, setShouldDisable] = React.useState(false);
 
     React.useEffect(() => {
         if (shouldDisable) {
@@ -48,8 +38,8 @@ const TradeAnimation = observer(({ className, should_show_overlay }: TTradeAnima
     }, [shouldDisable]);
 
     const status_classes = ['', '', ''];
-    const is_purchase_sent = contract_stage === (contract_stages.PURCHASE_SENT as unknown);
-    const is_purchase_received = contract_stage === (contract_stages.PURCHASE_RECEIVED as unknown);
+    const is_purchase_sent = contract_stage === contract_stages.PURCHASE_SENT;
+    const is_purchase_received = contract_stage === contract_stages.PURCHASE_RECEIVED;
 
     let progress_status = contract_stage - (is_purchase_sent || is_purchase_received ? 2 : 3);
 
@@ -69,22 +59,10 @@ const TradeAnimation = observer(({ className, should_show_overlay }: TTradeAnima
 
     const is_disabled = is_stop_button_disabled || shouldDisable;
 
-    const button_props = React.useMemo(() => {
-        if (is_stop_button_visible) {
-            return {
-                id: 'db-animation__stop-button',
-                class: 'animation__stop-button',
-                text: localize('Stop'),
-                icon: 'IcBotStop',
-            };
-        }
-        return {
-            id: 'db-animation__run-button',
-            class: 'animation__run-button',
-            text: localize('Run'),
-            icon: 'IcPlay',
-        };
-    }, [is_stop_button_visible]);
+    const button_props = is_stop_button_visible
+        ? { id: 'db-animation__stop-button', class: 'animation__stop-button', text: localize('Stop'), icon: 'IcBotStop' }
+        : { id: 'db-animation__run-button', class: 'animation__run-button', text: localize('Run'), icon: 'IcPlay' };
+
     const show_overlay = should_show_overlay && is_contract_completed;
 
     const TAB_NAMES = ['dashboard', 'bot_builder', 'charts', 'tutorials'] as const;
@@ -93,7 +71,7 @@ const TradeAnimation = observer(({ className, should_show_overlay }: TTradeAnima
     return (
         <div className={classNames('animation__wrapper', className)}>
             <Button
-                is_disabled={is_disabled && !is_unavailable_for_payment_agent}
+                is_disabled={is_disabled}
                 className={button_props.class}
                 id={button_props.id}
                 text={button_props.text}
@@ -108,7 +86,7 @@ const TradeAnimation = observer(({ className, should_show_overlay }: TTradeAnima
                     rudderStackSendRunBotEvent({ subpage_name: getTabName(active_tab) });
                 }}
                 has_effect
-                {...(is_stop_button_visible || !is_unavailable_for_payment_agent ? { primary: true } : { green: true })}
+                primary
             />
             <div
                 className={classNames('animation__container', className, {

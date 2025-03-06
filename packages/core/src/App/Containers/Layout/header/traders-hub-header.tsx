@@ -96,19 +96,29 @@ const TradersHubHeader = observer(() => {
             })}
         >
             <div className='traders-hub-header__menu-left'>
-                {!isDesktop && (
+                {/* {!isDesktop && (
                     <React.Fragment>
                         <ToggleMenuDrawer {...{ platform_config: filterPlatformsForClients(platform_config) }} />
                         {header_extension && is_logged_in && <div>{header_extension}</div>}
                     </React.Fragment>
-                )}
+                )} */}
                 <div
-                    className={classNames('traders-hub-header__logo-wrapper', {
-                        'traders-hub-header__logo-wrapper--cashier': cashier_routes,
-                    })}
-                >
-                    <DerivShortLogo />
-                </div>
+                                style={{
+                                    paddingLeft: '10px',
+                                    height: '40px',
+                                    width: '100px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    justifyContent: 'space-around',
+                                    alignContent: 'space-around',
+                                    alignItems: 'center',
+                                    alignSelf: 'center',
+                                }}
+                            >
+                                <a href='https://assetsradar.com'>
+                                    <img src='https://assetsradar.com/static/img/logo.png' alt='AssetRadar png' />
+                                </a>
+                            </div>
                 {isDesktop && (
                     <React.Fragment>
                         <div className='traders-hub-header__divider' />
@@ -125,22 +135,11 @@ const TradersHubHeader = observer(() => {
                             <div className='traders-hub-header__menu-right--items--notifications'>
                                 <ShowNotifications />
                             </div>
-                            {isTabletOs ? (
-                                accountSettings
-                            ) : (
-                                <Popover
-                                    classNameBubble='account-settings-toggle__tooltip'
-                                    alignment='bottom'
-                                    message={<Localize i18n_default_text='Manage account settings' />}
-                                    should_disable_pointer_events
-                                    zIndex='9999'
-                                >
-                                    {accountSettings}
-                                </Popover>
-                            )}
-                            {cashier_routes && (
+                            
+                            
+                            {/* {cashier_routes && (
                                 <div className='traders-hub-header__menu-right--items--account-toggle'>
-                                    <AccountInfo
+                                         <AccountInfo
                                         acc_switcher_disabled_message={account_switcher_disabled_message}
                                         account_type={account_type}
                                         balance={account_balance}
@@ -152,46 +151,36 @@ const TradersHubHeader = observer(() => {
                                         toggleDialog={toggleAccountsDialog}
                                     />
                                 </div>
-                            )}
+                            )} */}
                         </div>
                     </div>
-                    {is_real_acc_signup_on && <RealAccountSignup />}
+                    {/* {is_real_acc_signup_on && <RealAccountSignup />} */}
                 </React.Fragment>
             ) : (
                 <React.Fragment>
                     <div className='traders-hub-header__mobile-parent'>
                         <div className='traders-hub-header__menu-middle'>
-                            {cashier_routes ? (
+                            {/* {cashier_routes ? (
                                 <React.Fragment>
                                     <div className='traders-hub-header__menu-right--items--notifications__cashier'>
                                         <ShowNotifications />
                                     </div>
                                     <div className='traders-hub-header__menu-right--items--account-toggle'>
-                                        <AccountInfo
-                                            acc_switcher_disabled_message={account_switcher_disabled_message}
-                                            account_type={account_type}
-                                            balance={account_balance}
-                                            currency={currency}
-                                            is_dialog_on={is_accounts_switcher_on}
-                                            is_disabled={false}
-                                            is_eu={is_eu}
-                                            is_virtual={is_virtual}
-                                            toggleDialog={toggleAccountsDialog}
-                                        />
+                                        
                                     </div>
                                 </React.Fragment>
                             ) : (
                                 <DefaultMobileLinks />
-                            )}
+                            )} */}
                         </div>
                     </div>
-                    {is_real_acc_signup_on && <RealAccountSignup />}
+                    {/* {is_real_acc_signup_on && <RealAccountSignup />} */}
                 </React.Fragment>
             )}
-            {is_set_currency_modal_visible && <SetAccountCurrencyModal />}
+            {/* {is_set_currency_modal_visible && <SetAccountCurrencyModal />}
             {modal_data.active_modal === 'currency_selection' && (
                 <CurrencySelectionModal is_visible={modal_data.active_modal === 'currency_selection'} />
-            )}
+            )} */}
         </header>
     );
 });

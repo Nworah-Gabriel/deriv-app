@@ -85,9 +85,9 @@ describe('<NicknameForm/>', () => {
         expect(screen.getByTestId('dt_nickname_form_content')).toBeInTheDocument();
     });
 
-    it('should accept a valid nickname', async () => {
+    it('should accept a valid nickname', () => {
         render(<NicknameModal onConfirm={onConfirm} />, { wrapper });
-        await userEvent.type(screen.getByLabelText(/nickname/i), 'Advertiser');
+        userEvent.type(screen.getByLabelText(/nickname/i), 'Advertiser');
 
         expect(screen.getByRole('button', { name: 'Confirm' })).toBeEnabled();
     });
@@ -95,7 +95,7 @@ describe('<NicknameForm/>', () => {
     describe('should show an error if the user provides an invalid nickname', () => {
         it('should show an error if the user provides a nickname with only 1 character', async () => {
             render(<NicknameModal onConfirm={onConfirm} />, { wrapper });
-            await userEvent.type(screen.getByLabelText(/nickname/i), 'A');
+            userEvent.type(screen.getByLabelText(/nickname/i), 'A');
 
             await waitFor(() => {
                 expect(screen.getByText('Nickname is too short')).toBeInTheDocument();
@@ -105,7 +105,7 @@ describe('<NicknameForm/>', () => {
 
         it('should show an error if the user provides a nickname with more than 24 characters', async () => {
             render(<NicknameModal onConfirm={onConfirm} />, { wrapper });
-            await userEvent.type(screen.getByLabelText(/nickname/i), 'Advertiser123456789012345678901');
+            userEvent.type(screen.getByLabelText(/nickname/i), 'Advertiser123456789012345678901');
 
             await waitFor(() => {
                 expect(screen.getByText('Nickname is too long')).toBeInTheDocument();
@@ -115,7 +115,7 @@ describe('<NicknameForm/>', () => {
 
         it('should show an error if the user provides a nickname that contains special characters other than .- _ @', async () => {
             render(<NicknameModal onConfirm={onConfirm} />, { wrapper });
-            await userEvent.type(screen.getByLabelText(/nickname/i), 'Advertiser!');
+            userEvent.type(screen.getByLabelText(/nickname/i), 'Advertiser!');
 
             await waitFor(() => {
                 expect(
@@ -127,7 +127,7 @@ describe('<NicknameForm/>', () => {
 
         it('should show an error if the user provides a nickname that starts with special characters', async () => {
             render(<NicknameModal onConfirm={onConfirm} />, { wrapper });
-            await userEvent.type(screen.getByLabelText(/nickname/i), '.Advertiser');
+            userEvent.type(screen.getByLabelText(/nickname/i), '.Advertiser');
 
             await waitFor(() => {
                 expect(screen.getByText('Cannot start, end with, or repeat special characters.')).toBeInTheDocument();
@@ -137,7 +137,7 @@ describe('<NicknameForm/>', () => {
 
         it('should show an error if the user provides a nickname that ends with special characters', async () => {
             render(<NicknameModal onConfirm={onConfirm} />, { wrapper });
-            await userEvent.type(screen.getByLabelText(/nickname/i), 'Advertiser.');
+            userEvent.type(screen.getByLabelText(/nickname/i), 'Advertiser.');
 
             await waitFor(() => {
                 expect(screen.getByText('Cannot start, end with, or repeat special characters.')).toBeInTheDocument();
@@ -147,7 +147,7 @@ describe('<NicknameForm/>', () => {
 
         it('should show an error if the user provides a nickname that repeats special characters', async () => {
             render(<NicknameModal onConfirm={onConfirm} />, { wrapper });
-            await userEvent.type(screen.getByLabelText(/nickname/i), 'Ad__test');
+            userEvent.type(screen.getByLabelText(/nickname/i), 'Ad__test');
 
             await waitFor(() => {
                 expect(screen.getByText('Cannot start, end with, or repeat special characters.')).toBeInTheDocument();
@@ -157,7 +157,7 @@ describe('<NicknameForm/>', () => {
 
         it('should show an error if the user provides a nickname that repeats a character more than 4 times', async () => {
             render(<NicknameModal onConfirm={onConfirm} />, { wrapper });
-            await userEvent.type(screen.getByLabelText(/nickname/i), 'aaaaadvertiser');
+            userEvent.type(screen.getByLabelText(/nickname/i), 'aaaaadvertiser');
 
             await waitFor(() => {
                 expect(screen.getByText('Cannot repeat a character more than 4 times.')).toBeInTheDocument();
@@ -171,7 +171,7 @@ describe('<NicknameForm/>', () => {
 
         render(<NicknameModal onConfirm={onConfirm} />, { wrapper });
 
-        await userEvent.click(screen.getByRole('button', { name: 'Cancel' }));
+        userEvent.click(screen.getByRole('button', { name: 'Cancel' }));
 
         await waitFor(() => {
             expect(hideModal).toHaveBeenCalled();
@@ -181,8 +181,8 @@ describe('<NicknameForm/>', () => {
     it('should create the advertiser on click of Confirm button', async () => {
         render(<NicknameModal onConfirm={onConfirm} />, { wrapper });
 
-        await userEvent.type(screen.getByLabelText(/nickname/i), 'Advertiser');
-        await userEvent.click(screen.getByRole('button', { name: 'Confirm' }));
+        userEvent.type(screen.getByLabelText(/nickname/i), 'Advertiser');
+        userEvent.click(screen.getByRole('button', { name: 'Confirm' }));
 
         await waitFor(() => {
             expect(mock_store.general_store.createAdvertiser).toHaveBeenCalled();

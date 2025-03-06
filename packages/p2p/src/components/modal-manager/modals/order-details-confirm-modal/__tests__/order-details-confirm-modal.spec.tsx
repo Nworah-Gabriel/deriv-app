@@ -72,14 +72,14 @@ describe('<OrderDetailsConfirmModal/>', () => {
             screen.getByText('Sending forged documents will result in an immediate and permanent ban.')
         ).toBeInTheDocument();
     });
-    it('should handle GoBack Click', async () => {
+    it('should handle GoBack Click', () => {
         const { hideModal } = useModalManagerContext();
 
         render(<OrderDetailsConfirmModal />, { wrapper });
 
         const cancel_button = screen.getByRole('button', { name: 'Go Back' });
         expect(cancel_button).toBeInTheDocument();
-        await userEvent.click(cancel_button);
+        userEvent.click(cancel_button);
         expect(hideModal).toHaveBeenCalled();
     });
     it('should send a request when confirm button is clicked', async () => {
@@ -91,7 +91,7 @@ describe('<OrderDetailsConfirmModal/>', () => {
 
         const file = new File(['hello'], 'hello.png', { type: 'image/png' });
         const input: HTMLInputElement = screen.getByTestId('dt_file_upload_input');
-        await userEvent.upload(input, file);
+        userEvent.upload(input, file);
         await waitFor(() => {
             expect(input.files?.[0]).toBe(file);
             expect(input.files).toHaveLength(1);
@@ -100,7 +100,7 @@ describe('<OrderDetailsConfirmModal/>', () => {
         const confirm_button = screen.getByRole('button', { name: 'Confirm' });
         expect(confirm_button).toBeInTheDocument();
         expect(confirm_button).toBeEnabled();
-        await userEvent.click(confirm_button);
+        userEvent.click(confirm_button);
         await waitFor(() => {
             expect(sendbird_store.sendFile).toHaveBeenCalled();
             expect(confirmOrderRequest).toHaveBeenCalledWith(order_information.id, true);
@@ -108,7 +108,7 @@ describe('<OrderDetailsConfirmModal/>', () => {
         });
     });
 
-    it('should call hideModal when clicking the close icon', async () => {
+    it('should call hideModal when clicking the close icon', () => {
         const { hideModal } = useModalManagerContext();
 
         render(<OrderDetailsConfirmModal />, {
@@ -117,7 +117,7 @@ describe('<OrderDetailsConfirmModal/>', () => {
 
         const close_icon = screen.getByTestId('dt_modal_close_icon');
 
-        await userEvent.click(close_icon);
+        userEvent.click(close_icon);
 
         expect(hideModal).toHaveBeenCalled();
     });

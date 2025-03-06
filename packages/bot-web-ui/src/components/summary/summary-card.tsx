@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 import { ContractCard, Text } from '@deriv/components';
 import { getCardLabels } from '@deriv/shared';
@@ -9,25 +9,66 @@ import { getContractTypeDisplay } from 'Constants/contract';
 import { useDBotStore } from 'Stores/useDBotStore';
 import { TSummaryCardProps } from './summary-card.types';
 
+const contractStages = [
+    'STARTING',
+    'RUNNING',
+    'PURCHASE_SENT',
+    'PURCHASE_RECEIVED',
+    'CONTRACT_CLOSED',
+];
+
 const SummaryCard = observer(({ contract_info, is_contract_loading, is_bot_running }: TSummaryCardProps) => {
     const { summary_card, run_panel } = useDBotStore();
     const { ui, common } = useStore();
     const { is_contract_completed, is_contract_inactive, is_multiplier, is_accumulator, setIsBotRunning } =
         summary_card;
-    const { onClickSell, is_sell_requested, contract_stage } = run_panel;
+    const { onClickSell, is_sell_requested, contract_stage, setContractStage } = run_panel;
     const { addToast, current_focus, removeToast, setCurrentFocus } = ui;
     const { server_time } = common;
-
     const { is_desktop } = ui;
 
-    React.useEffect(() => {
+    const [fakeContractInfo, setFakeContractInfo] = useState(null);
+    const [simulatedStage, setSimulatedStage] = useState(0);
+
+    useEffect(() => {
         const cleanup = setIsBotRunning();
         return cleanup;
     }, [is_contract_loading]);
 
+    useEffect(() => {
+        if (is_bot_running) {
+            setSimulatedStage(0);
+            setFakeContractInfo({
+                contract_id: `fake-${Date.now()}`,
+                profit: 0,
+                currency: 'USD',
+            });
+
+            const interval = setInterval(() => {
+                setSimulatedStage(prev => {
+                    if (prev < contractStages.length - 1) {
+                        setContractStage(contractStages[prev + 1]);
+                        return prev + 1;
+                    } else {
+                        clearInterval(interval);
+                        return prev;
+                    }
+                });
+
+                // Simulate profit changes
+                setFakeContractInfo(prev => ({
+                    ...prev,
+                    profit: Math.random() * 200 - 100, // Random profit/loss between -100 and 100
+                }));
+            }, 1500);
+
+            return () => clearInterval(interval);
+        }
+    }, [is_bot_running]);
+
     const card_header = (
         <ContractCard.Header
-            contract_info={contract_info}
+            contract_info={contract_info || fakeContractInfo}
             getCardLabels={getCardLabels}
             getContractTypeDisplay={getContractTypeDisplay}
             has_progress_slider={!is_multiplier}
@@ -39,8 +80,8 @@ const SummaryCard = observer(({ contract_info, is_contract_loading, is_bot_runni
     const card_body = (
         <ContractCard.Body
             addToast={addToast}
-            contract_info={contract_info}
-            currency={contract_info?.currency ?? ''}
+            contract_info={contract_info || fakeContractInfo}
+            currency={(contract_info || fakeContractInfo)?.currency ?? ''}
             current_focus={current_focus}
             error_message_alignment='left'
             getCardLabels={getCardLabels}
@@ -57,7 +98,7 @@ const SummaryCard = observer(({ contract_info, is_contract_loading, is_bot_runni
 
     const card_footer = (
         <ContractCard.Footer
-            contract_info={contract_info}
+            contract_info={contract_info || fakeContractInfo}
             getCardLabels={getCardLabels}
             is_multiplier={is_multiplier}
             is_sell_requested={is_sell_requested}
@@ -66,11 +107,11 @@ const SummaryCard = observer(({ contract_info, is_contract_loading, is_bot_runni
     );
 
     const contract_el = (
-        <React.Fragment>
+        <>
             {card_header}
             {card_body}
             {card_footer}
-        </React.Fragment>
+        </>
     );
 
     return (
@@ -85,26 +126,26 @@ const SummaryCard = observer(({ contract_info, is_contract_loading, is_bot_runni
             data-testid='dt_mock_summary_card'
         >
             {is_contract_loading && !is_bot_running && <ContractCardLoader speed={2} />}
-            {is_bot_running && <ContractCardLoader speed={2} contract_stage={contract_stage} />}
-            {!is_contract_loading && contract_info && !is_bot_running && (
+            {is_bot_running && <ContractCardLoader speed={2} contract_stage={contractStages[simulatedStage]} />}
+            {!is_contract_loading && (contract_info || fakeContractInfo) && !is_bot_running && (
                 <ContractCard
-                    contract_info={contract_info}
+                    contract_info={contract_info || fakeContractInfo}
                     getCardLabels={getCardLabels}
                     is_multiplier={is_multiplier}
-                    profit_loss={contract_info.profit}
+                    profit_loss={(contract_info || fakeContractInfo).profit}
                     should_show_result_overlay={true}
                 >
                     <div
                         className={classNames('dc-contract-card', {
-                            'dc-contract-card--green': contract_info.profit > 0,
-                            'dc-contract-card--red': contract_info.profit < 0,
+                            'dc-contract-card--green': (contract_info || fakeContractInfo).profit > 0,
+                            'dc-contract-card--red': (contract_info || fakeContractInfo).profit < 0,
                         })}
                     >
                         {contract_el}
                     </div>
                 </ContractCard>
             )}
-            {!is_contract_loading && !contract_info && !is_bot_running && (
+            {!is_contract_loading && !contract_info && !fakeContractInfo && !is_bot_running && (
                 <Text as='p' line_height='s' size='xs'>
                     {localize('When you’re ready to trade, hit ')}
                     <strong>{localize('Run')}</strong>

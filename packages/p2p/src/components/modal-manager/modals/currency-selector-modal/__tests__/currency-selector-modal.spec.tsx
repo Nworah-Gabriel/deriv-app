@@ -65,10 +65,10 @@ describe('<CurrenySelectorModal/>', () => {
 
         expect(screen.getByText('Preferred currency')).toBeInTheDocument();
     });
-    it('should handle currency selection', async () => {
+    it('should handle currency selection', () => {
         render(<CurrenySelectorModal />, { wrapper });
 
-        await userEvent.click(screen.getByText('NZD'));
+        userEvent.click(screen.getByText('NZD'));
 
         expect(mock_store.buy_sell_store.onLocalCurrencySelect).toBeCalledWith('NZD');
         expect(mock_modal_manager.hideModal).toBeCalled();

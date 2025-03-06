@@ -28,7 +28,7 @@ describe('<FilterModalSearch />', () => {
         jest.spyOn(global, 'setTimeout');
         render(<FilterModalSearch />);
         const field = screen.getByRole('textbox');
-        await userEvent.type(field, 'test');
+        userEvent.type(field, 'test');
         act(() => {
             jest.advanceTimersByTime(1000);
         });
@@ -37,12 +37,12 @@ describe('<FilterModalSearch />', () => {
         });
         jest.clearAllTimers();
     });
-    it('should handle clearing search text', async () => {
+    it('should handle clearing search text', () => {
         render(<FilterModalSearch />);
         const field = screen.getByRole('textbox');
-        await userEvent.type(field, 'test');
+        userEvent.type(field, 'test');
         const cross_icon = screen.getByTestId('dt_filter_modal_search_icon');
-        await userEvent.click(cross_icon);
+        userEvent.click(cross_icon);
         expect(field).toHaveValue('');
         expect(mock_store.my_profile_store.setSearchTerm).toHaveBeenCalledWith('');
     });

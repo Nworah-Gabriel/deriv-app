@@ -10,6 +10,7 @@ const DEFAULT_LANGUAGE = 'EN';
 const ALL_LANGUAGES = Object.freeze({
     ACH: 'Translations',
     AR: 'العربية',
+    EU: 'English',
     EN: 'English',
     ES: 'Español',
     BN: 'বাংলা',
@@ -34,6 +35,7 @@ const ALL_LANGUAGES = Object.freeze({
 
 export const getAllowedLanguages = () => {
     const allowed_languages = {
+        EU: 'English',
         EN: 'English',
         AR: 'العربية',
         ES: 'Español',

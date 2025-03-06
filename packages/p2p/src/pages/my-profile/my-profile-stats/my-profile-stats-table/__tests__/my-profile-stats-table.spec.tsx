@@ -47,7 +47,7 @@ describe('<MyProfileStatsTable />', () => {
         expect(screen.getByText('Trade partners')).toBeInTheDocument();
     });
 
-    it('should render be able to switch between 30d and lifetime for Trade volume', async () => {
+    it('should render be able to switch between 30d and lifetime for Trade volume', () => {
         const setShowLifetimeTurnoverValueMock = jest.spyOn(React, 'useState');
         (setShowLifetimeTurnoverValueMock as jest.Mock).mockImplementation(initialValue => [initialValue, jest.fn()]);
 
@@ -58,18 +58,18 @@ describe('<MyProfileStatsTable />', () => {
         const tradeVolume30d = screen.getAllByText('30d')[4];
         const tradeVolumeLifetime = screen.getAllByText('lifetime')[0];
 
-        await userEvent.click(tradeVolume30d);
+        userEvent.click(tradeVolume30d);
 
         expect(setShowLifetimeTurnoverValueMock).toHaveBeenCalledWith(false);
 
-        await userEvent.click(tradeVolumeLifetime);
+        userEvent.click(tradeVolumeLifetime);
 
         expect(setShowLifetimeTurnoverValueMock).toHaveBeenCalledWith(false);
 
         setShowLifetimeTurnoverValueMock.mockRestore();
     });
 
-    it('should render be able to switch between 30d and lifetime for Total orders', async () => {
+    it('should render be able to switch between 30d and lifetime for Total orders', () => {
         const setShowLifetimeOrderValueMock = jest.spyOn(React, 'useState');
 
         (setShowLifetimeOrderValueMock as jest.Mock).mockImplementation(initialValue => [initialValue, jest.fn()]);
@@ -81,11 +81,11 @@ describe('<MyProfileStatsTable />', () => {
         const totalOrders30d = screen.getAllByText('30d')[5];
         const totalOrdersLifetime = screen.getAllByText('lifetime')[1];
 
-        await userEvent.click(totalOrders30d);
+        userEvent.click(totalOrders30d);
 
         expect(setShowLifetimeOrderValueMock).toHaveBeenCalledWith(false);
 
-        await userEvent.click(totalOrdersLifetime);
+        userEvent.click(totalOrdersLifetime);
 
         expect(setShowLifetimeOrderValueMock).toHaveBeenCalledWith(false);
 

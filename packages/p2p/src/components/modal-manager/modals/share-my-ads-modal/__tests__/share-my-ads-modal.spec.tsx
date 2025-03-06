@@ -62,16 +62,16 @@ describe('<ShareMyAdsModal />', () => {
         expect(screen.getByText('QR code')).toBeInTheDocument();
     });
 
-    it('should toggle the modal', async () => {
+    it('should toggle the modal', () => {
         render(<ShareMyAdsModal advert={mock_advert} />);
 
         const close_icon = screen.getByTestId('dt_modal_close_icon');
-        await userEvent.click(close_icon);
+        userEvent.click(close_icon);
 
         expect(mock_modal_manager.hideModal).toHaveBeenCalled();
     });
 
-    it('should call setShowPopup when clicking on Share link', async () => {
+    it('should call setShowPopup when clicking on Share link', () => {
         (useDevice as jest.Mock).mockReturnValueOnce({ isDesktop: false });
         const mockShare = jest.fn().mockResolvedValue(true);
         global.navigator.share = mockShare;
@@ -80,7 +80,7 @@ describe('<ShareMyAdsModal />', () => {
 
         const share_link_button = screen.getByRole('button', { name: 'Share link' });
 
-        await userEvent.click(share_link_button);
+        userEvent.click(share_link_button);
 
         expect(mockShare).toBeCalled();
     });
@@ -101,7 +101,7 @@ describe('<ShareMyAdsModal />', () => {
 
         const copy_button = screen.getByRole('button', { name: 'Copy link' });
 
-        await userEvent.click(copy_button);
+        userEvent.click(copy_button);
 
         await act(async () => {
             jest.runAllTimers();
@@ -117,7 +117,7 @@ describe('<ShareMyAdsModal />', () => {
         render(<ShareMyAdsModal advert={mock_advert} />);
 
         const download_button = screen.getByRole('button', { name: 'Download this QR code' });
-        await userEvent.click(download_button);
+        userEvent.click(download_button);
 
         expect(html2canvas).toBeCalled();
     });

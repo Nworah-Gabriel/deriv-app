@@ -50,13 +50,13 @@ describe('<BlockUserDropdown />', () => {
         expect(screen.getByText('All')).toBeInTheDocument();
     });
 
-    it('should call showModal when clicking on filter icon in mobile', async () => {
+    it('should call showModal when clicking on filter icon in mobile', () => {
         (useDevice as jest.Mock).mockReturnValueOnce({ isDesktop: false });
         render(<BlockUserDropdown />);
 
         const filterIcon = screen.getByTestId('dt_block_user_filter_icon');
 
-        await userEvent.click(filterIcon);
+        userEvent.click(filterIcon);
 
         expect(mock_modal_manager.showModal).toBeCalledTimes(1);
         expect(mock_modal_manager.showModal).toBeCalledWith({ key: 'BlockUserFilterModal' });

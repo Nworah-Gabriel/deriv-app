@@ -139,7 +139,7 @@ const DefaultHeader = observer(() => {
                     )}
                     <MenuLinks />
                 </div>
-                <div
+                {/* <div
                     className={classNames('header__menu-right', {
                         'header__menu-right--hidden': !isDesktop && is_logging_in,
                     })}
@@ -156,7 +156,7 @@ const DefaultHeader = observer(() => {
                         </div>
                     )}
                     <HeaderAccountActions onClickDeposit={onClickDeposit} />
-                </div>
+                </div> */}
             </div>
             {/*
                 Prevent the modals that are part of Real Account signup to get triggered when the corresponding store value changes by
@@ -164,7 +164,7 @@ const DefaultHeader = observer(() => {
             */}
             {!is_trading_assessment_for_existing_user_enabled && is_real_acc_signup_on && <RealAccountSignup />}
             <SetAccountCurrencyModal />
-            <NewVersionNotification onUpdate={addUpdateNotification} />
+            
         </header>
     );
 });

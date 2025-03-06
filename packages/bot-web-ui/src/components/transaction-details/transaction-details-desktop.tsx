@@ -18,7 +18,6 @@ const transaction_columns: TColumn[] = [
     { key: 'profit', label: localize('Profit/Loss') },
 ];
 
-/* TODO: Add back account & balance when we have support from transaction store */
 const result_columns: TColumn[] = [
     { key: 'account', label: localize('Account'), extra_class: '--grow-mid' },
     { key: 'no_of_runs', label: localize('No. of runs') },
@@ -30,6 +29,40 @@ const result_columns: TColumn[] = [
     { key: 'balance', label: localize('Balance') },
 ];
 
+const mockTransactions = [
+    {
+        timestamp: '2025-03-06 12:30:45',
+        reference: 'TXN12345',
+        market: 'Forex',
+        contract_type: 'Call',
+        entry_tick: '1.2345',
+        exit_tick: '1.2360',
+        buy_price: '100',
+        profit: '20',
+    },
+    {
+        timestamp: '2025-03-06 12:35:50',
+        reference: 'TXN12346',
+        market: 'Crypto',
+        contract_type: 'Put',
+        entry_tick: '45000',
+        exit_tick: '44950',
+        buy_price: '200',
+        profit: '-50',
+    },
+];
+
+const mockStatistics = {
+    account: 'VRTC12531562',
+    no_of_runs: 5,
+    total_stake: 500,
+    total_payout: 600,
+    win: 3,
+    loss: 2,
+    total_profit: 100,
+    balance: 1000,
+};
+
 const TransactionDetailsDesktop = observer(() => {
     const { client } = useStore();
     const { loginid, balance } = client;
@@ -37,12 +70,10 @@ const TransactionDetailsDesktop = observer(() => {
     const {
         toggleTransactionDetailsModal,
         is_transaction_details_modal_open,
-        transactions: transaction_list,
     }: Partial<TTransactionStore> = transactions;
-    const { statistics }: Partial<TRunPanelStore> = transactions;
 
     return (
-        <React.Fragment>
+        <>
             {is_transaction_details_modal_open && (
                 <DraggableResizeWrapper
                     boundary='.main'
@@ -56,15 +87,15 @@ const TransactionDetailsDesktop = observer(() => {
                 >
                     <DesktopTransactionTable
                         transaction_columns={transaction_columns}
-                        transactions={transaction_list}
+                        transactions={mockTransactions}
                         result_columns={result_columns}
-                        result={statistics}
-                        account={loginid ?? ''}
+                        result={mockStatistics}
+                        account={loginid ?? 'VRTC12531562'}
                         balance={balance ?? 0}
                     />
                 </DraggableResizeWrapper>
             )}
-        </React.Fragment>
+        </>
     );
 });
 

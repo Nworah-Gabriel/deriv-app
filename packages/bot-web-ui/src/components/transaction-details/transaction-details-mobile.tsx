@@ -9,14 +9,37 @@ import MobileTransactionCards from './mobile-transaction-card';
 import { TRunPanelStore } from './transaction-details.types';
 import './transaction-details-mobile.scss';
 
+const mock_transactions = [
+    {
+        type: transaction_elements.CONTRACT,
+        data: {
+            transaction_ids: { buy: 123456789, sell: 987654321 },
+            stake: 10,
+            payout: 20,
+            profit: 10,
+            status: 'won',
+        },
+    },
+    { type: 'divider' },
+];
+
+const mock_statistics = {
+    lost_contracts: 2,
+    number_of_runs: 10,
+    total_payout: 100,
+    total_profit: 30,
+    total_stake: 70,
+    won_contracts: 8,
+};
+
 const TransactionDetailsMobile = observer(() => {
     const { client } = useStore();
     const { transactions, run_panel } = useDBotStore();
     const {
         toggleTransactionDetailsModal,
         is_transaction_details_modal_open,
-        transactions: transaction_list,
-        statistics,
+        transactions: transaction_list = mock_transactions,
+        statistics = mock_statistics,
     } = transactions;
 
     const { toggleStatisticsInfoModal }: Partial<TRunPanelStore> = run_panel;

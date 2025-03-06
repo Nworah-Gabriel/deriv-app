@@ -66,11 +66,11 @@ describe('<BuySellModalTitle />', () => {
         expect(screen.getByText('Add payment method')).toBeInTheDocument();
     });
 
-    it('should call onReturn if user presses return icon', async () => {
+    it('should call onReturn if user presses return icon', () => {
         render(<BuySellModalTitle {...mock_props} />);
 
         const back_icon = screen.getByTestId('dt_buy_sell_modal_back_icon');
-        await userEvent.click(back_icon);
+        userEvent.click(back_icon);
 
         expect(mock_props.onReturn).toBeCalled();
     });

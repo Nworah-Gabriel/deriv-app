@@ -14,9 +14,9 @@ describe('ListItem', () => {
         render(<ListItem {...mock_props} />);
         expect(screen.getByText('All time')).toBeInTheDocument();
     });
-    it('should handle onclick for label', async () => {
+    it('should handle onclick for label', () => {
         render(<ListItem {...mock_props} />);
-        await userEvent.click(screen.getByText('All time'));
+        userEvent.click(screen.getByText('All time'));
         expect(mock_props.onClick).toHaveBeenCalled();
     });
 });

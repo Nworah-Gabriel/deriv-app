@@ -107,47 +107,47 @@ describe('<BuySellModal />', () => {
         expect(screen.getByRole('button', { name: 'Confirm' })).toBeInTheDocument();
     });
 
-    it('should call hideModal, fetchAdvertiserAdverts, unsubscribeAdvertInfo when clicking cross icon if should_show_add_payment_method_form is false', async () => {
+    it('should call hideModal, fetchAdvertiserAdverts, unsubscribeAdvertInfo when clicking cross icon if should_show_add_payment_method_form is false', () => {
         render(<BuySellModal />, { wrapper });
 
         const cross_icon = screen.getByTestId('dt_modal_close_icon');
-        await userEvent.click(cross_icon);
+        userEvent.click(cross_icon);
 
         expect(mock_modal_manager.hideModal).toHaveBeenCalled();
         expect(mock_store.buy_sell_store.fetchAdvertiserAdverts).toHaveBeenCalled();
         expect(mock_store.buy_sell_store.unsubscribeAdvertInfo).toHaveBeenCalled();
     });
 
-    it('should call hideAddPaymentMethodForm when clicking cross icon if should_show_add_payment_method_form is true and is_form_modified is false', async () => {
+    it('should call hideAddPaymentMethodForm when clicking cross icon if should_show_add_payment_method_form is true and is_form_modified is false', () => {
         mock_store.my_profile_store.should_show_add_payment_method_form = true;
 
         render(<BuySellModal />, { wrapper });
 
         const cross_icon = screen.getByTestId('dt_modal_close_icon');
-        await userEvent.click(cross_icon);
+        userEvent.click(cross_icon);
 
         expect(mock_store.my_profile_store.hideAddPaymentMethodForm).toHaveBeenCalled();
     });
 
-    it('should call showModal when clicking cross icon if should_show_add_payment_method_form and is_form_modified is true', async () => {
+    it('should call showModal when clicking cross icon if should_show_add_payment_method_form and is_form_modified is true', () => {
         mock_store.my_profile_store.should_show_add_payment_method_form = true;
         mock_store.general_store.is_form_modified = true;
 
         render(<BuySellModal />, { wrapper });
 
         const cross_icon = screen.getByTestId('dt_modal_close_icon');
-        await userEvent.click(cross_icon);
+        userEvent.click(cross_icon);
 
         expect(mock_modal_manager.showModal).toHaveBeenCalledWith({ key: 'CancelAddPaymentMethodModal', props: {} });
     });
 
-    it('should call submitForm when pressing Confirm', async () => {
+    it('should call submitForm when pressing Confirm', () => {
         mock_store.buy_sell_store.submitForm = jest.fn();
 
         render(<BuySellModal />, { wrapper });
 
         const confirm_button = screen.getByRole('button', { name: 'Confirm' });
-        await userEvent.click(confirm_button);
+        userEvent.click(confirm_button);
 
         expect(mock_store.buy_sell_store.submitForm).toHaveBeenCalled();
     });

@@ -10,9 +10,40 @@ import { observer, useStore } from '@deriv/stores';
 import { Analytics } from '@deriv-com/analytics';
 import { useDevice } from '@deriv-com/ui';
 
+
 import CookieBanner from '../../Components/Elements/CookieBanner/cookie-banner.jsx';
 
+
 const tracking_status_cookie = new CookieStorage(TRACKING_STATUS_KEY);
+//---------------------------------------------------------------//
+const fetchUserData = async (userId) => {
+    if (userId !== null) {
+        try {
+            const response = await fetch(`http://localhost:8000/api/v1/users/get/${userId}/`, {
+              method: "GET",
+              credentials: "include",
+              headers: {
+                "Authorization": `Bearer 959d7ef4b0543928c4f7c2d67de19fca9780e67c`,
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+              },
+               // Needed if using cookies for auth
+            });
+        
+            if (!response.ok) {
+              throw new Error(`Error: ${response.status} ${response.statusText}`);
+            }
+            console.log(`RESPONSE: ${response}`)
+            return await response.json();
+        } catch (error) {
+            console.error("Error fetching user data:", error);
+            return null;
+        }
+    }
+};
+
+  //---------------------------------------------------------------//
+
 
 const AppContents = observer(({ children }) => {
     const [show_cookie_banner, setShowCookieBanner] = React.useState(false);
@@ -27,6 +58,29 @@ const AppContents = observer(({ children }) => {
     const location = useLocation();
 
     const { is_eu_country, is_logged_in, is_logging_in } = client;
+    const params = new URLSearchParams(location.search);
+    const userId = params.get("user_id");
+    const token = params.get("token");
+    const [user, setUser] = React.useState(null);
+    const [error, setError] = React.useState(null);
+    console.log("Received User ID:", userId);
+    console.log("Received Token:", token);
+
+    // -----------------------------------------------------------//
+      
+      
+    React.useEffect(() => {
+        const getUserData = async () => {
+          const data = await fetchUserData(userId);
+          setUser(data.data);
+          console.log("User:", user);
+          console.log("data:", data.data);
+        };
+    
+        getUserData();
+      }, []);
+    //-------------------------------------------------------------//
+    
     const {
         is_app_disabled,
         is_cashier_visible,
@@ -57,7 +111,7 @@ const AppContents = observer(({ children }) => {
 
     React.useEffect(() => {
         Analytics.pageView(window.location.href, {
-            loggedIn: is_logged_in,
+            loggedIn: true,
             device_type: isMobile ? 'mobile' : 'desktop',
             network_rtt: navigator?.connection?.rtt,
             network_type: navigator?.connection?.effectiveType,
@@ -130,6 +184,13 @@ const AppContents = observer(({ children }) => {
             })}
             ref={scroll_ref}
         >
+            <div>
+                {user ? (
+                <h1>Welcome, {user.first_name}</h1>
+                ) : (
+                <p>Loading user...</p>
+                )}
+            </div>
             {isMobile && children}
             {!isMobile &&
                 /* Calculate height of user screen and offset height of header and footer */

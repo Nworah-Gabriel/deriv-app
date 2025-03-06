@@ -413,14 +413,11 @@ export default class OrderStore {
             clearTimeout(this.order_rerender_timeout);
 
             this.setOrderRendererTimeout(
-                setTimeout(
-                    () => {
-                        if (typeof this.forceRerenderFn === 'function') {
-                            this.forceRerenderFn(order_information.id);
-                        }
-                    },
-                    (remaining_seconds + 1) * 1000
-                )
+                setTimeout(() => {
+                    if (typeof this.forceRerenderFn === 'function') {
+                        this.forceRerenderFn(order_information.id);
+                    }
+                }, (remaining_seconds + 1) * 1000)
             );
         }
     }

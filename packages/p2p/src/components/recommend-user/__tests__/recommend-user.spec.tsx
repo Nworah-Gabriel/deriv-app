@@ -39,20 +39,20 @@ describe('<RecommendUser />', () => {
         expect(noText).toHaveStyle('color: var(--text-less-prominent)');
     });
 
-    it('should disable the Yes Button after being clicked', async () => {
+    it('should disable the Yes Button after being clicked', () => {
         render(<RecommendUser {...recommend_user_props} is_user_recommended_previously={1} />);
 
         const yesButton = screen.getByRole('button', { name: 'Yes' });
         const yesText = within(yesButton).getByText('Yes');
 
-        await userEvent.click(yesButton);
+        userEvent.click(yesButton);
 
         expect(yesText).toHaveStyle('color: var(--text-less-prominent)');
         expect(recommend_user_props.onClickClearRecommendation).toHaveBeenCalledTimes(1);
         expect(recommend_user_props.onClickRecommended).toHaveBeenCalledTimes(1);
     });
 
-    it('should disable the No Button after being clicked', async () => {
+    it('should disable the No Button after being clicked', () => {
         render(<RecommendUser {...recommend_user_props} is_user_recommended_previously={0} />);
 
         const noButton = screen.getByRole('button', { name: 'No' });
@@ -60,20 +60,20 @@ describe('<RecommendUser />', () => {
 
         expect(noText).toHaveStyle('color: var(--text-prominent)');
 
-        await userEvent.click(noButton);
+        userEvent.click(noButton);
 
         expect(noText).toHaveStyle('color: var(--text-less-prominent)');
         expect(recommend_user_props.onClickClearRecommendation).toHaveBeenCalledTimes(1);
         expect(recommend_user_props.onClickNotRecommended).toHaveBeenCalledTimes(1);
     });
 
-    it('should disable the other button if one of the buttons are selected', async () => {
+    it('should disable the other button if one of the buttons are selected', () => {
         render(<RecommendUser {...recommend_user_props} is_user_recommended_previously={0} />);
 
         const yesButton = screen.getByRole('button', { name: 'Yes' });
         const noButton = screen.getByRole('button', { name: 'No' });
 
-        await userEvent.click(yesButton);
+        userEvent.click(yesButton);
 
         const yesText = within(yesButton).getByText('Yes');
         const noText = within(noButton).getByText('No');
@@ -82,7 +82,7 @@ describe('<RecommendUser />', () => {
         expect(noText).toHaveStyle('color: var(--text-less-prominent)');
         expect(recommend_user_props.onClickRecommended).toHaveBeenCalledTimes(1);
 
-        await userEvent.click(noButton);
+        userEvent.click(noButton);
 
         expect(noText).toHaveStyle('color: var(--text-prominent)');
         expect(yesText).toHaveStyle('color: var(--text-less-prominent)');

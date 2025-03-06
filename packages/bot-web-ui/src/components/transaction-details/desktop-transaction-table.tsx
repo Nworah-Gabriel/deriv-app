@@ -61,6 +61,33 @@ export default function DesktopTransactionTable({
     account,
     balance,
 }: TDesktopTransactionTable) {
+    const mockTransactions = transactions || [
+        {
+            type: transaction_elements.CONTRACT,
+            data: {
+                date_start: '2025-03-06 12:00:00 GMT',
+                transaction_ids: { buy: '123456' },
+                display_name: 'Mock Asset',
+                underlying: 'MockIcon',
+                contract_type: 'CALL',
+                entry_tick: 100,
+                exit_tick: 110,
+                buy_price: 10,
+                profit: 5,
+                is_completed: true,
+            },
+        },
+    ];
+
+    const mockResult = result || {
+        number_of_runs: 10,
+        total_stake: 100,
+        total_payout: 120,
+        won_contracts: 7,
+        lost_contracts: 3,
+        total_profit: 20,
+    };
+
     return (
         <div data-testid='transaction_details_tables' className='transaction-details-tables'>
             <div
@@ -70,69 +97,23 @@ export default function DesktopTransactionTable({
                 )}
             >
                 <TableHeader columns={transaction_columns} />
-                {transactions?.map(transaction => {
+                {mockTransactions.map(transaction => {
                     const { data, type } = transaction;
                     if (type === transaction_elements.CONTRACT) {
                         return (
                             <div className={`${PARENT_CLASS}__table-row`} key={data?.transaction_ids?.buy}>
-                                <TableCell
-                                    label={
-                                        data?.date_start &&
-                                        convertDateFormat(
-                                            data?.date_start,
-                                            'YYYY-M-D HH:mm:ss [GMT]',
-                                            'YYYY-MM-DD HH:mm:ss [GMT]'
-                                        )
-                                    }
-                                    extra_classes={[`${PARENT_CLASS}__table-cell--grow-big`]}
-                                />
-                                <TableCell
-                                    label={data?.transaction_ids?.buy}
-                                    extra_classes={[`${PARENT_CLASS}__table-cell--grow-mid`]}
-                                />
-                                <TableCell
-                                    label={
-                                        <IconWrapper
-                                            message={data?.display_name}
-                                            icon={<Icon icon={`IcUnderlying${data?.underlying}`} size={24} />}
-                                        />
-                                    }
-                                />
-                                <TableCell
-                                    label={
-                                        <IconWrapper
-                                            message={getContractTypeName(data)}
-                                            icon={<IconTradeTypes type={data?.contract_type} size={24} />}
-                                        />
-                                    }
-                                />
+                                <TableCell label={convertDateFormat(data?.date_start, 'YYYY-MM-DD HH:mm:ss [GMT]')} />
+                                <TableCell label={data?.transaction_ids?.buy} />
+                                <TableCell label={<IconWrapper message={data?.display_name} icon={<Icon icon={`IcUnderlying${data?.underlying}`} size={24} />} />} />
+                                <TableCell label={<IconWrapper message={getContractTypeName(data)} icon={<IconTradeTypes type={data?.contract_type} size={24} />} />} />
                                 <TableCell label={data?.entry_tick} loader={!data?.entry_tick} />
                                 <TableCell label={data?.exit_tick} loader={!data.exit_tick} />
                                 <TableCell label={Math.abs(data?.buy_price ?? 0).toFixed(2)} />
-                                <TableCell
-                                    label={
-                                        <div
-                                            className={classNames({
-                                                [`${PARENT_CLASS}__profit--win`]: data?.profit > 0,
-                                                [`${PARENT_CLASS}__profit--loss`]: data?.profit < 0,
-                                            })}
-                                        >
-                                            {Math.abs(data?.profit ?? 0).toFixed(2)}
-                                        </div>
-                                    }
-                                    loader={!data.is_completed}
-                                />
+                                <TableCell label={<div className={classNames({ [`${PARENT_CLASS}__profit--win`]: data?.profit > 0, [`${PARENT_CLASS}__profit--loss`]: data?.profit < 0 })}>{Math.abs(data?.profit ?? 0).toFixed(2)}</div>} loader={!data.is_completed} />
                             </div>
                         );
                     }
-
-                    return (
-                        <div className={`${PARENT_CLASS}__table-row`} key={`transaction-row-divider-${data}`}>
-                            <div className={`${PARENT_CLASS}__divider`}>
-                                <div className='transactions__divider-line' />
-                            </div>
-                        </div>
-                    );
+                    return <div className={`${PARENT_CLASS}__table-row`} key={`transaction-row-divider-${data}`}><div className={`${PARENT_CLASS}__divider`}><div className='transactions__divider-line' /></div></div>;
                 })}
             </div>
             <div
@@ -143,27 +124,13 @@ export default function DesktopTransactionTable({
             >
                 <TableHeader columns={result_columns} />
                 <div className={`${PARENT_CLASS}__table-row`}>
-                    <TableCell label={account} extra_classes={[`${PARENT_CLASS}__table-cell--grow-mid`]} />
-                    <TableCell label={result?.number_of_runs} />
-                    <TableCell label={Math.abs(result?.total_stake ?? 0).toFixed(2)} />
-                    <TableCell label={Math.abs(result?.total_payout ?? 0).toFixed(2)} />
-                    <TableCell label={result?.won_contracts} />
-                    <TableCell label={result?.lost_contracts} extra_classes={[`${PARENT_CLASS}__loss`]} />
-                    <TableCell
-                        label={
-                            <div
-                                className={classNames(
-                                    result?.total_profit && {
-                                        [`${PARENT_CLASS}__profit--win`]: result?.total_profit > 0,
-                                        [`${PARENT_CLASS}__profit--loss`]: result?.total_profit < 0,
-                                    }
-                                )}
-                                data-testid='transaction_details_table_profit'
-                            >
-                                {Math.abs(result?.total_profit ?? 0).toFixed(2)}
-                            </div>
-                        }
-                    />
+                    <TableCell label={account} />
+                    <TableCell label={mockResult.number_of_runs} />
+                    <TableCell label={Math.abs(mockResult.total_stake ?? 0).toFixed(2)} />
+                    <TableCell label={Math.abs(mockResult.total_payout ?? 0).toFixed(2)} />
+                    <TableCell label={mockResult.won_contracts} />
+                    <TableCell label={mockResult.lost_contracts} extra_classes={[`${PARENT_CLASS}__loss`]} />
+                    <TableCell label={<div className={classNames(mockResult?.total_profit && { [`${PARENT_CLASS}__profit--win`]: mockResult?.total_profit > 0, [`${PARENT_CLASS}__profit--loss`]: mockResult?.total_profit < 0 })}>{Math.abs(mockResult?.total_profit ?? 0).toFixed(2)}</div>} />
                     <TableCell label={balance} />
                 </div>
             </div>

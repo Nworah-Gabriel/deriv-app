@@ -32,31 +32,31 @@ describe('<FilterModalFooter />', () => {
         expect(screen.getByRole('button', { name: 'Reset' })).toBeInTheDocument();
         expect(screen.getByRole('button', { name: 'Apply' })).toBeInTheDocument();
     });
-    it('should handle reset button click', async () => {
+    it('should handle reset button click', () => {
         render(<FilterModalFooter {...mock_props} />);
-        await userEvent.click(screen.getByRole('button', { name: 'Reset' }));
+        userEvent.click(screen.getByRole('button', { name: 'Reset' }));
         expect(mock_props.onClickReset).toHaveBeenCalledTimes(1);
     });
-    it('should handle apply button click', async () => {
+    it('should handle apply button click', () => {
         const new_props = { ...mock_props, has_made_changes: true };
 
         render(<FilterModalFooter {...new_props} />);
-        await userEvent.click(screen.getByRole('button', { name: 'Apply' }));
+        userEvent.click(screen.getByRole('button', { name: 'Apply' }));
         expect(mock_props.onClickApply).toHaveBeenCalledTimes(1);
     });
-    it('should handle clear button click', async () => {
+    it('should handle clear button click', () => {
         mock_store_values.buy_sell_store.show_filter_payment_methods = true;
 
         render(<FilterModalFooter {...mock_props} />);
-        await userEvent.click(screen.getByRole('button', { name: 'Clear' }));
+        userEvent.click(screen.getByRole('button', { name: 'Clear' }));
         expect(mock_props.onClickClearPaymentMethods).toHaveBeenCalledTimes(1);
     });
-    it('should handle confirm button click', async () => {
+    it('should handle confirm button click', () => {
         mock_store_values.buy_sell_store.show_filter_payment_methods = true;
         const new_props = { ...mock_props, has_selected_payment_methods: true };
 
         render(<FilterModalFooter {...new_props} />);
-        await userEvent.click(screen.getByRole('button', { name: 'Confirm' }));
+        userEvent.click(screen.getByRole('button', { name: 'Confirm' }));
         expect(mock_props.onClickConfirmPaymentMethods).toHaveBeenCalledTimes(1);
     });
 });

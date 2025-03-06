@@ -88,14 +88,14 @@ describe('<DailyLimitModal />', () => {
         expect(screen.getByText('Success!')).toBeInTheDocument();
     });
 
-    it('should call setIsDailyLimitUpgrading and upgradeDailyLimit functions when clicking on Yes button', async () => {
+    it('should call setIsDailyLimitUpgrading and upgradeDailyLimit functions when clicking on Yes button', () => {
         render(<DailyLimitModal />, {
             wrapper: ({ children }) => <StoreProvider store={mockStore({})}>{children}</StoreProvider>,
         });
 
         const yesButton = screen.getByRole('button', { name: 'Yes, continue' });
 
-        await userEvent.click(yesButton);
+        userEvent.click(yesButton);
 
         expect(mock_store.my_profile_store.setIsDailyLimitUpgrading).toHaveBeenCalledTimes(1);
         expect(mock_store.my_profile_store.setIsDailyLimitUpgrading).toHaveBeenCalledWith(true);

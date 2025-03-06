@@ -96,12 +96,12 @@ describe('<BlockUser />', () => {
         expect(screen.getByText('BlockUserList')).toBeInTheDocument();
     });
 
-    it('should call setActiveTab when clicking on pageReturn', async () => {
+    it('should call setActiveTab when clicking on pageReturn', () => {
         (useDevice as jest.Mock).mockReturnValueOnce({ isDesktop: false });
         render(<BlockUser />);
 
         const pageReturnIcon = screen.getByTestId('dt_mobile_full_page_return_icon');
-        await userEvent.click(pageReturnIcon);
+        userEvent.click(pageReturnIcon);
 
         expect(mock_store.my_profile_store.setActiveTab).toBeCalledWith(my_profile_tabs.MY_STATS);
     });

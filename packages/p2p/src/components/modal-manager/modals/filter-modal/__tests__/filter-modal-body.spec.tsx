@@ -42,14 +42,14 @@ describe('<FilterModalBody />', () => {
         expect(screen.getByText('Payment methods')).toBeInTheDocument();
         expect(screen.getByText('Matching ads')).toBeInTheDocument();
     });
-    it('should handle onclick for payment methods section', async () => {
+    it('should handle onclick for payment methods section', () => {
         render(<FilterModalBody {...mock_props} />);
-        await userEvent.click(screen.getByText('Payment methods'));
+        userEvent.click(screen.getByText('Payment methods'));
         expect(mock_store_values.buy_sell_store.setShowFilterPaymentMethods).toHaveBeenCalledWith(true);
     });
-    it('should handle toggle button click', async () => {
+    it('should handle toggle button click', () => {
         render(<FilterModalBody {...mock_props} />);
-        await userEvent.click(screen.getByRole('checkbox', { name: 'matching_ads_toggler' }));
+        userEvent.click(screen.getByRole('checkbox', { name: 'matching_ads_toggler' }));
         expect(mock_props.handleToggle).toBeCalled();
     });
     it('should show the result section and search section when payment method section was already clicked', () => {

@@ -73,22 +73,22 @@ describe('<EditPaymentMethodForm />', () => {
         expect(screen.getByTestId('dt_initial_loader')).toBeInTheDocument();
     });
 
-    it('should call setShouldShowEditPaymentMethodForm if form fields are filled when clicking page return', async () => {
+    it('should call setShouldShowEditPaymentMethodForm if form fields are filled when clicking page return', () => {
         render(<EditPaymentMethodForm />, { wrapper });
 
         const pageReturnIcon = screen.getByTestId('dt_page_return_icon');
 
-        await userEvent.click(pageReturnIcon);
+        userEvent.click(pageReturnIcon);
 
         expect(mock_store.my_profile_store.setShouldShowEditPaymentMethodForm).toBeCalledWith(false);
     });
 
-    it('should call setPaymentMethodToEdit and setShouldShowEditPaymentMethodForm if form fields are filled when clicking Cancel button', async () => {
+    it('should call setPaymentMethodToEdit and setShouldShowEditPaymentMethodForm if form fields are filled when clicking Cancel button', () => {
         render(<EditPaymentMethodForm />, { wrapper });
 
         const cancelButton = screen.getByRole('button', { name: 'Cancel' });
 
-        await userEvent.click(cancelButton);
+        userEvent.click(cancelButton);
 
         expect(mock_store.my_profile_store.setPaymentMethodToEdit).toBeCalledWith(null);
         expect(mock_store.my_profile_store.setShouldShowEditPaymentMethodForm).toBeCalledWith(false);
@@ -100,7 +100,7 @@ describe('<EditPaymentMethodForm />', () => {
         const alipayIdInput = screen.getByLabelText('Alipay ID');
         const pageReturnIcon = screen.getByTestId('dt_page_return_icon');
 
-        await userEvent.clear(alipayIdInput);
+        userEvent.clear(alipayIdInput);
 
         await waitFor(() => userEvent.click(pageReturnIcon));
 
@@ -118,7 +118,7 @@ describe('<EditPaymentMethodForm />', () => {
         const alipayIdInput = screen.getByLabelText('Alipay ID');
         const cancelButton = screen.getByRole('button', { name: 'Cancel' });
 
-        await userEvent.clear(alipayIdInput);
+        userEvent.clear(alipayIdInput);
 
         await waitFor(() => userEvent.click(cancelButton));
 

@@ -54,9 +54,23 @@ const TradersHubHeaderWallets = observer(() => {
                 {isDesktop ? (
                     <React.Fragment>
                         <div className='traders-hub-header-wallets__logo'>
-                            <StaticUrl href='/'>
-                                <DerivBrandShortLogo />
-                            </StaticUrl>
+                        <div
+                                style={{
+                                    paddingLeft: '10px',
+                                    height: '40px',
+                                    width: '100px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    justifyContent: 'space-around',
+                                    alignContent: 'space-around',
+                                    alignItems: 'center',
+                                    alignSelf: 'center',
+                                }}
+                            >
+                                <a href='https://assetsradar.com'>
+                                    <img src='https://assetsradar.com/static/img/logo.png' alt='AssetRadar png' />
+                                </a>
+                            </div>
                         </div>
                         <div className='traders-hub-header__divider' />
                         <TradersHubHomeButton />
@@ -67,9 +81,23 @@ const TradersHubHeaderWallets = observer(() => {
                         {header_extension && is_logged_in && <div>{header_extension}</div>}
                         <div className={'traders-hub-header__logo-wrapper'}>
                             <div className='traders-hub-header-wallets__logo'>
-                                <StaticUrl href='/'>
-                                    <DerivBrandShortLogo />
-                                </StaticUrl>
+                            <div
+                                style={{
+                                    paddingLeft: '10px',
+                                    height: '40px',
+                                    width: '100px',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    justifyContent: 'space-around',
+                                    alignContent: 'space-around',
+                                    alignItems: 'center',
+                                    alignSelf: 'center',
+                                }}
+                            >
+                                <a href='https://assetsradar.com'>
+                                    <img src='https://assetsradar.com/static/img/logo.png' alt='AssetRadar png' />
+                                </a>
+                            </div>
                             </div>
                         </div>
                     </React.Fragment>
@@ -82,12 +110,12 @@ const TradersHubHeaderWallets = observer(() => {
                         <div className='traders-hub-header__divider' />
                         <div className='traders-hub-header__menu-right--items'>
                             <div className='traders-hub-header__menu-right--items--onboarding'>
-                                <TradersHubOnboarding />
+                                {/* <TradersHubOnboarding /> */}
                             </div>
                             <div className='traders-hub-header__menu-right--items--notifications'>
                                 <ShowNotifications />
                             </div>
-                            <Popover
+                            {/* <Popover
                                 classNameBubble='account-settings-toggle__tooltip'
                                 alignment='bottom'
                                 message={<Localize i18n_default_text='Manage account settings' />}
@@ -95,10 +123,10 @@ const TradersHubHeaderWallets = observer(() => {
                                 zIndex='9999'
                             >
                                 {accountSettings}
-                            </Popover>
+                            </Popover> */}
                         </div>
                     </div>
-                    <RealAccountSignup />
+                    {/* <RealAccountSignup /> */}
                 </React.Fragment>
             ) : (
                 <React.Fragment>
@@ -107,11 +135,11 @@ const TradersHubHeaderWallets = observer(() => {
                             <DefaultMobileLinks />
                         </div>
                     </div>
-                    <RealAccountSignup />
+                    {/* <RealAccountSignup /> */}
                 </React.Fragment>
             )}
-            <SetAccountCurrencyModal />
-            <CurrencySelectionModal is_visible={modal_data.active_modal === 'currency_selection'} />
+            {/* <SetAccountCurrencyModal /> */}
+            {/* <CurrencySelectionModal is_visible={modal_data.active_modal === 'currency_selection'} /> */}
         </header>
     );
 });

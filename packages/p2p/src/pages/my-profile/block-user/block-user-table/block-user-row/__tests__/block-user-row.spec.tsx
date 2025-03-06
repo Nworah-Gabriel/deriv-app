@@ -41,7 +41,7 @@ describe('<BlockUserRow/>', () => {
         expect(screen.getByRole('button', { name: 'Block' })).toBeInTheDocument();
     });
 
-    it('should allow user to click on advertiser name if the user is not barred', async () => {
+    it('should allow user to click on advertiser name if the user is not barred', () => {
         const { id, name } = block_user_row_props.row;
 
         render(
@@ -52,12 +52,12 @@ describe('<BlockUserRow/>', () => {
 
         const advertiserName = screen.getByText('test');
 
-        await userEvent.click(advertiserName);
+        userEvent.click(advertiserName);
 
         expect(mock_store.buy_sell_store.setSelectedAdState).toBeCalledWith({ advertiser_details: { id, name } });
     });
 
-    it('should render the Block button if advertiser is not blocked and call onClickUnblock when clicked', async () => {
+    it('should render the Block button if advertiser is not blocked and call onClickUnblock when clicked', () => {
         render(<BlockUserRow {...block_user_row_props} />);
 
         const blockButton = screen.getByRole('button', { name: 'Block' });
@@ -65,12 +65,12 @@ describe('<BlockUserRow/>', () => {
         expect(blockButton).toBeInTheDocument();
         expect(screen.queryByRole('button', { name: 'Unblock' })).not.toBeInTheDocument();
 
-        await userEvent.click(blockButton);
+        userEvent.click(blockButton);
 
         expect(mock_store.my_profile_store.onClickUnblock).toBeCalledWith(block_user_row_props.row);
     });
 
-    it('should render the Unblock button if advertiser is blocked and call onClickUnblock when clicked', async () => {
+    it('should render the Unblock button if advertiser is blocked and call onClickUnblock when clicked', () => {
         block_user_row_props.row.is_blocked = 1;
 
         render(<BlockUserRow {...block_user_row_props} />);
@@ -80,7 +80,7 @@ describe('<BlockUserRow/>', () => {
         expect(unblockButton).toBeInTheDocument();
         expect(screen.queryByRole('button', { name: 'Block' })).not.toBeInTheDocument();
 
-        await userEvent.click(unblockButton);
+        userEvent.click(unblockButton);
 
         expect(mock_store.my_profile_store.onClickUnblock).toBeCalledWith(block_user_row_props.row);
     });

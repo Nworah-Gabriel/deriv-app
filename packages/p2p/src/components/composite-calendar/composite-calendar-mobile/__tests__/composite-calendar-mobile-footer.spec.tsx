@@ -14,14 +14,14 @@ describe('CompositeCalendarMobileFooter', () => {
         expect(screen.getByText('Cancel')).toBeInTheDocument();
         expect(screen.getByText('OK')).toBeInTheDocument();
     });
-    it('should handle Cancel click', async () => {
+    it('should handle Cancel click', () => {
         render(<CompositeCalendarMobileFooter {...mock_props} />);
-        await userEvent.click(screen.getByText('Cancel'));
+        userEvent.click(screen.getByText('Cancel'));
         expect(mock_props.onCancel).toHaveBeenCalled();
     });
-    it('should handle OK button click', async () => {
+    it('should handle OK button click', () => {
         render(<CompositeCalendarMobileFooter {...mock_props} />);
-        await userEvent.click(screen.getByText('OK'));
+        userEvent.click(screen.getByText('OK'));
         expect(mock_props.applyDateRange).toHaveBeenCalled();
     });
 });

@@ -69,20 +69,20 @@ describe('<CreateAdAddPaymentMethodModal />', () => {
         expect(screen.getByRole('button', { name: 'Cancel' })).toBeInTheDocument();
     });
 
-    it('should close CreateAdAddPaymentMethodModal component when clicking Cancel button', async () => {
+    it('should close CreateAdAddPaymentMethodModal component when clicking Cancel button', () => {
         render(<CreateAdAddPaymentMethodModal />);
         const cancel_button = screen.getByRole('button', { name: 'Cancel' });
         expect(cancel_button).toBeInTheDocument();
-        await userEvent.click(cancel_button);
+        userEvent.click(cancel_button);
         expect(mock_modal_manager_context.hideModal).toHaveBeenCalled();
     });
 
-    it('should show CancelAddPaymentMethod modal if is_form_modified is true', async () => {
+    it('should show CancelAddPaymentMethod modal if is_form_modified is true', () => {
         mock_store.general_store.is_form_modified = true;
         render(<CreateAdAddPaymentMethodModal />);
         const cancel_button = screen.getByRole('button', { name: 'Cancel' });
         expect(cancel_button).toBeInTheDocument();
-        await userEvent.click(cancel_button);
+        userEvent.click(cancel_button);
         expect(mock_modal_manager_context.showModal).toHaveBeenNthCalledWith(1, {
             key: 'CancelAddPaymentMethodModal',
             props: {

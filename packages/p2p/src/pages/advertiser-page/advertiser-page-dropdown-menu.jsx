@@ -3,7 +3,7 @@ import { observer } from 'mobx-react-lite';
 import { Dropdown, Icon, Text } from '@deriv/components';
 import { Localize } from 'Components/i18next';
 import { useStores } from 'Stores';
-import { useOnClickOutside } from '@deriv/components/src/hooks/hooks';
+import { useOnClickOutside } from '../../../../components/src/hooks';
 import './advertiser-page-dropdown-menu.scss';
 
 const AdvertiserPageDropdownMenu = () => {

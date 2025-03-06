@@ -28,10 +28,10 @@ describe('<FilterModalHeader />', () => {
         render(<FilterModalHeader {...mock_props} />);
         expect(screen.getByText('Payment methods')).toBeInTheDocument();
     });
-    it('should handle clicking return', async () => {
+    it('should handle clicking return', () => {
         render(<FilterModalHeader {...mock_props} />);
         const return_button = screen.getByTestId('dt_page_return_icon');
-        await userEvent.click(return_button);
+        userEvent.click(return_button);
         expect(mock_props.pageHeaderReturnFn).toHaveBeenCalled();
     });
 });

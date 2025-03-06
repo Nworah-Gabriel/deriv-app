@@ -61,12 +61,12 @@ describe('<MyProfileForm />', () => {
         expect(screen.getByTestId('dt_initial_loader')).toBeInTheDocument();
     });
 
-    it('expects the setActiveTab function to be called when return function is clicked', async () => {
+    it('expects the setActiveTab function to be called when return function is clicked', () => {
         (useDevice as jest.Mock).mockReturnValue({ isDesktop: false });
         render(<MyProfileForm />);
 
         const returnButton = screen.getByRole('button', { name: 'Return' });
-        await userEvent.click(returnButton);
+        userEvent.click(returnButton);
 
         expect(screen.getByText('Ad details')).toBeInTheDocument();
         expect(mock_store.my_profile_store.setActiveTab).toHaveBeenCalledTimes(1);

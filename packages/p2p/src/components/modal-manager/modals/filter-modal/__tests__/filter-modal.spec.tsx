@@ -79,7 +79,7 @@ describe('<FilterModal />', () => {
         expect(mock_store.my_profile_store.setSearchResults).toHaveBeenCalledWith([]);
         expect(mock_store.my_profile_store.setSearchTerm).toHaveBeenCalledWith('');
     });
-    it('should handle clicking close icon', async () => {
+    it('should handle clicking close icon', () => {
         mock_modal_manager.useSavedState
             .mockReturnValueOnce([false, mock_fn])
             .mockReturnValueOnce([[], mock_fn])
@@ -88,13 +88,13 @@ describe('<FilterModal />', () => {
             wrapper: ({ children }) => <StoreProvider store={mockStore({})}>{children}</StoreProvider>,
         });
         const close_icon = screen.getByTestId('dt_modal_close_icon');
-        await userEvent.click(close_icon);
+        userEvent.click(close_icon);
         expect(mock_modal_manager.hideModal).toHaveBeenCalledTimes(1);
         expect(mock_store.buy_sell_store.setShowFilterPaymentMethods).toHaveBeenCalledWith(false);
         expect(mock_store.my_profile_store.setSearchResults).toHaveBeenCalledWith([]);
         expect(mock_store.my_profile_store.setSearchTerm).toHaveBeenCalledWith('');
     });
-    it('should open LeavePageModal if user has made changes and clicks close icon', async () => {
+    it('should open LeavePageModal if user has made changes and clicks close icon', () => {
         mock_modal_manager = {
             ...mock_modal_manager,
             useSavedState: jest.fn(() => [['skrill'], mock_fn]),
@@ -104,28 +104,28 @@ describe('<FilterModal />', () => {
             wrapper: ({ children }) => <StoreProvider store={mockStore({})}>{children}</StoreProvider>,
         });
         const close_icon = screen.getByTestId('dt_modal_close_icon');
-        await userEvent.click(close_icon);
+        userEvent.click(close_icon);
         expect(mock_modal_manager.showModal).toHaveBeenCalledTimes(1);
         (mock_modal_manager.showModal as jest.Mock)?.mock.calls[0][0].props.onLeavePage();
         expect(mock_modal_manager.hideModal).toHaveBeenCalledTimes(1);
     });
-    it('should handle clicking reset button', async () => {
+    it('should handle clicking reset button', () => {
         render(<FilterModal />, {
             wrapper: ({ children }) => <StoreProvider store={mockStore({})}>{children}</StoreProvider>,
         });
         const reset_button = screen.getByRole('button', { name: 'Reset' });
-        await userEvent.click(reset_button);
+        userEvent.click(reset_button);
         expect(mock_store.buy_sell_store.setShouldUseClientLimits).toHaveBeenCalledWith(true);
     });
-    it('should handle clicking apply button', async () => {
+    it('should handle clicking apply button', () => {
         render(<FilterModal />, {
             wrapper: ({ children }) => <StoreProvider store={mockStore({})}>{children}</StoreProvider>,
         });
         const apply_button = screen.getByRole('button', { name: 'Apply' });
-        await userEvent.click(apply_button);
+        userEvent.click(apply_button);
         expect(mock_store.buy_sell_store.onClickApply).toHaveBeenCalledTimes(1);
     });
-    it('should handle clicking confirm button', async () => {
+    it('should handle clicking confirm button', () => {
         (useStores as jest.Mock).mockReturnValue({
             ...mock_store,
             buy_sell_store: {
@@ -137,17 +137,17 @@ describe('<FilterModal />', () => {
             wrapper: ({ children }) => <StoreProvider store={mockStore({})}>{children}</StoreProvider>,
         });
         const confirm_button = screen.getByRole('button', { name: 'Confirm' });
-        await userEvent.click(confirm_button);
+        userEvent.click(confirm_button);
         expect(mock_store.buy_sell_store.setShowFilterPaymentMethods).toHaveBeenCalledWith(false);
         expect(mock_store.my_profile_store.setSearchResults).toHaveBeenCalledWith([]);
         expect(mock_store.my_profile_store.setSearchTerm).toHaveBeenCalledWith('');
     });
-    it('should handle clicking clear button', async () => {
+    it('should handle clicking clear button', () => {
         render(<FilterModal />, {
             wrapper: ({ children }) => <StoreProvider store={mockStore({})}>{children}</StoreProvider>,
         });
         const clear_button = screen.getByRole('button', { name: 'Clear' });
-        await userEvent.click(clear_button);
+        userEvent.click(clear_button);
         expect(mock_fn).toHaveBeenCalledTimes(2);
     });
     it('should close the payment methods section on clicking back from there', async () => {
@@ -155,7 +155,7 @@ describe('<FilterModal />', () => {
             wrapper: ({ children }) => <StoreProvider store={mockStore({})}>{children}</StoreProvider>,
         });
         const back_icon = screen.getByTestId('dt_page_return_icon');
-        await userEvent.click(back_icon);
+        userEvent.click(back_icon);
         expect(mock_store.buy_sell_store.setShowFilterPaymentMethods).toHaveBeenCalledWith(false);
     });
 });

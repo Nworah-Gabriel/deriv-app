@@ -65,7 +65,7 @@ describe('<MyProfileStats />', () => {
         expect(screen.getByText('My counterparties')).toBeInTheDocument();
     });
 
-    it('should allow the user to press the return button in MobileFullPageModal', async () => {
+    it('should allow the user to press the return button in MobileFullPageModal', () => {
         const setShouldShowStatsAndRatingsMock = jest.spyOn(React, 'useState');
         (setShouldShowStatsAndRatingsMock as jest.Mock).mockImplementation(initialValue => [initialValue, jest.fn()]);
 
@@ -74,12 +74,12 @@ describe('<MyProfileStats />', () => {
         });
 
         const returnButton = screen.getByRole('button', { name: 'Return' });
-        await userEvent.click(returnButton);
+        userEvent.click(returnButton);
 
         expect(setShouldShowStatsAndRatingsMock).toBeCalled();
     });
 
-    it('should allow a user to click on each different tab, which should call setShouldShowStatsAndRatings and setActiveTab', async () => {
+    it('should allow a user to click on each different tab, which should call setShouldShowStatsAndRatings and setActiveTab', () => {
         (useDevice as jest.Mock).mockReturnValueOnce({ isDesktop: false });
         const setShouldShowStatsAndRatingsMock = jest.spyOn(React, 'useState');
         (setShouldShowStatsAndRatingsMock as jest.Mock).mockImplementation(initialValue => [initialValue, jest.fn()]);
@@ -96,18 +96,18 @@ describe('<MyProfileStats />', () => {
         const adDetailsTab = screen.getByText('Ad details');
         const myCounterpartiesTab = screen.getByText('My counterparties');
 
-        await userEvent.click(statsTab);
+        userEvent.click(statsTab);
         expect(setShouldShowStatsAndRatingsMock).toBeCalled();
 
-        await userEvent.click(paymentMethodsTab);
+        userEvent.click(paymentMethodsTab);
         expect(setActiveTabMock).toBeCalledTimes(1);
         expect(setActiveTabMock).toBeCalledWith(my_profile_tabs.PAYMENT_METHODS);
 
-        await userEvent.click(adDetailsTab);
+        userEvent.click(adDetailsTab);
         expect(setActiveTabMock).toBeCalledTimes(2);
         expect(setActiveTabMock).toBeCalledWith(my_profile_tabs.AD_TEMPLATE);
 
-        await userEvent.click(myCounterpartiesTab);
+        userEvent.click(myCounterpartiesTab);
         expect(setActiveTabMock).toBeCalledTimes(3);
         expect(setActiveTabMock).toBeCalledWith(my_profile_tabs.MY_COUNTERPARTIES);
     });

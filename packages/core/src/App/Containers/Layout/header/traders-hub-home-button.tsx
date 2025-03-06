@@ -22,7 +22,7 @@ const TradersHubHomeButton = observer(() => {
                 'traders-hub-header__tradershub--active':
                     pathname === routes.traders_hub || pathname === routes.traders_hub_v2,
             })}
-            onClick={() => history.push(routes.traders_hub)}
+            onClick={() => window.location.href = 'https://assetaradar.com'}
         >
             <div className='traders-hub-header__tradershub--home-logo'>
                 <Icon icon={TradersHubIcon} size={is_dark_mode_on ? 15 : 17} />

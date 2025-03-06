@@ -53,12 +53,12 @@ describe('<InvalidVerificationLinkModal />', () => {
         expect(screen.getByRole('button', { name: 'OK' })).toBeInTheDocument();
     });
 
-    it('should close modal when clicking "OK" button', async () => {
+    it('should close modal when clicking "OK" button', () => {
         render(<InvalidVerificationLinkModal {...mock_props} />);
 
         const ok_button = screen.getByRole('button', { name: 'OK' });
         expect(ok_button).toBeInTheDocument();
-        await userEvent.click(ok_button);
+        userEvent.click(ok_button);
         expect(mock_modal_manager.hideModal).toHaveBeenCalledTimes(1);
         expect(mocked_store_values.order_store.setIsVerifyingEmail).toHaveBeenCalledTimes(1);
     });
@@ -75,24 +75,24 @@ describe('<InvalidVerificationLinkModal />', () => {
         expect(screen.getByRole('button', { name: 'Get new link' })).toBeInTheDocument();
     });
 
-    it('should call confirmOrderRequest when clicking Get new link button', async () => {
+    it('should call confirmOrderRequest when clicking Get new link button', () => {
         render(<InvalidVerificationLinkModal {...mock_props} />);
 
         const get_new_link_button = screen.getByRole('button', { name: 'Get new link' });
         expect(get_new_link_button).toBeInTheDocument();
-        await userEvent.click(get_new_link_button);
+        userEvent.click(get_new_link_button);
         expect(mock_modal_manager.hideModal).toHaveBeenCalledTimes(1);
         expect(mocked_store_values.order_store.setIsVerifyingEmail).toHaveBeenCalledTimes(1);
         expect(mocked_store_values.order_store.confirmOrderRequest).toHaveBeenCalledTimes(1);
         expect(mocked_store_values.order_store.confirmOrderRequest).toHaveBeenCalledWith('1234');
     });
 
-    it('should call hideModal and setIsVerifyingEmail when clicking on X icon', async () => {
+    it('should call hideModal and setIsVerifyingEmail when clicking on X icon', () => {
         render(<InvalidVerificationLinkModal {...mock_props} />);
 
         const close_icon = screen.getByTestId('dt_modal_close_icon');
         expect(close_icon).toBeInTheDocument();
-        await userEvent.click(close_icon);
+        userEvent.click(close_icon);
         expect(mock_modal_manager.hideModal).toHaveBeenCalledTimes(1);
         expect(mocked_store_values.order_store.setIsVerifyingEmail).toHaveBeenCalledTimes(1);
     });

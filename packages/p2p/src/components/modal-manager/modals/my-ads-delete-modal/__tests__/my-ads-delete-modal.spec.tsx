@@ -64,11 +64,11 @@ describe('<MyAdsDeleteErrorModal />', () => {
         expect(screen.getByRole('button', { name: 'Delete' })).toBeInTheDocument();
     });
 
-    it('should close modal when cancel button is clicked', async () => {
+    it('should close modal when cancel button is clicked', () => {
         render(<MyAdsDeleteErrorModal />);
 
         const cancel_button = screen.getByRole('button', { name: 'Cancel' });
-        await userEvent.click(cancel_button);
+        userEvent.click(cancel_button);
 
         expect(mock_modal_manager_context.hideModal).toHaveBeenCalled();
     });
@@ -77,7 +77,7 @@ describe('<MyAdsDeleteErrorModal />', () => {
         render(<MyAdsDeleteErrorModal />);
 
         const delete_button = screen.getByRole('button', { name: 'Delete' });
-        await userEvent.click(delete_button);
+        userEvent.click(delete_button);
 
         await Promise.resolve();
 
@@ -100,7 +100,7 @@ describe('<MyAdsDeleteErrorModal />', () => {
         render(<MyAdsDeleteErrorModal />);
 
         const delete_button = screen.getByRole('button', { name: 'Delete' });
-        await userEvent.click(delete_button);
+        userEvent.click(delete_button);
 
         await Promise.resolve();
 

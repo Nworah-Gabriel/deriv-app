@@ -48,7 +48,7 @@ describe('<LeavePageModal/>', () => {
         expect(screen.getByText('If you leave this page, your unsaved changes will be lost.')).toBeInTheDocument();
     });
 
-    it('should call onLeavePage and close the modal on click of Leave page button', async () => {
+    it('should call onLeavePage and close the modal on click of Leave page button', () => {
         const props = {
             onLeavePage: jest.fn(),
         };
@@ -56,13 +56,13 @@ describe('<LeavePageModal/>', () => {
         render(<LeavePageModal {...props} />);
 
         const leave_page_button = screen.getByRole('button', { name: 'Leave page' });
-        await userEvent.click(leave_page_button);
+        userEvent.click(leave_page_button);
         expect(props.onLeavePage).toHaveBeenCalled();
         expect(mock_modal_manager.hideModal).toHaveBeenCalled();
         expect(mock_store_values.buy_sell_store.setShowFilterPaymentMethods).toHaveBeenCalledWith(false);
     });
 
-    it('should call onCancel and close the modal on click of Cancel button', async () => {
+    it('should call onCancel and close the modal on click of Cancel button', () => {
         const props = {
             onCancel: jest.fn(),
         };
@@ -70,7 +70,7 @@ describe('<LeavePageModal/>', () => {
         render(<LeavePageModal {...props} />);
 
         const cancel_button = screen.getByRole('button', { name: 'Cancel' });
-        await userEvent.click(cancel_button);
+        userEvent.click(cancel_button);
         expect(props.onCancel).toHaveBeenCalled();
         expect(mock_modal_manager.hideModal).toHaveBeenCalled();
     });

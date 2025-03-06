@@ -35,11 +35,11 @@ describe('<OrderTimeTooltipModal />', () => {
 
         expect(screen.getByText('Orders will expire if they aren’t completed within this time.')).toBeInTheDocument();
     });
-    it('should handle ok button click', async () => {
+    it('should handle ok button click', () => {
         render(<OrderTimeTooltipModal {...props} />);
 
         const ok_button = screen.getByRole('button', { name: 'OK' });
-        await userEvent.click(ok_button);
+        userEvent.click(ok_button);
         expect(mock_modal_manager.hideModal).toHaveBeenCalledTimes(1);
     });
 });

@@ -28,12 +28,12 @@ describe('<BlockUserTableError />', () => {
         expect(screen.getByText('test error')).toBeInTheDocument();
     });
 
-    it('should call setActiveTab when clicking return icon', async () => {
+    it('should call setActiveTab when clicking return icon', () => {
         render(<BlockUserTableError error_message='test error' />);
 
         const pageReturnIcon = screen.getByTestId('dt_mobile_full_page_return_icon');
 
-        await userEvent.click(pageReturnIcon);
+        userEvent.click(pageReturnIcon);
 
         expect(mock_store.my_profile_store.setActiveTab).toBeCalledWith(my_profile_tabs.MY_STATS);
     });

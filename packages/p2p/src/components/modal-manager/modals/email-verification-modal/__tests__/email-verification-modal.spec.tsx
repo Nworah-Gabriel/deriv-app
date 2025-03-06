@@ -68,7 +68,7 @@ describe('EmailVerificationModal />', () => {
         expect(screen.queryByText(/to release the funds./)).toBeInTheDocument();
     });
 
-    it('should be able to click on I didn’t receive the email and setShouldShowReasonsIfNoEmail should be passing true', async () => {
+    it('should be able to click on I didn’t receive the email and setShouldShowReasonsIfNoEmail should be passing true', () => {
         const setShouldShowReasonsIfNoEmailMock = jest.spyOn(React, 'useState');
         (setShouldShowReasonsIfNoEmailMock as jest.Mock).mockImplementation(initial_value => [
             initial_value,
@@ -79,19 +79,19 @@ describe('EmailVerificationModal />', () => {
 
         const didntReceiveEmailText = screen.getByText('I didn’t receive the email');
 
-        await userEvent.click(didntReceiveEmailText);
+        userEvent.click(didntReceiveEmailText);
 
         expect(setShouldShowReasonsIfNoEmailMock).toHaveBeenCalled();
     });
 
-    it('should call hideModal, confirmOrderRequest when clicking on Resend Email button', async () => {
+    it('should call hideModal, confirmOrderRequest when clicking on Resend Email button', () => {
         jest.spyOn(React, 'useState').mockImplementationOnce(() => React.useState(true));
 
         render(<EmailVerificationModal />);
 
         const resendEmail = screen.getByRole('button', { name: 'Resend email' });
 
-        await userEvent.click(resendEmail);
+        userEvent.click(resendEmail);
 
         expect(mock_modal_manager.hideModal).toHaveBeenCalled();
         expect(mock_store.order_store.confirmOrderRequest).toHaveBeenCalledWith(

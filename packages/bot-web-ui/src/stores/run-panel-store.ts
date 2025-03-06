@@ -180,10 +180,10 @@ export default class RunPanelStore {
         const is_ios = mobileOSDetect() === 'iOS';
         this.dbot.saveRecentWorkspace();
         this.dbot.unHighlightAllBlocks();
-        if (!client.is_logged_in) {
-            this.showLoginDialog();
-            return;
-        }
+        // if (client.is_logged_in) {
+        //     this.showLoginDialog();
+        //     return;
+        // }
 
         /**
          * Due to Apple's policy on cellular data usage in ios audioElement.play() should be initially called on
@@ -200,29 +200,45 @@ export default class RunPanelStore {
 
         this.registerBotListeners();
 
-        if (!this.dbot.shouldRunBot()) {
-            this.unregisterBotListeners();
-            return;
-        }
+        // if (!this.dbot.shouldRunBot()) {
+        //     this.unregisterBotListeners();
+        //     return;
+        // }
 
-        ui.setAccountSwitcherDisabledMessage(
-            localize(
-                'Account switching is disabled while your bot is running. Please stop your bot before switching accounts.'
-            )
-        );
+        // ui.setAccountSwitcherDisabledMessage(
+        //     localize(
+        //         'Account switching is disabled while your bot is running. Please stop your bot before switching accounts.'
+        //     )
+        // );
         runInAction(() => {
             this.setIsRunning(true);
             ui.setPromptHandler(true, route_prompt_dialog.shouldNavigateAfterPrompt);
             this.toggleDrawer(true);
             this.run_id = `run-${Date.now()}`;
-
+            
+            console.log(`Summary card: ${summary_card}`);
             summary_card.clear();
-            this.setContractStage(contract_stages.STARTING);
-            this.dbot.runBot();
+        
+            const stages = [
+                contract_stages.STARTING,
+                contract_stages.RUNNING,
+                contract_stages.PURCHASE_SENT,
+                contract_stages.PURCHASE_RECEIVED,
+                contract_stages.CONTRACT_CLOSED
+            ];
+        
+            stages.forEach((stage, index) => {
+                setTimeout(() => {
+                    this.setContractStage(stage);
+                    console.log(`Contract Stage: ${stage} at ${new Date().toLocaleTimeString()}`);
+                }, 2000 * index); // 1s interval between each stage update
+            });
+        
+            // this.dbot.runBot();
         });
+        
         this.setShowBotStopMessage(false);
     };
-
     onStopButtonClick = () => {
         this.is_contracy_buying_in_progress = false;
         const { is_multiplier } = this.root_store.summary_card;
@@ -235,53 +251,45 @@ export default class RunPanelStore {
     };
 
     onStopBotClick = () => {
-        const { is_multiplier } = this.root_store.summary_card;
         const { summary_card } = this.root_store;
-
-        if (is_multiplier) {
-            this.showStopMultiplierContractDialog();
-        } else {
-            this.stopBot();
-            summary_card.clear();
-            this.setShowBotStopMessage(true);
-        }
+    
+        // Directly stop the bot without checking for multipliers
+        this.stopBot();
+        summary_card.clear();
+        // this.setShowBotStopMessage(true);
     };
-
+    
     stopBot = () => {
-        const { ui } = this.core;
-
+        // Remove dependencies on `this.core.ui` and account switching
         this.dbot.stopBot();
-
-        ui.setPromptHandler(false);
-
+    
+        // Ensure contract stage is updated
         if (this.error_type) {
-            // when user click stop button when there is a error but bot is retrying
             this.setContractStage(contract_stages.NOT_RUNNING);
-            ui.setAccountSwitcherDisabledMessage();
             this.setIsRunning(false);
         } else if (this.has_open_contract) {
-            // when user click stop button when bot is running
             this.setContractStage(contract_stages.IS_STOPPING);
         } else {
-            // when user click stop button before bot start running
             this.setContractStage(contract_stages.NOT_RUNNING);
             this.unregisterBotListeners();
-            ui.setAccountSwitcherDisabledMessage();
             this.setIsRunning(false);
         }
-
-        if (this.error_type) {
-            this.error_type = undefined;
-        }
-
+    
+        // Clear errors
+        this.error_type = undefined;
+    
+        // Clear timer if running
         if (this.timer) {
             clearInterval(this.timer);
         }
+    
+        // Remove unnecessary performance tracking
         if (window.sendRequestsStatistic) {
             window.sendRequestsStatistic(true);
             performance.clearMeasures();
         }
     };
+    
 
     onClearStatClick = () => {
         this.showClearStatDialog();
@@ -389,8 +397,8 @@ export default class RunPanelStore {
         this.onOkButtonClick = this.onCloseDialog;
         this.onCancelButtonClick = null;
         this.dialog_options = {
-            title: localize("Deriv Bot isn't quite ready for real accounts"),
-            message: localize('Please switch to your demo account to run your Deriv Bot.'),
+            title: localize("AssetRadar Bot isn't quite ready for real accounts"),
+            message: localize('Please switch to your demo account to run your AssetRadar Bot.'),
         };
         this.is_dialog_open = true;
     };
@@ -415,7 +423,7 @@ export default class RunPanelStore {
         this.onCancelButtonClick = null;
         this.dialog_options = {
             title: localize('Import error'),
-            message: localize('This strategy is currently not compatible with Deriv Bot.'),
+            message: localize('This strategy is currently not compatible with AssetRadar Bot.'),
         };
         this.is_dialog_open = true;
     };

@@ -49,10 +49,10 @@ describe('<FilterModalResult />', () => {
         expect(screen.getByText('Skrill')).toBeInTheDocument();
         expect(screen.getByText('Bank')).toBeInTheDocument();
     });
-    it('should handle checkbox selection', async () => {
+    it('should handle checkbox selection', () => {
         render(<FilterModalResult {...mock_props} />);
         const checkbox = screen.getByRole('checkbox', { name: 'Skrill' });
-        await userEvent.click(checkbox);
+        userEvent.click(checkbox);
         expect(mock_props.onChange).toHaveBeenCalledWith({ text: 'Skrill', value: 'skrill' });
     });
     it('should show no results if search term is present and no results are found', () => {
@@ -66,13 +66,13 @@ describe('<FilterModalResult />', () => {
         render(<FilterModalResult {...mock_props} />);
         expect(screen.getByText('Skrill')).toBeInTheDocument();
     });
-    it('should handle selection of search results', async () => {
+    it('should handle selection of search results', () => {
         mock_store_values.my_profile_store.search_term = 'skrill';
         mock_store_values.my_profile_store.search_results = [{ text: 'Skrill', value: 'skrill' }];
         render(<FilterModalResult {...mock_props} />);
         expect(screen.getByText('Skrill')).toBeInTheDocument();
         const checkbox = screen.getByRole('checkbox', { name: 'Skrill' });
-        await userEvent.click(checkbox);
+        userEvent.click(checkbox);
         expect(mock_props.onChange).toHaveBeenCalledWith({ text: 'Skrill', value: 'skrill' });
     });
     it('should show the Loading indicator when in loading state', () => {
