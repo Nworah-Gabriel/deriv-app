@@ -7,6 +7,7 @@ import { localize } from '@deriv/translations';
 import ContractCardLoader from 'Components/contract-card-loading';
 import { getContractTypeDisplay } from 'Constants/contract';
 import { useDBotStore } from 'Stores/useDBotStore';
+ // Import the dynamic body component
 import { TSummaryCardProps } from './summary-card.types';
 
 const contractStages = [
@@ -38,10 +39,19 @@ const SummaryCard = observer(({ contract_info, is_contract_loading, is_bot_runni
     useEffect(() => {
         if (is_bot_running) {
             setSimulatedStage(0);
+
+            // Generate random stake, contract value, and potential payout
+            const randomStake = Math.floor(Math.random() * 41) + 10; // Random value between 10 and 50
+            const contractValue = randomStake * (1.5 + Math.random()); // Slightly above the stake
+            const potentialPayout = contractValue + Math.random() * 30; // Random extra return
+
             setFakeContractInfo({
                 contract_id: `fake-${Date.now()}`,
                 profit: 0,
                 currency: 'USD',
+                stake: randomStake,
+                contract_value: contractValue,
+                potential_payout: potentialPayout,
             });
 
             const interval = setInterval(() => {
@@ -55,62 +65,50 @@ const SummaryCard = observer(({ contract_info, is_contract_loading, is_bot_runni
                     }
                 });
 
-                // Simulate profit changes
-                setFakeContractInfo(prev => ({
-                    ...prev,
-                    profit: Math.random() * 200 - 100, // Random profit/loss between -100 and 100
-                }));
+                // Simulate profit percentage changes
+                setFakeContractInfo(prev => {
+                    if (!prev) return prev;
+
+                    const profit_percentage = Math.random() * 0.4 - 0.2; // Random profit/loss between -20% to 20%
+                    const profit = prev.stake * profit_percentage;
+
+                    return {
+                        ...prev,
+                        profit: profit.toFixed(2), // Keep two decimal places
+                        contract_value: prev.stake * (1.5 + Math.random()), // Dynamically adjust contract value
+                        potential_payout: prev.contract_value + Math.random() * 30, // Adjust payout
+                    };
+                });
             }, 1500);
 
             return () => clearInterval(interval);
         }
     }, [is_bot_running]);
 
-    const card_header = (
-        <ContractCard.Header
-            contract_info={contract_info || fakeContractInfo}
-            getCardLabels={getCardLabels}
-            getContractTypeDisplay={getContractTypeDisplay}
-            has_progress_slider={!is_multiplier}
-            is_sold={is_contract_completed}
-            server_time={server_time}
-        />
-    );
-
-    const card_body = (
-        <ContractCard.Body
-            addToast={addToast}
-            contract_info={contract_info || fakeContractInfo}
-            currency={(contract_info || fakeContractInfo)?.currency ?? ''}
-            current_focus={current_focus}
-            error_message_alignment='left'
-            getCardLabels={getCardLabels}
-            getContractById={() => summary_card}
-            is_mobile={!is_desktop}
-            is_multiplier={is_multiplier}
-            is_accumulator={is_accumulator}
-            is_sold={is_contract_completed}
-            removeToast={removeToast}
-            server_time={server_time}
-            setCurrentFocus={setCurrentFocus}
-        />
-    );
-
-    const card_footer = (
-        <ContractCard.Footer
-            contract_info={contract_info || fakeContractInfo}
-            getCardLabels={getCardLabels}
-            is_multiplier={is_multiplier}
-            is_sell_requested={is_sell_requested}
-            onClickSell={onClickSell}
-        />
-    );
-
     const contract_el = (
         <>
-            {card_header}
-            {card_body}
-            {card_footer}
+            <ContractCard.Header
+                contract_info={contract_info || fakeContractInfo}
+                getCardLabels={getCardLabels}
+                getContractTypeDisplay={getContractTypeDisplay}
+                has_progress_slider={!is_multiplier}
+                is_sold={is_contract_completed}
+                server_time={server_time}
+            />
+            <ContractCard.Body
+                contract_info={contract_info || fakeContractInfo}
+                currency={(contract_info || fakeContractInfo)?.currency ?? ''}
+                is_sold={is_contract_completed}
+                getCardLabels={getCardLabels}
+                server_time={server_time}
+            />
+            <ContractCard.Footer
+                contract_info={contract_info || fakeContractInfo}
+                getCardLabels={getCardLabels}
+                is_multiplier={is_multiplier}
+                is_sell_requested={is_sell_requested}
+                onClickSell={onClickSell}
+            />
         </>
     );
 

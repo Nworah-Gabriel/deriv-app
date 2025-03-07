@@ -6,7 +6,6 @@ import { useNewRowTransition } from '@deriv/shared';
 import { observer, useStore } from '@deriv/stores';
 import { localize } from '@deriv/translations';
 import Download from 'Components/download';
-import { TContractInfo } from 'Components/summary/summary-card.types';
 import { contract_stages } from 'Constants/contract-stage';
 import { transaction_elements } from 'Constants/transactions';
 import { useDBotStore } from 'Stores/useDBotStore';
@@ -19,7 +18,7 @@ type TTransactions = {
 type TTransactionItem = {
     row: {
         type: string;
-        data: TContractInfo;
+        data: any; // Change this to match your data structure
     };
     is_new_row?: boolean;
     onClickTransaction?: (transaction_id: null | number) => void;
@@ -60,13 +59,41 @@ const Transactions = observer(({ is_drawer_open }: TTransactions) => {
     const { transactions: transaction_list, toggleTransactionDetailsModal, recoverPendingContracts } = transactions;
     const { is_desktop } = ui;
 
+    const [fakeTransactions, setFakeTransactions] = useState<any[]>([]);
+
+    // Function to generate fake transactions
+    const generateFakeTransaction = () => {
+        const newTransaction = {
+            type: transaction_elements.CONTRACT,
+            data: {
+                transaction_ids: {
+                    buy: Date.now(),
+                },
+                entry_spot: (Math.random() * 100).toFixed(2),
+                exit_spot: (Math.random() * 100).toFixed(2),
+                profit_loss: (Math.random() * 200 - 100).toFixed(2), // Random profit/loss
+            },
+        };
+
+        setFakeTransactions(prev => [newTransaction, ...prev]);
+    };
+
+    // Simulate transaction generation every 5 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            generateFakeTransaction();
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     useEffect(() => {
         recoverPendingContracts();
     }, [recoverPendingContracts]);
 
     useEffect(() => {
         if (active_transaction_id) setActiveTransactionId(null);
-    }, [transaction_list?.length]);
+    }, [fakeTransactions.length]);
 
     const onClickOutsideTransaction = useCallback((event: Event) => {
         if (!(event.target as HTMLElement)?.closest('.transactions__item-wrapper')) {
@@ -95,17 +122,17 @@ const Transactions = observer(({ is_drawer_open }: TTransactions) => {
                 'run-panel-tab__content--mobile': !is_desktop && is_drawer_open,
             })}
         >
-            <div className='download__container transaction-details__button-container'>
+            {/* <div className='download__container transaction-details__button-container'>
                 <Download tab='transactions' />
                 <Button
                     id='download__container__view-detail-button'
                     className='download__container__view-detail-button'
-                    is_disabled={!transaction_list?.length}
+                    is_disabled={!fakeTransactions.length}
                     text={localize('View Detail')}
                     onClick={() => toggleTransactionDetailsModal(true)}
                     secondary
                 />
-            </div>
+            </div> */}
             <div className='transactions__header'>
                 <span className='transactions__header-column transactions__header-type'>{localize('Type')}</span>
                 <span className='transactions__header-column transactions__header-spot'>
@@ -117,10 +144,10 @@ const Transactions = observer(({ is_drawer_open }: TTransactions) => {
             </div>
             <div className={classnames({ transactions__content: is_desktop, 'transactions__content--mobile': !is_desktop })}>
                 <div className='transactions__scrollbar'>
-                    {transaction_list?.length ? (
+                    {fakeTransactions.length ? (
                         <DataList
                             className='transactions'
-                            data_source={transaction_list}
+                            data_source={fakeTransactions}
                             rowRenderer={props => (
                                 <TransactionItem
                                     onClickTransaction={onClickTransaction}
@@ -129,7 +156,7 @@ const Transactions = observer(({ is_drawer_open }: TTransactions) => {
                                 />
                             )}
                             keyMapper={row => row.type === transaction_elements.CONTRACT ? row.data.transaction_ids.buy : row.data}
-                            getRowSize={({ index }) => (transaction_list?.[index]?.type === transaction_elements.CONTRACT ? 50 : 21)}
+                            getRowSize={({ index }) => (fakeTransactions?.[index]?.type === transaction_elements.CONTRACT ? 50 : 21)}
                         />
                     ) : contract_stage >= contract_stages.STARTING ? (
                         <Transaction contract={null} />

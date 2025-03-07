@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import classnames from 'classnames';
 import { DataList, Icon, Text } from '@deriv/components';
 import { observer, useStore } from '@deriv/stores';
@@ -8,9 +8,70 @@ import { useDBotStore } from 'Stores/useDBotStore';
 import { TCheckedFilters, TFilterMessageValues, TJournalDataListArgs } from './journal.types';
 import { JournalItem, JournalLoader, JournalTools } from './journal-components';
 
+const fakeFilteredMessages: TFilterMessageValues[] = [
+    {
+        unique_id: '1',
+        message: 'Trade executed successfully',
+        className: 'journal-message--success',
+        date: new Date().toISOString(),
+        extra: { currency: 'USD', profit: 25 }, // ✅ Small Profit
+        message_type: 'success',
+        time: new Date().toISOString(),
+    },
+    {
+        unique_id: '2',
+        message: 'New trade opened',
+        className: 'journal-message--info',
+        date: new Date().toISOString(),
+        extra: { longcode: 'Buy 1 lot EUR/USD', transaction_id: 987654321 }, // ✅ Journal Entry
+        message_type: 'trade',
+        time: new Date().toISOString(),
+    },
+    {
+        unique_id: '3',
+        message: 'Stop loss triggered',
+        className: 'journal-message--error',
+        date: new Date().toISOString(),
+        extra: { currency: 'EUR', profit: -2500 }, // ✅ Major Loss
+        message_type: 'error',
+        time: new Date().toISOString(),
+    },
+];
+
+const fakeUnfilteredMessages: TFilterMessageValues[] = [
+    {
+        unique_id: '4',
+        message: 'Take profit hit',
+        className: 'journal-message--success',
+        date: new Date().toISOString(),
+        extra: { currency: 'GBP', profit: 40 }, // ✅ Small Profit
+        message_type: 'profit',
+        time: new Date().toISOString(),
+    },
+    {
+        unique_id: '5',
+        message: 'Transaction confirmed',
+        className: 'journal-message--info',
+        date: new Date().toISOString(),
+        extra: { longcode: 'Sell 2 lots BTC/USD', transaction_id: 123456789 }, // ✅ Journal Entry
+        message_type: 'transaction',
+        time: new Date().toISOString(),
+    },
+    {
+        unique_id: '6',
+        message: 'Risk management alert',
+        className: 'journal-message--warning',
+        date: new Date().toISOString(),
+        extra: { currency: 'JPY', profit: -3700 }, // ✅ Major Loss
+        message_type: 'warning',
+        time: new Date().toISOString(),
+    },
+];
+
 const Journal = observer(() => {
     const { ui } = useStore();
     const { journal, run_panel } = useDBotStore();
+
     const {
         checked_filters,
         filterMessage,
@@ -20,11 +81,29 @@ const Journal = observer(() => {
         toggleFilterDialog,
         unfiltered_messages,
     } = journal;
-    const { is_stop_button_visible, contract_stage } = run_panel;
 
-    const filtered_messages_length = Array.isArray(filtered_messages) && filtered_messages.length;
-    const unfiltered_messages_length = Array.isArray(unfiltered_messages) && unfiltered_messages.length;
+    const { is_stop_button_visible, contract_stage } = run_panel;
     const { is_desktop } = ui;
+
+    // ✅ Ensuring filtered and unfiltered messages are valid arrays
+    const safeFilteredMessages = Array.isArray(filtered_messages) ? filtered_messages : [];
+    const safeUnfilteredMessages = Array.isArray(unfiltered_messages) ? unfiltered_messages : [];
+
+    // ✅ State for managing messages
+    const [messages, setMessages] = useState<TFilterMessageValues[]>(fakeFilteredMessages);
+
+    // ✅ Update messages when real data arrives
+    useEffect(() => {
+        if (safeFilteredMessages.length) {
+            setMessages(safeFilteredMessages);
+        } else {
+            setMessages(fakeFilteredMessages);
+        }
+    }, [safeFilteredMessages]);
+
+    console.log('Contract Stage:', contract_stage);
+    console.log('Filtered Messages:', safeFilteredMessages);
+    console.log('Unfiltered Messages:', safeUnfilteredMessages);
 
     return (
         <div
@@ -41,10 +120,10 @@ const Journal = observer(() => {
                 toggleFilterDialog={toggleFilterDialog}
             />
             <div className='journal__item-list'>
-                {filtered_messages_length ? (
+                {messages.length ? (
                     <DataList
                         className='journal'
-                        data_source={filtered_messages}
+                        data_source={messages}
                         rowRenderer={(args: TJournalDataListArgs) => <JournalItem {...args} />}
                         keyMapper={(row: TFilterMessageValues) => row.unique_id}
                     />
@@ -52,7 +131,7 @@ const Journal = observer(() => {
                     <>
                         {contract_stage >= contract_stages.STARTING &&
                         !!Object.keys(checked_filters as TCheckedFilters).length &&
-                        !unfiltered_messages_length &&
+                        !safeUnfilteredMessages.length &&
                         is_stop_button_visible ? (
                             <JournalLoader is_mobile={!is_desktop} />
                         ) : (

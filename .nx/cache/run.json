@@ -1,18 +1,18 @@
 {
   "run": {
-    "command": "nx build @deriv/components --skip-nx-cache",
-    "startTime": "2025-03-06T14:51:02.937Z",
-    "endTime": "2025-03-06T14:51:15.104Z",
+    "command": "nx build @deriv/core",
+    "startTime": "2025-03-07T15:25:37.105Z",
+    "endTime": "2025-03-07T15:29:31.811Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@deriv/components:build",
+      "taskId": "@deriv/core:build",
       "target": "build",
-      "projectName": "@deriv/components",
-      "hash": "4064751615916724320",
-      "startTime": "2025-03-06T14:51:02.997Z",
-      "endTime": "2025-03-06T14:51:15.103Z",
+      "projectName": "@deriv/core",
+      "hash": "17660081304278302221",
+      "startTime": "2025-03-07T15:25:37.120Z",
+      "endTime": "2025-03-07T15:29:31.810Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

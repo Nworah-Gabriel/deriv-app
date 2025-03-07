@@ -77,7 +77,7 @@ export const StatisticsSummary = ({
             'run-panel__stat--mobile': is_mobile,
         })}
     >
-        <div className='run-panel__stat--info' onClick={toggleStatisticsInfoModal}>
+        {/* <div className='run-panel__stat--info' onClick={toggleStatisticsInfoModal}>
             <div className='run-panel__stat--info-item'>
                 <Localize i18n_default_text="What's this?" />
             </div>
@@ -105,7 +105,7 @@ export const StatisticsSummary = ({
                     'run-panel__stat-amount--negative': total_profit < 0,
                 })}
             />
-        </div>
+        </div> */}
     </div>
 );
 
@@ -312,7 +312,7 @@ const RunPanel = observer(() => {
                 >
                     {content}
                 </Drawer>
-                {!is_desktop && <MobileDrawerFooter />}
+                {/* {!is_desktop && <MobileDrawerFooter />} */}
             </div>
             <SelfExclusion onRunButtonClick={onRunButtonClick} />
             <StatisticsInfoModal
