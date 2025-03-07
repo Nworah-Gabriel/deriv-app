@@ -80,32 +80,200 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": ".github/workflows/release_uat2.yml",
+        "hash": "3877705694920922872"
+      },
+      {
+        "file": "__mocks__/fileMock.js",
+        "hash": "1018172441669056807"
+      },
+      {
+        "file": "default.conf",
+        "hash": "5992324476747020483"
+      },
+      {
+        "file": ".github/workflows/generate_app_id.yml",
+        "hash": "8606811651977613018"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "3255892640244836420"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "4424025658815316949"
+      },
+      {
+        "file": "hooks/pre-push.sh",
+        "hash": "5286686340530522257"
+      },
+      {
+        "file": "nx.json",
+        "hash": "8581766905961528442"
+      },
+      {
+        "file": "types/blockly.d.ts",
+        "hash": "7519571552178495416"
+      },
+      {
+        "file": ".github/CODEOWNERS",
+        "hash": "12663982432440147546"
+      },
+      {
+        "file": ".github/workflows/analyze.yml",
+        "hash": "5152297769874819203"
+      },
+      {
+        "file": "docs/Typescript/README.md",
+        "hash": "6216384093849808059"
+      },
+      {
+        "file": "scripts/check-imports.js",
+        "hash": "1471907153355528980"
+      },
+      {
+        "file": "eslint-local-rules/index.js",
+        "hash": "4971542074609981645"
+      },
+      {
+        "file": "Dockerfile-storybook",
+        "hash": "13548699327750840684"
+      },
+      {
+        "file": ".github/workflows/build_docker_image.yml",
+        "hash": "11911719934338528083"
+      },
+      {
+        "file": "setupTests.js",
+        "hash": "18395007098765842477"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "15308740546970707008"
+      },
+      {
+        "file": "jest.setup.js",
+        "hash": "5272592626641043315"
+      },
+      {
+        "file": ".github/workflows/sync-translations.yml",
+        "hash": "4475555928003193697"
+      },
+      {
+        "file": ".github/workflows/generate_and_push_deriv_api_types.md",
+        "hash": "113285001250619206"
+      },
+      {
+        "file": ".github/workflows/stale.yml",
+        "hash": "10625570303192999770"
+      },
+      {
+        "file": ".github/workflows/remote_config_pr.yml",
+        "hash": "4301076487562138061"
+      },
+      {
+        "file": "nx-cloud.env.example",
+        "hash": "7041907643926882943"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "4785799033052902872"
+      },
+      {
+        "file": ".github/actions/publish_to_pages_test/action.yml",
+        "hash": "13438166771231315535"
+      },
+      {
         "file": ".github/workflows/update_npm_cache.yml",
         "hash": "7417408293068414184"
+      },
+      {
+        "file": ".github/actions/versioning/action.yml",
+        "hash": "13525718399907869005"
+      },
+      {
+        "file": ".github/workflows/generate_and_push_deriv_api_types.yml",
+        "hash": "13244826054057294700"
+      },
+      {
+        "file": "types/global.d.ts",
+        "hash": "15588136486311764734"
+      },
+      {
+        "file": ".github/workflows/test.yml",
+        "hash": "5139773699577638323"
+      },
+      {
+        "file": "__mocks__/translation.mock.js",
+        "hash": "11640752155346710381"
+      },
+      {
+        "file": ".lintstagedrc.json",
+        "hash": "12825823929011875438"
+      },
+      {
+        "file": ".github/workflows/release_production.yml",
+        "hash": "18172186645152054304"
+      },
+      {
+        "file": ".github/workflows/smoketests_manual.yml",
+        "hash": "17756546116008473772"
+      },
+      {
+        "file": ".github/boring-cyborg.yml",
+        "hash": "7725124892600427974"
+      },
+      {
+        "file": ".travis.yml",
+        "hash": "7743544888499916257"
+      },
+      {
+        "file": "types/svg.d.ts",
+        "hash": "2723891104647893293"
+      },
+      {
+        "file": "__mocks__/styleMock.js",
+        "hash": "3429130306414473014"
+      },
+      {
+        "file": ".commitlintrc.json",
+        "hash": "7954883893246595078"
+      },
+      {
+        "file": ".husky/post-checkout",
+        "hash": "9726544199741375604"
+      },
+      {
+        "file": ".github/actions/npm_install_from_cache/action.yml",
+        "hash": "15691874985642919393"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "9472159228019008904"
+      },
+      {
+        "file": ".github/workflows/release_uat.yml",
+        "hash": "8848317286744261304"
+      },
+      {
+        "file": ".github/workflows/push_and_pull_crowdin_translations.yml",
+        "hash": "892765869508804736"
+      },
+      {
+        "file": "__mocks__/globals.js",
+        "hash": "12869529316679446762"
       },
       {
         "file": ".github/workflows/release_test.yml",
         "hash": "15079071259188842490"
       },
       {
-        "file": ".github/workflows/merge_and_release_to_staging.yml",
-        "hash": "8143477635789960788"
+        "file": "docs/JavaScript/README.md",
+        "hash": "10646827030684562873"
       },
       {
-        "file": "qawolf.config.js",
-        "hash": "13895142839518198391"
-      },
-      {
-        "file": "babel.config.json",
-        "hash": "13517406426309205634"
-      },
-      {
-        "file": ".github/actions/setup_node/action.yml",
-        "hash": "1900893088621716907"
-      },
-      {
-        "file": ".dockerignore",
-        "hash": "12755463638231543196"
+        "file": ".github/actions/publish_to_pages_production/action.yml",
+        "hash": "6958228495412707319"
       },
       {
         "file": "Dockerfile",
@@ -116,368 +284,200 @@
         "hash": "3321894835559589529"
       },
       {
-        "file": "lerna.json",
-        "hash": "4424025658815316949"
-      },
-      {
-        "file": ".github/workflows/release_uat.yml",
-        "hash": "8848317286744261304"
-      },
-      {
-        "file": ".github/workflows/release_uat2.yml",
-        "hash": "3877705694920922872"
-      },
-      {
-        "file": ".travis.yml",
-        "hash": "7743544888499916257"
-      },
-      {
-        "file": ".husky/pre-commit",
-        "hash": "3255892640244836420"
-      },
-      {
-        "file": "docs/JavaScript/README.md",
-        "hash": "10646827030684562873"
-      },
-      {
-        "file": ".github/pull_request_template.md",
-        "hash": "14250442855188194508"
-      },
-      {
-        "file": "__mocks__/translation.mock.js",
-        "hash": "11640752155346710381"
-      },
-      {
-        "file": ".github/workflows/smoketests_manual.yml",
-        "hash": "17756546116008473772"
-      },
-      {
-        "file": "hooks/pre-push.sh",
-        "hash": "5286686340530522257"
-      },
-      {
-        "file": ".github/actions/publish_to_pages_test/action.yml",
-        "hash": "13438166771231315535"
-      },
-      {
-        "file": "scripts/check-tests.sh",
-        "hash": "9622893060761089185"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "8522358260915360388"
-      },
-      {
-        "file": "nx.json",
-        "hash": "8581766905961528442"
-      },
-      {
-        "file": ".github/actions/publish_to_pages_production/action.yml",
-        "hash": "6958228495412707319"
-      },
-      {
-        "file": "WRITING TESTS.md",
-        "hash": "10855733417395638727"
-      },
-      {
-        "file": "types/blockly.d.ts",
-        "hash": "7519571552178495416"
-      },
-      {
-        "file": ".github/workflows/generate_and_push_deriv_api_types.yml",
-        "hash": "13244826054057294700"
-      },
-      {
-        "file": "types/utils.d.ts",
-        "hash": "712056843793748187"
-      },
-      {
-        "file": ".github/CODEOWNERS",
-        "hash": "12663982432440147546"
-      },
-      {
-        "file": "docs/Typescript/README.md",
-        "hash": "6216384093849808059"
-      },
-      {
-        "file": "jest.setup.js",
-        "hash": "5272592626641043315"
-      },
-      {
-        "file": "__mocks__/fileMock.js",
-        "hash": "1018172441669056807"
-      },
-      {
-        "file": "jest.config.js",
-        "hash": "6626711652311828739"
-      },
-      {
-        "file": ".github/actions/publish_to_pages_uat/action.yml",
-        "hash": "3968386743461719588"
-      },
-      {
-        "file": ".github/actions/invalidate_npm_cache/action.yml",
-        "hash": "13208227821348124510"
-      },
-      {
-        "file": "docs/package_dependencies.png",
-        "hash": "3935936426562658644"
-      },
-      {
-        "file": ".github/workflows/release_staging.yml",
-        "hash": "10779579571986346628"
-      },
-      {
-        "file": ".github/workflows/generate_app_id.yml",
-        "hash": "8606811651977613018"
-      },
-      {
-        "file": "setupTests.js",
-        "hash": "18395007098765842477"
-      },
-      {
-        "file": ".github/actions/npm_install_from_cache/action.yml",
-        "hash": "15691874985642919393"
-      },
-      {
-        "file": ".github/workflows/release_production.yml",
-        "hash": "18172186645152054304"
-      },
-      {
-        "file": ".husky/post-merge",
-        "hash": "2213761663528130316"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "7083867210218692195"
-      },
-      {
-        "file": ".github/workflows/sync-translations.yml",
-        "hash": "4475555928003193697"
-      },
-      {
-        "file": ".stylelintrc.js",
-        "hash": "18196883491111832388"
-      },
-      {
-        "file": ".husky/post-commit",
-        "hash": "6814139225194061654"
-      },
-      {
-        "file": ".github/workflows/analyze.yml",
-        "hash": "5152297769874819203"
-      },
-      {
-        "file": ".github/workflows/lighthouse.yml",
-        "hash": "17953221040584107101"
-      },
-      {
-        "file": "jest.config.base.js",
-        "hash": "11264346071027136485"
-      },
-      {
-        "file": ".husky/commit-msg",
-        "hash": "15273148749009256939"
-      },
-      {
-        "file": ".github/actions/versioning/action.yml",
-        "hash": "13525718399907869005"
-      },
-      {
-        "file": ".github/workflows/smoketests.yml",
-        "hash": "7351950786408719317"
-      },
-      {
-        "file": "package.json",
-        "hash": "10477857662336722848"
-      },
-      {
-        "file": "__mocks__/styleMock.js",
-        "hash": "3429130306414473014"
-      },
-      {
-        "file": ".github/workflows/stale.yml",
-        "hash": "10625570303192999770"
-      },
-      {
-        "file": "nx-cloud.env.example",
-        "hash": "7041907643926882943"
-      },
-      {
-        "file": "__mocks__/deriv-com.ui.mock.js",
-        "hash": "17847120010233828908"
-      },
-      {
-        "file": "__mocks__/globals.js",
-        "hash": "12869529316679446762"
-      },
-      {
-        "file": ".github/actions/analyze/compareReports.js",
-        "hash": "13670101071155126159"
-      },
-      {
-        "file": ".github/workflows/push_and_pull_crowdin_translations.yml",
-        "hash": "892765869508804736"
-      },
-      {
-        "file": ".gitattributes",
-        "hash": "11049760743951520457"
-      },
-      {
-        "file": ".github/actions/analyze/action.yml",
-        "hash": "457514574082819381"
-      },
-      {
-        "file": "postcss.config.js",
-        "hash": "17128295701842752783"
-      },
-      {
-        "file": "Dockerfile-storybook",
-        "hash": "13548699327750840684"
-      },
-      {
         "file": "V2-MIGRATION-GUIDE.MD",
         "hash": "14276741953027621349"
-      },
-      {
-        "file": "docs/README.md",
-        "hash": "5589912385839151340"
-      },
-      {
-        "file": ".husky/.gitignore",
-        "hash": "10106645302852536800"
-      },
-      {
-        "file": ".github/lighthouse/lighthouserc.json",
-        "hash": "8139817067661193406"
-      },
-      {
-        "file": "README.md",
-        "hash": "3777040208513422767"
-      },
-      {
-        "file": "default.conf",
-        "hash": "5992324476747020483"
-      },
-      {
-        "file": "docs/git/README.md",
-        "hash": "14617688955422723122"
-      },
-      {
-        "file": ".github/actions/download_remote_config_backup/action.yml",
-        "hash": "17848199035650493824"
-      },
-      {
-        "file": ".github/workflows/test.yml",
-        "hash": "5139773699577638323"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "9472159228019008904"
-      },
-      {
-        "file": ".eslintrc.js",
-        "hash": "13236919886401729596"
-      },
-      {
-        "file": "docs/Modules/README.md",
-        "hash": "11219714609692194324"
-      },
-      {
-        "file": "types/global.d.ts",
-        "hash": "15588136486311764734"
-      },
-      {
-        "file": ".github/workflows/automationrc.json",
-        "hash": "11574350821299685291"
       },
       {
         "file": "types/livechat.ts",
         "hash": "11126349531720191700"
       },
       {
-        "file": ".github/boring-cyborg.yml",
-        "hash": "7725124892600427974"
+        "file": "package-lock.json",
+        "hash": "8522358260915360388"
+      },
+      {
+        "file": ".github/actions/download_remote_config_backup/action.yml",
+        "hash": "17848199035650493824"
       },
       {
         "file": "sonar-project.properties",
         "hash": "5007276303618536562"
       },
       {
+        "file": ".eslintrc.js",
+        "hash": "13236919886401729596"
+      },
+      {
+        "file": ".github/actions/setup_node/action.yml",
+        "hash": "1900893088621716907"
+      },
+      {
+        "file": ".github/actions/publish_to_pages_uat/action.yml",
+        "hash": "3968386743461719588"
+      },
+      {
+        "file": ".github/workflows/automationrc.json",
+        "hash": "11574350821299685291"
+      },
+      {
         "file": "docs/Dependencies/README.md",
         "hash": "2961513967652254026"
-      },
-      {
-        "file": ".github/workflows/generate_and_push_deriv_api_types.md",
-        "hash": "113285001250619206"
-      },
-      {
-        "file": ".lintstagedrc.json",
-        "hash": "12825823929011875438"
-      },
-      {
-        "file": "docs/Stylesheet/README.md",
-        "hash": "9878776503825364155"
-      },
-      {
-        "file": ".github/actions/publish_to_pages_staging/action.yml",
-        "hash": "7532564673881347127"
-      },
-      {
-        "file": "eslint-local-rules/index.js",
-        "hash": "4971542074609981645"
-      },
-      {
-        "file": ".eslintignore",
-        "hash": "15407719801463093179"
-      },
-      {
-        "file": ".husky/post-checkout",
-        "hash": "9726544199741375604"
-      },
-      {
-        "file": ".husky/pre-push",
-        "hash": "8990678870675173207"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "15308740546970707008"
-      },
-      {
-        "file": ".github/workflows/coveralls.yml",
-        "hash": "13784329410841139922"
-      },
-      {
-        "file": ".commitlintrc.json",
-        "hash": "7954883893246595078"
-      },
-      {
-        "file": ".github/actions/build/action.yml",
-        "hash": "15713401306626906512"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "4785799033052902872"
-      },
-      {
-        "file": ".github/workflows/build_docker_image.yml",
-        "hash": "11911719934338528083"
-      },
-      {
-        "file": "scripts/check-imports.js",
-        "hash": "1471907153355528980"
       },
       {
         "file": "hooks/post-merge.sh",
         "hash": "14012673302819686850"
       },
       {
-        "file": "types/svg.d.ts",
-        "hash": "2723891104647893293"
+        "file": "scripts/check-tests.sh",
+        "hash": "9622893060761089185"
       },
       {
-        "file": ".github/workflows/remote_config_pr.yml",
-        "hash": "4301076487562138061"
+        "file": ".github/workflows/lighthouse.yml",
+        "hash": "17953221040584107101"
+      },
+      {
+        "file": "WRITING TESTS.md",
+        "hash": "10855733417395638727"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "7083867210218692195"
+      },
+      {
+        "file": ".github/actions/build/action.yml",
+        "hash": "15713401306626906512"
+      },
+      {
+        "file": ".husky/post-commit",
+        "hash": "6814139225194061654"
+      },
+      {
+        "file": "docs/package_dependencies.png",
+        "hash": "3935936426562658644"
+      },
+      {
+        "file": ".gitattributes",
+        "hash": "11049760743951520457"
+      },
+      {
+        "file": "docs/git/README.md",
+        "hash": "14617688955422723122"
+      },
+      {
+        "file": ".github/workflows/smoketests.yml",
+        "hash": "7351950786408719317"
+      },
+      {
+        "file": ".husky/commit-msg",
+        "hash": "15273148749009256939"
+      },
+      {
+        "file": "jest.config.js",
+        "hash": "6626711652311828739"
+      },
+      {
+        "file": "qawolf.config.js",
+        "hash": "13895142839518198391"
+      },
+      {
+        "file": "docs/Modules/README.md",
+        "hash": "11219714609692194324"
+      },
+      {
+        "file": "docs/README.md",
+        "hash": "5589912385839151340"
+      },
+      {
+        "file": ".github/actions/invalidate_npm_cache/action.yml",
+        "hash": "13208227821348124510"
+      },
+      {
+        "file": "postcss.config.js",
+        "hash": "17128295701842752783"
+      },
+      {
+        "file": ".husky/pre-push",
+        "hash": "8990678870675173207"
+      },
+      {
+        "file": "__mocks__/deriv-com.ui.mock.js",
+        "hash": "17847120010233828908"
+      },
+      {
+        "file": "README.md",
+        "hash": "3777040208513422767"
+      },
+      {
+        "file": ".github/lighthouse/lighthouserc.json",
+        "hash": "8139817067661193406"
+      },
+      {
+        "file": "package.json",
+        "hash": "10477857662336722848"
+      },
+      {
+        "file": "docs/Stylesheet/README.md",
+        "hash": "9878776503825364155"
+      },
+      {
+        "file": ".stylelintrc.js",
+        "hash": "18196883491111832388"
+      },
+      {
+        "file": ".husky/post-merge",
+        "hash": "2213761663528130316"
+      },
+      {
+        "file": ".github/pull_request_template.md",
+        "hash": "14250442855188194508"
+      },
+      {
+        "file": "types/utils.d.ts",
+        "hash": "712056843793748187"
+      },
+      {
+        "file": "jest.config.base.js",
+        "hash": "11264346071027136485"
+      },
+      {
+        "file": ".dockerignore",
+        "hash": "12755463638231543196"
+      },
+      {
+        "file": "babel.config.json",
+        "hash": "13517406426309205634"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "15407719801463093179"
+      },
+      {
+        "file": ".github/workflows/merge_and_release_to_staging.yml",
+        "hash": "8143477635789960788"
+      },
+      {
+        "file": ".husky/.gitignore",
+        "hash": "10106645302852536800"
+      },
+      {
+        "file": ".github/actions/analyze/compareReports.js",
+        "hash": "13670101071155126159"
+      },
+      {
+        "file": ".github/actions/analyze/action.yml",
+        "hash": "457514574082819381"
+      },
+      {
+        "file": ".github/actions/publish_to_pages_staging/action.yml",
+        "hash": "7532564673881347127"
+      },
+      {
+        "file": ".github/workflows/release_staging.yml",
+        "hash": "10779579571986346628"
+      },
+      {
+        "file": ".github/workflows/coveralls.yml",
+        "hash": "13784329410841139922"
       }
     ],
     "projectFileMap": {
@@ -1642,7 +1642,7 @@
         },
         {
           "file": "packages/account/dist/account/css/Sections_Security_ApiToken_index_ts.716ede20007da5fb2cc8.css",
-          "hash": "7595752821058126507"
+          "hash": "3244421341483603138"
         },
         {
           "file": "packages/account/dist/account/css/Sections_Security_ConnectedApps_index_ts.655b76abbb0ad5c54e94.css",
@@ -1665,20 +1665,16 @@
           "hash": "9770032590395276613"
         },
         {
-          "file": "packages/account/dist/account/css/vendors-node_modules_binary-com_binary-document-uploader_DocumentUploader_js-node_modules_day-7988b1.acb55ffafb42b19da3b5.css",
-          "hash": "14091234801803041634"
-        },
-        {
           "file": "packages/account/dist/account/js/account.404.daee706d7a563fa21ae0.js",
           "hash": "16338130829667050743"
         },
         {
           "file": "packages/account/dist/account/js/account.Sections_Assessment_FinancialAssessment_index_ts.a1ba37636550589d059b.js",
-          "hash": "6949963513957349469"
+          "hash": "3244421341483603138"
         },
         {
           "file": "packages/account/dist/account/js/account.Sections_Assessment_TradingAssessment_index_js.3bafcd3b58eeee72b6f6.js",
-          "hash": "8612784317120477593"
+          "hash": "3244421341483603138"
         },
         {
           "file": "packages/account/dist/account/js/account.Sections_Profile_LanguageSettings_index_ts.c34135672e4ce642d4bf.js",
@@ -1698,11 +1694,7 @@
         },
         {
           "file": "packages/account/dist/account/js/account.Sections_Security_ApiToken_index_ts.7fe67190b4d7553f8493.js",
-          "hash": "6453738575286633071"
-        },
-        {
-          "file": "packages/account/dist/account/js/account.Sections_Security_ClosingAccount_index_ts.ef9c615d379fb00afade.js",
-          "hash": "831896732264171552"
+          "hash": "3244421341483603138"
         },
         {
           "file": "packages/account/dist/account/js/account.Sections_Security_ConnectedApps_index_ts.55d01944d3f8d183f1e9.js",
@@ -1721,12 +1713,8 @@
           "hash": "10637221060934446228"
         },
         {
-          "file": "packages/account/dist/account/js/account.Sections_Security_SelfExclusion_index_ts.7fd88e5b69f8ebe438eb.js",
-          "hash": "1061702079974666260"
-        },
-        {
           "file": "packages/account/dist/account/js/account.Sections_Security_TwoFactorAuthentication_index_ts.b1e072b98576c683594a.js",
-          "hash": "7684605081154860567"
+          "hash": "3244421341483603138"
         },
         {
           "file": "packages/account/dist/account/js/account.account-app.db900e50433e9599cb67.js",
@@ -1735,10 +1723,6 @@
         {
           "file": "packages/account/dist/account/js/account.js",
           "hash": "10826612536335682613"
-        },
-        {
-          "file": "packages/account/dist/account/js/account.vendors-node_modules_binary-com_binary-document-uploader_DocumentUploader_js-node_modules_day-7988b1.811514dfb8108ba56fe9.js",
-          "hash": "15851843063975342027"
         },
         {
           "file": "packages/account/dist/account/js/address-details-config.js",
@@ -20759,80 +20743,44 @@
           "hash": "15565096763745654612"
         },
         {
-          "file": "packages/bot-skeleton/dist/media/1x1.gif",
-          "hash": "7438556337867072020"
+          "file": "packages/bot-skeleton/dist/media/create_variable.jpg",
+          "hash": "969405757898040064"
         },
         {
-          "file": "packages/bot-skeleton/dist/media/click.mp3",
-          "hash": "15738243036299672845"
+          "file": "packages/bot-skeleton/dist/media/ic-chevron-down-bold.svg",
+          "hash": "4847166081961220206"
         },
         {
-          "file": "packages/bot-skeleton/dist/media/click.ogg",
-          "hash": "8869177775147831217"
+          "file": "packages/bot-skeleton/dist/media/is_candle_black.jpeg",
+          "hash": "16165810956281538820"
         },
         {
-          "file": "packages/bot-skeleton/dist/media/click.wav",
-          "hash": "12258399977332147969"
+          "file": "packages/bot-skeleton/dist/media/is_candle_black_1.jpeg",
+          "hash": "3717895528517020741"
         },
         {
-          "file": "packages/bot-skeleton/dist/media/delete.mp3",
-          "hash": "2400699239164548049"
+          "file": "packages/bot-skeleton/dist/media/logic.png",
+          "hash": "18421366245021927129"
         },
         {
-          "file": "packages/bot-skeleton/dist/media/delete.ogg",
-          "hash": "2323694854787945139"
+          "file": "packages/bot-skeleton/dist/media/set_variable.png",
+          "hash": "16802540126162371460"
         },
         {
-          "file": "packages/bot-skeleton/dist/media/delete.wav",
-          "hash": "1437929327991215550"
+          "file": "packages/bot-skeleton/dist/media/sma_array_explanation.jpeg",
+          "hash": "8458300008773836512"
         },
         {
-          "file": "packages/bot-skeleton/dist/media/disconnect.mp3",
-          "hash": "13125985011790209363"
+          "file": "packages/bot-skeleton/dist/media/sma_chart_1.png",
+          "hash": "8644245203721727152"
         },
         {
-          "file": "packages/bot-skeleton/dist/media/disconnect.ogg",
-          "hash": "1527149224163126438"
+          "file": "packages/bot-skeleton/dist/media/sma_chart_2.png",
+          "hash": "2428052845196119226"
         },
         {
-          "file": "packages/bot-skeleton/dist/media/disconnect.wav",
-          "hash": "5743703489366375029"
-        },
-        {
-          "file": "packages/bot-skeleton/dist/media/dropdown-arrow.svg",
-          "hash": "2468461504159207296"
-        },
-        {
-          "file": "packages/bot-skeleton/dist/media/handclosed.cur",
-          "hash": "12155587142756290166"
-        },
-        {
-          "file": "packages/bot-skeleton/dist/media/handdelete.cur",
-          "hash": "15256897943437175672"
-        },
-        {
-          "file": "packages/bot-skeleton/dist/media/handopen.cur",
-          "hash": "9424313844594576695"
-        },
-        {
-          "file": "packages/bot-skeleton/dist/media/pilcrow.png",
-          "hash": "141349375210414988"
-        },
-        {
-          "file": "packages/bot-skeleton/dist/media/quote0.png",
-          "hash": "10468094107427307109"
-        },
-        {
-          "file": "packages/bot-skeleton/dist/media/quote1.png",
-          "hash": "1723680356580112715"
-        },
-        {
-          "file": "packages/bot-skeleton/dist/media/sprites.png",
-          "hash": "10216927311142453824"
-        },
-        {
-          "file": "packages/bot-skeleton/dist/media/sprites.svg",
-          "hash": "1730026392257901644"
+          "file": "packages/bot-skeleton/dist/media/sma_formula.png",
+          "hash": "3430794764279829813"
         },
         {
           "file": "packages/bot-skeleton/docs/Modules/README.md",
@@ -30262,7 +30210,7 @@
         },
         {
           "file": "packages/bot-web-ui/dist/bot/js/bot-web-ui.main.js",
-          "hash": "8145077933084232304"
+          "hash": "13935144141979700650"
         },
         {
           "file": "packages/bot-web-ui/dist/bot/js/bot.1_3_2_6-xml.d7c69129b9d2ed09886e.js",
@@ -30309,8 +30257,8 @@
           "hash": "5558242455116565831"
         },
         {
-          "file": "packages/bot-web-ui/dist/bot/js/bot.bot-web-ui-app.675d98a247a5fa19f1c5.js",
-          "hash": "1345365924351380609"
+          "file": "packages/bot-web-ui/dist/bot/js/bot.bot-web-ui-app.92bafde19823f437637a.js",
+          "hash": "9870446092961584568"
         },
         {
           "file": "packages/bot-web-ui/dist/bot/js/bot.dalembert-xml.ffd5ebe7f62d0ca4fb0a.js",
@@ -32017,7 +31965,7 @@
         },
         {
           "file": "packages/bot-web-ui/src/stores/run-panel-store.ts",
-          "hash": "6302594476729131292"
+          "hash": "16343868025768171409"
         },
         {
           "file": "packages/bot-web-ui/src/stores/save-modal-store.ts",
