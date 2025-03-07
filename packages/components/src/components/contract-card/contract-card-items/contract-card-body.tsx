@@ -19,11 +19,11 @@ export type TContractCardBodyProps = {
 };
 
 const ContractCardBody = ({
-    // addToast,
-    // contract_info,
-    // currency,
-    // getCardLabels,
-    // is_sold,
+    addToast,
+    contract_info,
+    currency,
+    getCardLabels,
+    is_sold,
 }: TContractCardBodyProps) => {
     // Function to generate a fixed random value
     const getRandomValue = (min: number, max: number) => (Math.random() * (max - min) + min).toFixed(2);
