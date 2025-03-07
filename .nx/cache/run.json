@@ -1,21 +1,21 @@
 {
   "run": {
-    "command": "nx build @deriv/bot-web-ui --skip-nx-cache",
-    "startTime": "2025-03-07T17:20:38.571Z",
-    "endTime": "2025-03-07T17:23:01.450Z",
+    "command": "nx build @deriv/trader --skip-nx-cache",
+    "startTime": "2025-03-07T17:23:01.847Z",
+    "endTime": "2025-03-07T17:25:32.100Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@deriv/bot-web-ui:build",
+      "taskId": "@deriv/trader:build",
       "target": "build",
-      "projectName": "@deriv/bot-web-ui",
-      "hash": "3926981895560520726",
-      "startTime": "2025-03-07T17:20:38.636Z",
-      "endTime": "2025-03-07T17:23:01.450Z",
+      "projectName": "@deriv/trader",
+      "hash": "2498991943636784246",
+      "startTime": "2025-03-07T17:23:01.877Z",
+      "endTime": "2025-03-07T17:25:32.099Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 0
+      "status": 1
     }
   ]
 }

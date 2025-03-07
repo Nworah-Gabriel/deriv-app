@@ -16,14 +16,14 @@ export type TContractCardBodyProps = {
     is_turbos?: boolean;
     is_vanilla?: boolean;
     server_time: moment.Moment;
-} & TGeneralContractCardBodyProps;
+};
 
 const ContractCardBody = ({
-    addToast,
-    contract_info,
-    currency,
-    getCardLabels,
-    is_sold,
+    // addToast,
+    // contract_info,
+    // currency,
+    // getCardLabels,
+    // is_sold,
 }: TContractCardBodyProps) => {
     // Function to generate a fixed random value
     const getRandomValue = (min: number, max: number) => (Math.random() * (max - min) + min).toFixed(2);
