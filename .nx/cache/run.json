@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx build @deriv/trader",
-    "startTime": "2025-03-07T17:30:56.489Z",
-    "endTime": "2025-03-07T17:33:40.562Z",
+    "startTime": "2025-03-07T17:38:48.797Z",
+    "endTime": "2025-03-07T17:41:27.542Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "@deriv/trader:build",
       "target": "build",
       "projectName": "@deriv/trader",
-      "hash": "15013857073584577302",
-      "startTime": "2025-03-07T17:30:56.540Z",
-      "endTime": "2025-03-07T17:33:40.561Z",
+      "hash": "2498991943636784246",
+      "startTime": "2025-03-07T17:38:48.825Z",
+      "endTime": "2025-03-07T17:41:27.539Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1

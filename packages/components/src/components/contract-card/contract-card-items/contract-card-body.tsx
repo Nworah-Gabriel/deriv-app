@@ -16,7 +16,7 @@ export type TContractCardBodyProps = {
     is_turbos?: boolean;
     is_vanilla?: boolean;
     server_time: moment.Moment;
-};
+} & TContractCardBodyProps;
 
 const ContractCardBody = ({
     addToast,

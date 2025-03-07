@@ -34,7 +34,7 @@ built modules 4.75 MiB (javascript) 1.61 MiB (css/mini-extract) [1m[33m[built]
 
 [1m[31mERROR[39m[22m in [1msrc/App/Components/Elements/ContractDrawer/__tests__/contract-drawer-card.spec.tsx:9:7[39m[22m
 [90mTS2322: [39mType '{ contract_update: undefined; contract_info: { date_expiry: number; profit: number; purchase_time: number; validation_error: string; shortcode: string; underlying: string; }; is_accumulator: boolean; ... 13 more ...; toggleContractAuditDrawer: jest.Mock<...>; }' is not assignable to type '{ currency?: string | undefined; is_collapsed: boolean; is_market_closed: boolean; result?: string | undefined; server_time?: Moment | undefined; toggleContractAuditDrawer: () => void; } & Pick<...> & Pick<...> & Pick<...>'.
-  Property 'is_lookbacks' is missing in type '{ contract_update: undefined; contract_info: { date_expiry: number; profit: number; purchase_time: number; validation_error: string; shortcode: string; underlying: string; }; is_accumulator: boolean; ... 13 more ...; toggleContractAuditDrawer: jest.Mock<...>; }' but required in type 'Pick<any, "contract_update" | "contract_info" | "is_turbos" | "is_multiplier" | "is_lookbacks" | "is_mobile" | "is_accumulator" | "is_vanilla">'.
+  Property 'is_lookbacks' is missing in type '{ contract_update: undefined; contract_info: { date_expiry: number; profit: number; purchase_time: number; validation_error: string; shortcode: string; underlying: string; }; is_accumulator: boolean; ... 13 more ...; toggleContractAuditDrawer: jest.Mock<...>; }' but required in type 'Pick<any, "contract_info" | "is_multiplier" | "is_lookbacks" | "is_turbos" | "contract_update" | "is_mobile" | "is_accumulator" | "is_vanilla">'.
   [0m [90m  7 |[39m [36mimport[39m [33mTraderProviders[39m [36mfrom[39m [32m'../../../../../trader-providers'[39m[33m;[39m
    [90m  8 |[39m
   [31m[1m>[22m[39m[90m  9 |[39m [36mconst[39m mocked_props[33m:[39m [33mReact[39m[33m.[39m[33mComponentProps[39m[33m<[39m[36mtypeof[39m [33mContractDrawerCard[39m[33m>[39m [33m=[39m {
@@ -44,7 +44,7 @@ built modules 4.75 MiB (javascript) 1.61 MiB (css/mini-extract) [1m[33m[built]
    [90m 12 |[39m         date_expiry[33m:[39m [35m1699709000[39m[33m,[39m[0m
 
 [1m[31mERROR[39m[22m in [1msrc/App/Components/Elements/ContractDrawer/__tests__/contract-drawer.spec.tsx:12:7[39m[22m
-[90mTS2741: [39mProperty 'is_lookbacks' is missing in type '{ contract_info: {}; is_accumulator: boolean; is_dark_theme: false; is_market_closed: false; is_multiplier: boolean; is_vanilla: boolean; is_sell_requested: false; is_turbos: boolean; onClickCancel: jest.Mock<...>; onClickSell: jest.Mock<...>; toggleHistoryTab: jest.Mock<...>; contract_update: undefined; contract_up...' but required in type 'Pick<TContractDrawerProps, "contract_update" | "contract_update_history" | "contract_info" | "is_turbos" | "is_sell_requested" | "onClickSell" | "onClickCancel" | ... 6 more ... | "is_dark_theme">'.
+[90mTS2741: [39mProperty 'is_lookbacks' is missing in type '{ contract_info: {}; is_accumulator: boolean; is_dark_theme: false; is_market_closed: false; is_multiplier: boolean; is_vanilla: boolean; is_sell_requested: false; is_turbos: boolean; onClickCancel: jest.Mock<...>; onClickSell: jest.Mock<...>; toggleHistoryTab: jest.Mock<...>; contract_update: undefined; contract_up...' but required in type 'Pick<TContractDrawerProps, "contract_info" | "is_multiplier" | "is_sell_requested" | "onClickSell" | "is_lookbacks" | "onClickCancel" | "is_turbos" | ... 6 more ... | "is_dark_theme">'.
   [0m [90m 10 |[39m [36mimport[39m userEvent [36mfrom[39m [32m'@testing-library/user-event'[39m[33m;[39m
    [90m 11 |[39m
   [31m[1m>[22m[39m[90m 12 |[39m [36mconst[39m mocked_props[33m:[39m [33mReact[39m[33m.[39m[33mComponentProps[39m[33m<[39m[36mtypeof[39m [33mContractDrawer[39m[33m>[39m [33m=[39m {
@@ -53,7 +53,7 @@ built modules 4.75 MiB (javascript) 1.61 MiB (css/mini-extract) [1m[33m[built]
    [90m 14 |[39m     is_accumulator[33m:[39m [36mfalse[39m[33m,[39m
    [90m 15 |[39m     is_dark_theme[33m:[39m [36mfalse[39m[33m,[39m[0m
 
-webpack 5.97.1 compiled with [1m[31m3 errors[39m[22m and [1m[33m2 warnings[39m[22m in 143992 ms
+webpack 5.97.1 compiled with [1m[31m3 errors[39m[22m and [1m[33m2 warnings[39m[22m in 151660 ms
 [1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m Lifecycle script `build` failed with error:
 [1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mcode[39m [33m1[39m
 [1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mpath[39m /home/dell/Programs/react/deriv-app/packages/trader
