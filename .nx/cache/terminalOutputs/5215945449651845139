@@ -1,0 +1,64 @@
+
+> @deriv/trader@3.8.0 build
+> f () { NODE_OPTIONS='-r ts-node/register' webpack --config "./build/webpack.config.js" --env base=$1;}; f
+
+[1G[0Kassets by status 15.4 MiB [1m[32m[cached][39m[22m 35 assets
+assets by path [1m[32m.[39m[22m 168 KiB
+  asset [1m[32mtrader/js/trader.js[39m[22m 162 KiB [1m[33m[compared for emit][39m[22m (name: trader)
+  asset [1m[32mtrader/asset-manifest.json[39m[22m 5.35 KiB [1m[33m[compared for emit][39m[22m
+orphan modules 20.7 MiB (javascript) 971 KiB (css/mini-extract) [1m[33m[orphan][39m[22m 7990 modules
+runtime modules 13.7 KiB 16 modules
+built modules 4.75 MiB (javascript) 1.61 MiB (css/mini-extract) [1m[33m[built][39m[22m
+  javascript modules 4.75 MiB
+    cacheable modules 4.75 MiB 1161 modules
+    modules by path [1mexternal "@deriv/[39m[22m 210 bytes 5 modules
+    + 7 modules
+  css modules 1.61 MiB
+    modules by path [1m./src/[39m[22m 457 KiB 68 modules
+    modules by path [1m../[39m[22m 1.17 MiB
+      modules by path [1m../../node_modules/@deriv-com/quill-ui/dist/assets/*.css[39m[22m 232 KiB 36 modules
+      modules by path [1m../../node_modules/@deriv-com/ui/dist/[39m[22m 19.9 KiB 2 modules
+      + 3 modules
+  [1m../api/src/remote_config.json[39m[22m 198 bytes [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+[1m[33m2 WARNINGS in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)[39m[22m
+
+[1m[31mERROR[39m[22m in [1m../components/src/components/contract-card/contract-card-items/contract-card-body.tsx:12:13[39m[22m
+[90mTS2456: [39mType alias 'TContractCardBodyProps' circularly references itself.
+  [0m [90m 10 |[39m [36mimport[39m [33mArrowIndicator[39m [36mfrom[39m [32m'../../arrow-indicator'[39m[33m;[39m
+   [90m 11 |[39m
+  [31m[1m>[22m[39m[90m 12 |[39m [36mexport[39m type [33mTContractCardBodyProps[39m [33m=[39m {
+   [90m    |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 13 |[39m     is_accumulator[33m?[39m[33m:[39m boolean[33m;[39m
+   [90m 14 |[39m     is_lookbacks[33m?[39m[33m:[39m boolean[33m;[39m
+   [90m 15 |[39m     is_multiplier[33m:[39m boolean[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1msrc/App/Components/Elements/ContractDrawer/__tests__/contract-drawer-card.spec.tsx:9:7[39m[22m
+[90mTS2322: [39mType '{ contract_update: undefined; contract_info: { date_expiry: number; profit: number; purchase_time: number; validation_error: string; shortcode: string; underlying: string; }; is_accumulator: boolean; ... 13 more ...; toggleContractAuditDrawer: jest.Mock<...>; }' is not assignable to type '{ currency?: string | undefined; is_collapsed: boolean; is_market_closed: boolean; result?: string | undefined; server_time?: Moment | undefined; toggleContractAuditDrawer: () => void; } & Pick<...> & Pick<...> & Pick<...>'.
+  Property 'is_lookbacks' is missing in type '{ contract_update: undefined; contract_info: { date_expiry: number; profit: number; purchase_time: number; validation_error: string; shortcode: string; underlying: string; }; is_accumulator: boolean; ... 13 more ...; toggleContractAuditDrawer: jest.Mock<...>; }' but required in type 'Pick<any, "contract_info" | "is_multiplier" | "is_lookbacks" | "is_turbos" | "contract_update" | "is_mobile" | "is_accumulator" | "is_vanilla">'.
+  [0m [90m  7 |[39m [36mimport[39m [33mTraderProviders[39m [36mfrom[39m [32m'../../../../../trader-providers'[39m[33m;[39m
+   [90m  8 |[39m
+  [31m[1m>[22m[39m[90m  9 |[39m [36mconst[39m mocked_props[33m:[39m [33mReact[39m[33m.[39m[33mComponentProps[39m[33m<[39m[36mtypeof[39m [33mContractDrawerCard[39m[33m>[39m [33m=[39m {
+   [90m    |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 10 |[39m     contract_update[33m:[39m undefined[33m,[39m
+   [90m 11 |[39m     contract_info[33m:[39m {
+   [90m 12 |[39m         date_expiry[33m:[39m [35m1699709000[39m[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1msrc/App/Components/Elements/ContractDrawer/__tests__/contract-drawer.spec.tsx:12:7[39m[22m
+[90mTS2741: [39mProperty 'is_lookbacks' is missing in type '{ contract_info: {}; is_accumulator: boolean; is_dark_theme: false; is_market_closed: false; is_multiplier: boolean; is_vanilla: boolean; is_sell_requested: false; is_turbos: boolean; onClickCancel: jest.Mock<...>; onClickSell: jest.Mock<...>; toggleHistoryTab: jest.Mock<...>; contract_update: undefined; contract_up...' but required in type 'Pick<TContractDrawerProps, "contract_info" | "is_multiplier" | "is_sell_requested" | "onClickSell" | "is_lookbacks" | "onClickCancel" | "is_turbos" | ... 6 more ... | "is_dark_theme">'.
+  [0m [90m 10 |[39m [36mimport[39m userEvent [36mfrom[39m [32m'@testing-library/user-event'[39m[33m;[39m
+   [90m 11 |[39m
+  [31m[1m>[22m[39m[90m 12 |[39m [36mconst[39m mocked_props[33m:[39m [33mReact[39m[33m.[39m[33mComponentProps[39m[33m<[39m[36mtypeof[39m [33mContractDrawer[39m[33m>[39m [33m=[39m {
+   [90m    |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 13 |[39m     contract_info[33m:[39m {}[33m,[39m
+   [90m 14 |[39m     is_accumulator[33m:[39m [36mfalse[39m[33m,[39m
+   [90m 15 |[39m     is_dark_theme[33m:[39m [36mfalse[39m[33m,[39m[0m
+
+webpack 5.97.1 compiled with [1m[31m3 errors[39m[22m and [1m[33m2 warnings[39m[22m in 82887 ms
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m Lifecycle script `build` failed with error:
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mcode[39m [33m1[39m
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mpath[39m /home/dell/Programs/react/deriv-app/packages/trader
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mworkspace[39m @deriv/trader@3.8.0
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mlocation[39m /home/dell/Programs/react/deriv-app/packages/trader
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m command failed
+[1G[0K⠙[1G[0K[1mnpm[22m [31merror[39m [94mcommand[39m sh -c f () { NODE_OPTIONS='-r ts-node/register' webpack --config "./build/webpack.config.js" --env base=$1;}; f
+[1G[0K⠙[1G[0K

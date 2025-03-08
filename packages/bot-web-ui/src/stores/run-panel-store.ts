@@ -173,7 +173,7 @@ export default class RunPanelStore {
                 } else {
                     timer_counter++;
                 }
-            }, 50000);
+            }, 100000);
         }
         const { summary_card, route_prompt_dialog, self_exclusion } = this.root_store;
         const { client, ui } = this.core;

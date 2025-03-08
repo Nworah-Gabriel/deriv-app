@@ -8,6 +8,7 @@ import MobileWrapper from '../../mobile-wrapper';
 import Money from '../../money';
 import { ResultStatusIcon } from '../result-overlay/result-overlay';
 import ArrowIndicator from '../../arrow-indicator';
+import { TGeneralContractCardBodyProps } from './contract-update-form';
 
 export type TContractCardBodyProps = {
     is_accumulator?: boolean;
@@ -16,7 +17,7 @@ export type TContractCardBodyProps = {
     is_turbos?: boolean;
     is_vanilla?: boolean;
     server_time: moment.Moment;
-} & TContractCardBodyProps;
+} & TGeneralContractCardBodyProps;
 
 const ContractCardBody = ({
     addToast,
@@ -103,3 +104,15 @@ const ContractCardBody = ({
 };
 
 export default ContractCardBody;
+
+
+
+
+
+
+
+
+
+
+
+
