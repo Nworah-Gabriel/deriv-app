@@ -77,7 +77,7 @@ const ContractCardHeader = ({
         () => [
             {
                 is_param_displayed: is_multipliers,
-                displayed_param: `${getContractTypeDisplay(contract_type ?? '', {
+                displayed_param: `${getContractTypeDisplay(contract_type ?? 'Trade', {
                     isHighLow: is_high_low,
                 })} x${multiplier}`.trim(),
             },
@@ -96,7 +96,7 @@ const ContractCardHeader = ({
 
     const displayed_trade_param =
         contract_type_list_info.find(contract_type_item_info => contract_type_item_info.is_param_displayed)
-            ?.displayed_param || '';
+            ?.displayed_param || 'Trade';
 
     return (
         <React.Fragment>
