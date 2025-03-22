@@ -123,11 +123,11 @@ const ContractCardHeader = ({
                     <Text
                         size='xxs'
                         className={classNames('dc-contract-card__symbol', {
-                            'dc-contract-card__symbol--smarttrader-contract': is_smarttrader_contract,
+                            
                         })}
                         weight='bold'
                     >
-                        {display_name || contract_info.display_name}
+                        USD TRADE
                     </Text>
                 </div>
                 <div

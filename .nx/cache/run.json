@@ -1,18 +1,18 @@
 {
   "run": {
-    "command": "nx build @deriv/core",
-    "startTime": "2025-03-08T08:13:38.377Z",
-    "endTime": "2025-03-08T08:17:23.407Z",
+    "command": "nx build @deriv/p2p",
+    "startTime": "2025-03-22T15:50:46.585Z",
+    "endTime": "2025-03-22T15:53:00.391Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@deriv/core:build",
+      "taskId": "@deriv/p2p:build",
       "target": "build",
-      "projectName": "@deriv/core",
-      "hash": "5904969216729095547",
-      "startTime": "2025-03-08T08:13:38.396Z",
-      "endTime": "2025-03-08T08:17:23.406Z",
+      "projectName": "@deriv/p2p",
+      "hash": "7743971286659020928",
+      "startTime": "2025-03-22T15:50:46.598Z",
+      "endTime": "2025-03-22T15:53:00.389Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

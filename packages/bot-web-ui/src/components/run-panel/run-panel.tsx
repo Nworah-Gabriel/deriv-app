@@ -312,7 +312,7 @@ const RunPanel = observer(() => {
                 >
                     {content}
                 </Drawer>
-                {/* {!is_desktop && <MobileDrawerFooter />} */}
+                {!is_desktop && <MobileDrawerFooter />}
             </div>
             <SelfExclusion onRunButtonClick={onRunButtonClick} />
             <StatisticsInfoModal

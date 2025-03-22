@@ -36,10 +36,7 @@ const ContractTypeCell = ({
                 'dc-contract-type__type-label--multipliers': is_multipliers,
             })}
         >
-            <div>
-                {getContractTypeDisplay(type, { isHighLow: is_high_low, showMainTitle: is_multipliers || is_turbos }) ||
-                    ''}
-            </div>
+            
             {displayed_trade_param && (
                 <div className='dc-contract-type__type-label-trade-param'>{displayed_trade_param}</div>
             )}
