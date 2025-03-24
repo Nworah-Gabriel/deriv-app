@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_deriv_p2p=self.webpackChunk_deriv_p2p||[]).push([[5751],{65751:(e,p,s)=>{s.r(p)}}]);
