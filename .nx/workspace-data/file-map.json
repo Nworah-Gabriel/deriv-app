@@ -80,256 +80,216 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".github/workflows/analyze.yml",
-        "hash": "5152297769874819203"
+        "file": ".husky/commit-msg",
+        "hash": "15273148749009256939"
       },
       {
-        "file": "V2-MIGRATION-GUIDE.MD",
-        "hash": "14276741953027621349"
+        "file": "types/utils.d.ts",
+        "hash": "712056843793748187"
       },
       {
-        "file": "sonar-project.properties",
-        "hash": "5007276303618536562"
-      },
-      {
-        "file": ".stylelintrc.js",
-        "hash": "18196883491111832388"
-      },
-      {
-        "file": ".dockerignore",
-        "hash": "12755463638231543196"
-      },
-      {
-        "file": ".github/workflows/generate_and_push_deriv_api_types.yml",
-        "hash": "13244826054057294700"
-      },
-      {
-        "file": ".github/workflows/update_npm_cache.yml",
-        "hash": "7417408293068414184"
-      },
-      {
-        "file": "setupTests.js",
-        "hash": "18395007098765842477"
-      },
-      {
-        "file": "types/global.d.ts",
-        "hash": "15588136486311764734"
-      },
-      {
-        "file": "hooks/post-merge.sh",
-        "hash": "14012673302819686850"
-      },
-      {
-        "file": "README.md",
-        "hash": "3777040208513422767"
-      },
-      {
-        "file": ".github/lighthouse/lighthouserc.json",
-        "hash": "8139817067661193406"
-      },
-      {
-        "file": "types/svg.d.ts",
-        "hash": "2723891104647893293"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "9472159228019008904"
-      },
-      {
-        "file": ".github/workflows/release_uat2.yml",
-        "hash": "3877705694920922872"
-      },
-      {
-        "file": "docs/JavaScript/README.md",
-        "hash": "10646827030684562873"
-      },
-      {
-        "file": ".github/workflows/build_docker_image.yml",
-        "hash": "11911719934338528083"
-      },
-      {
-        "file": "eslint-local-rules/index.js",
-        "hash": "4971542074609981645"
-      },
-      {
-        "file": ".github/actions/download_remote_config_backup/action.yml",
-        "hash": "17848199035650493824"
-      },
-      {
-        "file": "__mocks__/deriv-com.ui.mock.js",
-        "hash": "17847120010233828908"
-      },
-      {
-        "file": ".github/actions/publish_to_pages_staging/action.yml",
-        "hash": "7532564673881347127"
-      },
-      {
-        "file": "default.conf",
-        "hash": "5992324476747020483"
-      },
-      {
-        "file": "types/blockly.d.ts",
-        "hash": "7519571552178495416"
-      },
-      {
-        "file": "__mocks__/globals.js",
-        "hash": "12869529316679446762"
-      },
-      {
-        "file": "package.json",
-        "hash": "10477857662336722848"
-      },
-      {
-        "file": ".github/actions/analyze/action.yml",
-        "hash": "457514574082819381"
-      },
-      {
-        "file": "jest.config.js",
-        "hash": "6626711652311828739"
-      },
-      {
-        "file": ".github/actions/publish_to_pages_test/action.yml",
-        "hash": "13438166771231315535"
-      },
-      {
-        "file": ".lintstagedrc.json",
-        "hash": "12825823929011875438"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "15308740546970707008"
-      },
-      {
-        "file": ".github/boring-cyborg.yml",
-        "hash": "7725124892600427974"
-      },
-      {
-        "file": ".github/workflows/lighthouse.yml",
-        "hash": "17953221040584107101"
-      },
-      {
-        "file": ".github/actions/publish_to_pages_production/action.yml",
-        "hash": "6958228495412707319"
-      },
-      {
-        "file": ".github/workflows/sync-translations.yml",
-        "hash": "4475555928003193697"
-      },
-      {
-        "file": ".gitattributes",
-        "hash": "11049760743951520457"
-      },
-      {
-        "file": ".github/actions/invalidate_npm_cache/action.yml",
-        "hash": "13208227821348124510"
-      },
-      {
-        "file": ".github/workflows/release_test.yml",
-        "hash": "15079071259188842490"
-      },
-      {
-        "file": ".husky/post-checkout",
-        "hash": "9726544199741375604"
-      },
-      {
-        "file": ".husky/post-commit",
-        "hash": "6814139225194061654"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "4424025658815316949"
-      },
-      {
-        "file": ".github/workflows/stale.yml",
-        "hash": "10625570303192999770"
-      },
-      {
-        "file": "docs/README.md",
-        "hash": "5589912385839151340"
-      },
-      {
-        "file": ".github/workflows/merge_and_release_to_staging.yml",
-        "hash": "8143477635789960788"
-      },
-      {
-        "file": "docs/Stylesheet/README.md",
-        "hash": "9878776503825364155"
-      },
-      {
-        "file": ".husky/pre-push",
-        "hash": "8990678870675173207"
-      },
-      {
-        "file": ".github/workflows/release_uat.yml",
-        "hash": "8848317286744261304"
-      },
-      {
-        "file": ".husky/.gitignore",
-        "hash": "10106645302852536800"
-      },
-      {
-        "file": "types/livechat.ts",
-        "hash": "11126349531720191700"
-      },
-      {
-        "file": ".github/workflows/automationrc.json",
-        "hash": "11574350821299685291"
-      },
-      {
-        "file": "__mocks__/fileMock.js",
-        "hash": "1018172441669056807"
-      },
-      {
-        "file": "qawolf.config.js",
-        "hash": "13895142839518198391"
-      },
-      {
-        "file": ".husky/pre-commit",
-        "hash": "3255892640244836420"
-      },
-      {
-        "file": ".github/actions/publish_to_pages_uat/action.yml",
-        "hash": "3968386743461719588"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "4785799033052902872"
-      },
-      {
-        "file": ".github/workflows/remote_config_pr.yml",
-        "hash": "4301076487562138061"
-      },
-      {
-        "file": "docs/package_dependencies.png",
-        "hash": "3935936426562658644"
-      },
-      {
-        "file": ".github/workflows/test.yml",
-        "hash": "5139773699577638323"
-      },
-      {
-        "file": "docs/Typescript/README.md",
-        "hash": "6216384093849808059"
-      },
-      {
-        "file": "__mocks__/translation.mock.js",
-        "hash": "11640752155346710381"
+        "file": "__mocks__/styleMock.js",
+        "hash": "3429130306414473014"
       },
       {
         "file": ".github/CODEOWNERS",
         "hash": "12663982432440147546"
       },
       {
+        "file": ".gitattributes",
+        "hash": "11049760743951520457"
+      },
+      {
+        "file": ".github/workflows/release_production.yml",
+        "hash": "18172186645152054304"
+      },
+      {
+        "file": ".github/actions/analyze/action.yml",
+        "hash": "457514574082819381"
+      },
+      {
+        "file": ".husky/post-commit",
+        "hash": "6814139225194061654"
+      },
+      {
+        "file": ".github/actions/npm_install_from_cache/action.yml",
+        "hash": "15691874985642919393"
+      },
+      {
+        "file": "nx-cloud.env.example",
+        "hash": "7041907643926882943"
+      },
+      {
+        "file": ".github/actions/invalidate_npm_cache/action.yml",
+        "hash": "13208227821348124510"
+      },
+      {
+        "file": "docs/Dependencies/README.md",
+        "hash": "2961513967652254026"
+      },
+      {
+        "file": "types/global.d.ts",
+        "hash": "15588136486311764734"
+      },
+      {
+        "file": ".github/actions/publish_to_pages_uat/action.yml",
+        "hash": "3968386743461719588"
+      },
+      {
+        "file": "types/svg.d.ts",
+        "hash": "2723891104647893293"
+      },
+      {
+        "file": ".husky/post-checkout",
+        "hash": "9726544199741375604"
+      },
+      {
+        "file": ".github/workflows/smoketests_manual.yml",
+        "hash": "17756546116008473772"
+      },
+      {
+        "file": ".github/workflows/release_uat2.yml",
+        "hash": "3877705694920922872"
+      },
+      {
+        "file": "types/livechat.ts",
+        "hash": "11126349531720191700"
+      },
+      {
+        "file": ".github/workflows/build_docker_image.yml",
+        "hash": "11911719934338528083"
+      },
+      {
+        "file": "WRITING TESTS.md",
+        "hash": "10855733417395638727"
+      },
+      {
+        "file": "postcss.config.js",
+        "hash": "17128295701842752783"
+      },
+      {
+        "file": "jest.setup.js",
+        "hash": "5272592626641043315"
+      },
+      {
+        "file": ".github/workflows/stale.yml",
+        "hash": "10625570303192999770"
+      },
+      {
+        "file": ".husky/.gitignore",
+        "hash": "10106645302852536800"
+      },
+      {
+        "file": "__mocks__/translation.mock.js",
+        "hash": "11640752155346710381"
+      },
+      {
+        "file": "types/blockly.d.ts",
+        "hash": "7519571552178495416"
+      },
+      {
+        "file": ".husky/pre-push",
+        "hash": "8990678870675173207"
+      },
+      {
+        "file": "__mocks__/globals.js",
+        "hash": "12869529316679446762"
+      },
+      {
+        "file": ".github/actions/publish_to_pages_test/action.yml",
+        "hash": "13438166771231315535"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "15308740546970707008"
+      },
+      {
+        "file": ".github/workflows/generate_and_push_deriv_api_types.md",
+        "hash": "113285001250619206"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "4785799033052902872"
+      },
+      {
+        "file": ".github/workflows/push_and_pull_crowdin_translations.yml",
+        "hash": "892765869508804736"
+      },
+      {
+        "file": ".github/workflows/release_staging.yml",
+        "hash": "10779579571986346628"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "3255892640244836420"
+      },
+      {
+        "file": "docs/README.md",
+        "hash": "5589912385839151340"
+      },
+      {
+        "file": "docs/Stylesheet/README.md",
+        "hash": "9878776503825364155"
+      },
+      {
+        "file": "scripts/check-imports.js",
+        "hash": "1471907153355528980"
+      },
+      {
+        "file": ".github/actions/publish_to_pages_staging/action.yml",
+        "hash": "7532564673881347127"
+      },
+      {
+        "file": "nx.json",
+        "hash": "8581766905961528442"
+      },
+      {
+        "file": "docs/Typescript/README.md",
+        "hash": "6216384093849808059"
+      },
+      {
         "file": "docs/Modules/README.md",
         "hash": "11219714609692194324"
       },
       {
-        "file": "hooks/pre-push.sh",
-        "hash": "5286686340530522257"
+        "file": "Dockerfile-storybook",
+        "hash": "13548699327750840684"
       },
       {
-        "file": ".prettierignore",
-        "hash": "7083867210218692195"
+        "file": "setupTests.js",
+        "hash": "18395007098765842477"
+      },
+      {
+        "file": "jest.config.base.js",
+        "hash": "11264346071027136485"
+      },
+      {
+        "file": ".github/workflows/analyze.yml",
+        "hash": "5152297769874819203"
+      },
+      {
+        "file": "README.md",
+        "hash": "3777040208513422767"
+      },
+      {
+        "file": ".github/workflows/push_and_pull_crowdin_translations.md",
+        "hash": "3321894835559589529"
+      },
+      {
+        "file": "default.conf",
+        "hash": "5992324476747020483"
+      },
+      {
+        "file": ".lintstagedrc.json",
+        "hash": "12825823929011875438"
+      },
+      {
+        "file": ".travis.yml",
+        "hash": "7743544888499916257"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "9472159228019008904"
       },
       {
         "file": "Dockerfile",
@@ -340,144 +300,184 @@
         "hash": "7954883893246595078"
       },
       {
-        "file": "WRITING TESTS.md",
-        "hash": "10855733417395638727"
+        "file": "eslint-local-rules/index.js",
+        "hash": "4971542074609981645"
       },
       {
-        "file": ".eslintrc.js",
-        "hash": "13236919886401729596"
+        "file": "hooks/post-merge.sh",
+        "hash": "14012673302819686850"
       },
       {
-        "file": "postcss.config.js",
-        "hash": "17128295701842752783"
+        "file": ".github/lighthouse/lighthouserc.json",
+        "hash": "8139817067661193406"
       },
       {
-        "file": ".github/actions/npm_install_from_cache/action.yml",
-        "hash": "15691874985642919393"
+        "file": ".github/workflows/sync-translations.yml",
+        "hash": "4475555928003193697"
       },
       {
-        "file": "docs/git/README.md",
-        "hash": "14617688955422723122"
+        "file": ".github/workflows/release_test.yml",
+        "hash": "15079071259188842490"
       },
       {
-        "file": ".github/actions/setup_node/action.yml",
-        "hash": "1900893088621716907"
+        "file": ".github/workflows/remote_config_pr.yml",
+        "hash": "4301076487562138061"
       },
       {
-        "file": "types/utils.d.ts",
-        "hash": "712056843793748187"
+        "file": "hooks/pre-push.sh",
+        "hash": "5286686340530522257"
       },
       {
-        "file": ".github/workflows/generate_app_id.yml",
-        "hash": "8606811651977613018"
-      },
-      {
-        "file": ".github/workflows/coveralls.yml",
-        "hash": "13784329410841139922"
-      },
-      {
-        "file": ".husky/commit-msg",
-        "hash": "15273148749009256939"
-      },
-      {
-        "file": ".github/workflows/smoketests.yml",
-        "hash": "7351950786408719317"
-      },
-      {
-        "file": "Dockerfile-storybook",
-        "hash": "13548699327750840684"
-      },
-      {
-        "file": "jest.config.base.js",
-        "hash": "11264346071027136485"
-      },
-      {
-        "file": ".github/pull_request_template.md",
-        "hash": "14250442855188194508"
-      },
-      {
-        "file": ".husky/post-merge",
-        "hash": "2213761663528130316"
-      },
-      {
-        "file": "jest.setup.js",
-        "hash": "5272592626641043315"
-      },
-      {
-        "file": ".github/workflows/release_staging.yml",
-        "hash": "10779579571986346628"
-      },
-      {
-        "file": ".github/actions/build/action.yml",
-        "hash": "15713401306626906512"
-      },
-      {
-        "file": ".github/actions/versioning/action.yml",
-        "hash": "13525718399907869005"
+        "file": ".github/actions/download_remote_config_backup/action.yml",
+        "hash": "17848199035650493824"
       },
       {
         "file": ".eslintignore",
         "hash": "15407719801463093179"
       },
       {
-        "file": ".github/workflows/push_and_pull_crowdin_translations.md",
-        "hash": "3321894835559589529"
+        "file": ".github/boring-cyborg.yml",
+        "hash": "7725124892600427974"
       },
       {
-        "file": "scripts/check-imports.js",
-        "hash": "1471907153355528980"
+        "file": ".github/workflows/test.yml",
+        "hash": "5139773699577638323"
       },
       {
-        "file": ".github/workflows/smoketests_manual.yml",
-        "hash": "17756546116008473772"
+        "file": "qawolf.config.js",
+        "hash": "13895142839518198391"
+      },
+      {
+        "file": ".github/pull_request_template.md",
+        "hash": "14250442855188194508"
       },
       {
         "file": ".github/actions/analyze/compareReports.js",
         "hash": "13670101071155126159"
       },
       {
-        "file": ".travis.yml",
-        "hash": "7743544888499916257"
+        "file": "V2-MIGRATION-GUIDE.MD",
+        "hash": "14276741953027621349"
       },
       {
-        "file": ".github/workflows/generate_and_push_deriv_api_types.md",
-        "hash": "113285001250619206"
+        "file": ".github/workflows/automationrc.json",
+        "hash": "11574350821299685291"
       },
       {
-        "file": "nx.json",
-        "hash": "8581766905961528442"
+        "file": ".github/workflows/merge_and_release_to_staging.yml",
+        "hash": "8143477635789960788"
       },
       {
-        "file": "package-lock.json",
-        "hash": "8522358260915360388"
-      },
-      {
-        "file": "scripts/check-tests.sh",
-        "hash": "9622893060761089185"
+        "file": "jest.config.js",
+        "hash": "6626711652311828739"
       },
       {
         "file": "babel.config.json",
         "hash": "13517406426309205634"
       },
       {
-        "file": ".github/workflows/release_production.yml",
-        "hash": "18172186645152054304"
+        "file": ".github/workflows/smoketests.yml",
+        "hash": "7351950786408719317"
       },
       {
-        "file": "nx-cloud.env.example",
-        "hash": "7041907643926882943"
+        "file": "docs/git/README.md",
+        "hash": "14617688955422723122"
       },
       {
-        "file": "__mocks__/styleMock.js",
-        "hash": "3429130306414473014"
+        "file": "sonar-project.properties",
+        "hash": "5007276303618536562"
       },
       {
-        "file": ".github/workflows/push_and_pull_crowdin_translations.yml",
-        "hash": "892765869508804736"
+        "file": ".prettierignore",
+        "hash": "7083867210218692195"
       },
       {
-        "file": "docs/Dependencies/README.md",
-        "hash": "2961513967652254026"
+        "file": ".github/actions/setup_node/action.yml",
+        "hash": "1900893088621716907"
+      },
+      {
+        "file": ".dockerignore",
+        "hash": "12755463638231543196"
+      },
+      {
+        "file": ".github/workflows/generate_app_id.yml",
+        "hash": "8606811651977613018"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "8522358260915360388"
+      },
+      {
+        "file": ".github/actions/publish_to_pages_production/action.yml",
+        "hash": "6958228495412707319"
+      },
+      {
+        "file": "docs/package_dependencies.png",
+        "hash": "3935936426562658644"
+      },
+      {
+        "file": "__mocks__/fileMock.js",
+        "hash": "1018172441669056807"
+      },
+      {
+        "file": ".github/actions/versioning/action.yml",
+        "hash": "13525718399907869005"
+      },
+      {
+        "file": "package.json",
+        "hash": "10477857662336722848"
+      },
+      {
+        "file": ".github/workflows/update_npm_cache.yml",
+        "hash": "7417408293068414184"
+      },
+      {
+        "file": ".github/workflows/generate_and_push_deriv_api_types.yml",
+        "hash": "13244826054057294700"
+      },
+      {
+        "file": ".eslintrc.js",
+        "hash": "13236919886401729596"
+      },
+      {
+        "file": ".github/workflows/lighthouse.yml",
+        "hash": "17953221040584107101"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "4424025658815316949"
+      },
+      {
+        "file": ".github/actions/build/action.yml",
+        "hash": "15713401306626906512"
+      },
+      {
+        "file": ".husky/post-merge",
+        "hash": "2213761663528130316"
+      },
+      {
+        "file": ".github/workflows/release_uat.yml",
+        "hash": "8848317286744261304"
+      },
+      {
+        "file": ".stylelintrc.js",
+        "hash": "18196883491111832388"
+      },
+      {
+        "file": ".github/workflows/coveralls.yml",
+        "hash": "13784329410841139922"
+      },
+      {
+        "file": "scripts/check-tests.sh",
+        "hash": "9622893060761089185"
+      },
+      {
+        "file": "docs/JavaScript/README.md",
+        "hash": "10646827030684562873"
+      },
+      {
+        "file": "__mocks__/deriv-com.ui.mock.js",
+        "hash": "17847120010233828908"
       }
     ],
     "projectFileMap": {
@@ -5477,7 +5477,7 @@
         },
         {
           "file": "packages/components/src/components/contract-card/contract-card-items/contract-card-header.tsx",
-          "hash": "15696036297345806989"
+          "hash": "18245422036910416115"
         },
         {
           "file": "packages/components/src/components/contract-card/contract-card-items/contract-card-item.tsx",
@@ -5489,7 +5489,7 @@
         },
         {
           "file": "packages/components/src/components/contract-card/contract-card-items/contract-type-cell.tsx",
-          "hash": "15504394279632347896"
+          "hash": "9274765133913690383"
         },
         {
           "file": "packages/components/src/components/contract-card/contract-card-items/contract-update-form.tsx",
@@ -23010,6 +23010,330 @@
         {
           "file": "packages/core/build/webpack.config.js",
           "hash": "6998013192794143276"
+        },
+        {
+          "file": "packages/core/dist/public/images/app/header/dbot-logo.svg",
+          "hash": "6320772126694334200"
+        },
+        {
+          "file": "packages/core/dist/public/images/app/header/dmt5-logo.svg",
+          "hash": "6493540985302808012"
+        },
+        {
+          "file": "packages/core/dist/public/images/app/header/dtrader-logo.svg",
+          "hash": "5511169578674999188"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/android-chrome-192x192.png",
+          "hash": "8313556081945287941"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/android-chrome-512x512.png",
+          "hash": "405184002063383806"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/apple-touch-icon-114.png",
+          "hash": "9896404364830979169"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/apple-touch-icon-120.png",
+          "hash": "6839891941592722671"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/apple-touch-icon-144.png",
+          "hash": "9407416055180764692"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/apple-touch-icon-152.png",
+          "hash": "14886998536326553481"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/apple-touch-icon-180.png",
+          "hash": "12007511348620841230"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/apple-touch-icon-57.png",
+          "hash": "16830151593042572159"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/apple-touch-icon-60.png",
+          "hash": "9179011268420835830"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/apple-touch-icon-72.png",
+          "hash": "11943515161940386326"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/apple-touch-icon-76.png",
+          "hash": "5632447950738156104"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/apple-touch-icon.png",
+          "hash": "10433747262608488367"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/favicon-16.png",
+          "hash": "13264836081900409949"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/favicon-160.png",
+          "hash": "9220626918405350092"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/favicon-16x16.png",
+          "hash": "5143035167717317514"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/favicon-192.png",
+          "hash": "11154449532641918523"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/favicon-32.png",
+          "hash": "12427145182553429743"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/favicon-32x32.png",
+          "hash": "7492733789676468475"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/favicon-96.png",
+          "hash": "11932966721383443868"
+        },
+        {
+          "file": "packages/core/dist/public/images/favicons/favicon.ico",
+          "hash": "7520096491716523866"
+        },
+        {
+          "file": "packages/core/dist/reports/css/reports.reports-app.c6e5cbfdfbcc03076620.css",
+          "hash": "16122419454616443831"
+        },
+        {
+          "file": "packages/core/dist/reports/css/reports.reports-routes.cd6da124f7e1a2bfa9d0.css",
+          "hash": "14546956491536101769"
+        },
+        {
+          "file": "packages/core/dist/reports/js/reports.404.98c995472a305e5900c8.js",
+          "hash": "15153435103390603552"
+        },
+        {
+          "file": "packages/core/dist/reports/js/reports.js",
+          "hash": "12339794191679825978"
+        },
+        {
+          "file": "packages/core/dist/reports/js/reports.reports-app.096b2715999ca977da76.js",
+          "hash": "1050317001860262589"
+        },
+        {
+          "file": "packages/core/dist/reports/js/reports.reports-routes.b2473eb823fa1e179f16.js",
+          "hash": "16600430875176642186"
+        },
+        {
+          "file": "packages/core/dist/reports/js/reports.trade-modals.ce7110d28c60d146030b.js",
+          "hash": "1933923471158160803"
+        },
+        {
+          "file": "packages/core/dist/reports/js/reports.two-month-picker.106a4745f1c7059b15b0.js",
+          "hash": "450554616356564343"
+        },
+        {
+          "file": "packages/core/dist/reports/js/reports.vendors-node_modules_lodash_debounce_index_js-node_modules_mobx-persist-store_lib_esm5_index_-41aa7c.7c128e3ae7b08a9e10b7.js",
+          "hash": "17482015774835102460"
+        },
+        {
+          "file": "packages/core/dist/reports/js/reports.vendors-node_modules_moment_moment_js.9a7db509770a541c7837.js",
+          "hash": "6104511064105304113"
+        },
+        {
+          "file": "packages/core/dist/reports/js/reports.vendors-node_modules_react-content-loader_dist_react-content-loader_es_js-node_modules_classn-e603fb.041fb19dd6c7131e5610.js",
+          "hash": "13483147703278438566"
+        },
+        {
+          "file": "packages/core/dist/robots.txt",
+          "hash": "10443802330348248198"
+        },
+        {
+          "file": "packages/core/dist/service-worker.js",
+          "hash": "6168624935565170595"
+        },
+        {
+          "file": "packages/core/dist/service-worker.js.map",
+          "hash": "13013582055839939095"
+        },
+        {
+          "file": "packages/core/dist/sitemap.xml",
+          "hash": "3314568377802417999"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.market-countdown-timer.b3f392cf58edf6a649f3.js",
+          "hash": "12032947155602293881"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.matches-differs-trade-description.884aae61dfca1eea8ad4.js",
+          "hash": "12310563233247200284"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.multipliers-trade-description.d4b029806bdc63056969.js",
+          "hash": "7490528908081768544"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.over-under-trade-description.ad377287b70b2811c746.js",
+          "hash": "12087109169648264739"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.rise-fall-trade-description.e324b6c707c7bbcb9667.js",
+          "hash": "820877749144608238"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.screen-large.2bc2c8960511d292b254.js",
+          "hash": "15157793745211784268"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.screen-small.0688d15df567f952ffbb.js",
+          "hash": "5345372389876865011"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.settings-chart.a25a0c0dcec576e89a5e.js",
+          "hash": "18226222858074094072"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.src_Modules_Contract_Containers_replay-chart_tsx-src_Stores_Modules_Trading_Helpers_logic_ts.b35c560bfebc316020a6.js",
+          "hash": "15751587443814213348"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.src_Modules_Trading_Components_Form_TradeParams_Accumulator_accumulators-info-display_tsx-src-a7086a.7af9cd6e96156ace20c0.js",
+          "hash": "5635638142908779164"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.src_sass_app_scss-src_App_Components_Elements_PositionsDrawer_helpers_index_ts-src_App_init-s-ba58f8.3065c77615d59f8298af.js",
+          "hash": "10390652592216274609"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.touch-no-touch-trade-description.ded06168f5c17efcf1e0.js",
+          "hash": "417918016477894284"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.trade-modals.33efcb90ba693405cccb.js",
+          "hash": "12292082380728728469"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.trader-app-v2.366ade8e1d974d63faba.js",
+          "hash": "16175590384705461462"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.trader-app.5115f7c1d4bbcd204a95.js",
+          "hash": "13936131417793882404"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.turbos-trade-description.c245100ce303d1e587a7.js",
+          "hash": "9471534655059941054"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.vanillas-trade-description.0725da979f485569e402.js",
+          "hash": "6437235981049703241"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.vendors-node_modules_bowser_es5_js-node_modules_dayjs_dayjs_min_js-node_modules_lodash_deboun-8ca634.de0452865bc86c3dc3fc.js",
+          "hash": "14719571455619440415"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.vendors-node_modules_cloudflare_stream-react_dist_stream-react_esm_js-node_modules_deriv_quil-145140.953216750c849c03a62b.js",
+          "hash": "11085629380226116544"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.vendors-node_modules_deriv_quill-icons_dist_esm_react_LabelPaired_LabelPairedChevronsDownCapt-dee9aa.382d17e67da104c25bd3.js",
+          "hash": "6435114356309973162"
+        },
+        {
+          "file": "packages/core/dist/trader/js/trader.vendors-node_modules_react-content-loader_dist_react-content-loader_es_js-node_modules_react--c10131.bb9b637acb75f2bc0b39.js",
+          "hash": "15619814345322012606"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/index.js",
+          "hash": "8198931762403134830"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.cashier-modal-route.a4a852166ccbf64a9098.js",
+          "hash": "6821080703851065913"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.compare-accounts-route.867176f1bd41c84e24ba.js",
+          "hash": "8165343011030746290"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.components.ba730e02036ff7111782.js",
+          "hash": "9519065907140759635"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.default-src_components_AccountsList_AccountsList_tsx-src_components_WalletListCardActions_Wal-39cda1.59e59ded53a269fb1d47.js",
+          "hash": "6136995720738508982"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.default-src_components_WalletCard_WalletCard_tsx-src_constants_constants_tsx-src_features_cfd-b5d10d.ce62ff65aa31e484e3f7.js",
+          "hash": "12126675873659760121"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.default-src_components_WalletListCardBadge_WalletListCardBadge_tsx-src_components_WalletMarke-4de253.068c253f276368cd5b8a.js",
+          "hash": "3614729439395013845"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.src_components_DesktopWalletsList_DesktopWalletsList_tsx.9f022806c2e3dd6ed192.js",
+          "hash": "10371502178230437530"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.src_components_WalletTourGuide_WalletTourGuide_tsx.86350bb73d35ae29076a.js",
+          "hash": "4142876512311275009"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.src_components_WalletsCarousel_WalletsCarousel_tsx.e7a3087253bc0060766b.js",
+          "hash": "13573631337028366106"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.vendors-node_modules_deriv-com_ui_dist_components_ActionScreen_index_js-node_modules_deriv-co-1a632f.672375c6dc6f58c9ea25.js",
+          "hash": "678071188630973380"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.vendors-node_modules_deriv-com_ui_dist_components_Dialog_index_js-node_modules_deriv-com_ui_d-bddf3a.d9ee6e28e226202c2704.js",
+          "hash": "18438712400923307971"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.vendors-node_modules_deriv-com_ui_dist_components_Divider_index_js-node_modules_deriv-com_ui_-49d755.440be016a12f4814bb59.js",
+          "hash": "16800350695987814174"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.vendors-node_modules_embla-carousel-react_embla-carousel-react_esm_js-node_modules_yup_es_ind-9b9ae7.d7cc43d607fba7f93196.js",
+          "hash": "1077501136562107360"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.vendors-node_modules_formik_dist_formik_esm_js-node_modules_deriv-com_ui_dist_components_Badg-13772c.091ba262c20e7bf44701.js",
+          "hash": "13324133647807833821"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.vendors-node_modules_react-joyride_dist_index_mjs.6ddfe7b103c751779054.js",
+          "hash": "1697224859951641893"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.vendors-node_modules_react-transition-group_esm_CSSTransition_js-node_modules_react-transitio-246a7c.cefd2990ac481c196fae.js",
+          "hash": "16602058376852591217"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.vendors-node_modules_zxcvbn-ts_core_dist_index_esm_js-node_modules_zxcvbn-ts_language-common_-2fa420.f35f15faf81062d5e4d4.js",
+          "hash": "4556541258239797233"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.wallets-app.22eb058ab49697887388.js",
+          "hash": "4022898756072109562"
+        },
+        {
+          "file": "packages/core/dist/wallets/js/wallets.wallets-listing-route.d67e6770d47f26239726.js",
+          "hash": "13880969617971883868"
+        },
+        {
+          "file": "packages/core/dist/workbox-d3667991.js",
+          "hash": "2636385229717731373"
+        },
+        {
+          "file": "packages/core/dist/workbox-d3667991.js.map",
+          "hash": "1043552367686882561"
         },
         {
           "file": "packages/core/docs/Modules/README.md",

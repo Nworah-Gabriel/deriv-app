@@ -115,11 +115,7 @@ const ContractCardHeader = ({
                         'dc-contract-card__underlying-name--accumulator': is_accumulator,
                     })}
                 >
-                    <Icon
-                        icon={underlying ? `IcUnderlying${underlying}` : 'IcUnknown'}
-                        width={is_accumulator ? 46 : 40}
-                        size={32}
-                    />
+                    
                     <Text
                         size='xxs'
                         className={classNames('dc-contract-card__symbol', {

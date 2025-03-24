@@ -22,13 +22,7 @@ const ContractTypeCell = ({
     type = '',
 }: TContractTypeCellProps) => (
     <div className='dc-contract-type'>
-        <div className='dc-contract-type__type-wrapper'>
-            <IconTradeTypes
-                type={is_high_low && !isVanillaContract(type) ? `${type.toLowerCase()}_barrier` : type.toLowerCase()}
-                className='category-type'
-                size={24}
-            />
-        </div>
+        
         <div
             className={classNames('dc-contract-type__type-label', {
                 'dc-contract-type__type-label--smarttrader-contract': isSmartTraderContract(type),
